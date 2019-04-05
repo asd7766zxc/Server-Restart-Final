@@ -1,0 +1,7 @@
+﻿<Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ServerFileLocation>C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\</ServerFileLocation>
+  <ServerFileLocationName>C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\Server_Start.bat</ServerFileLocationName>
+  <SQLServerLoaction>cr-reports.ddns.net</SQLServerLoaction>
+  <UserFroceTiming>true</UserFroceTiming>
+  <ServerRestartTimes>1</ServerRestartTimes>
+</Data>

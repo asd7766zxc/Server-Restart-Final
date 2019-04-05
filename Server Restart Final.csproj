@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89518A46-BC80-4A38-A50D-9875F9C34C6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Server_Restart_Final</RootNamespace>
+    <AssemblyName>Server Restart Final</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Libraries\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="XPlat.Foundation, Version=1.5.19060.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XPlat.Foundation.1.5.19060.1\lib\netstandard1.4\XPlat.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="XPlat.Storage, Version=1.5.19060.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XPlat.Storage.1.5.19060.1\lib\netstandard1.4\XPlat.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="XPlat.Storage.Pickers, Version=1.5.19060.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XPlat.Storage.Pickers.1.5.19060.1\lib\netstandard1.4\XPlat.Storage.Pickers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Animation\PageAnimation.cs" />
+    <Compile Include="Animation\PageAnimations.cs" />
+    <Compile Include="Animation\StoryboardHelpers.cs" />
+    <Compile Include="DataModuels\ApplicationPage.cs" />
+    <Compile Include="DataModuels\ServerType.cs" />
+    <Compile Include="DataStorage\Data.cs" />
+    <Compile Include="DataStorage\StorageData.cs" />
+    <Compile Include="Event Handler\Basic_Handler.cs" />
+    <Compile Include="Event Handler\ServerCrashEvent.cs" />
+    <Compile Include="Event Handler\Server_UI_Update_Event_Handler.cs" />
+    <Compile Include="Event Handler\TaskControler.cs" />
+    <Compile Include="Expressions\ExpressionHelpers.cs" />
+    <Compile Include="File_Control_IO\GetSetFile.cs" />
+    <Compile Include="Global\GlobalSigh.cs" />
+    <Compile Include="Log\Logging.cs" />
+    <Compile Include="Pages\InfoPage.xaml.cs">
+      <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IstaneProperties\BaseAttached.cs" />
+    <Compile Include="IstaneProperties\ButtonAttachedProperty - 複製.cs" />
+    <Compile Include="IstaneProperties\MonitorPasswordPropertys.cs" />
+    <Compile Include="ListItemViewModel\ChatlistItemViewModel.cs" />
+    <Compile Include="ListItemViewModel\ChatlistViewModel.cs" />
+    <Compile Include="ListItemViewModel\Design\ChatListDesignModel.cs" />
+    <Compile Include="ListItemViewModel\Design\ChatListItemDesignModel.cs" />
+    <Compile Include="Pages\LoadingPage.xaml.cs">
+      <DependentUpon>LoadingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Particle.xaml.cs">
+      <DependentUpon>Particle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Particle\Ellipse_Particle.cs" />
+    <Compile Include="Particle\Particle.cs" />
+    <Compile Include="ProcessObject\ProcessCheckStatus.cs" />
+    <Compile Include="ProcessObject\Server.cs" />
+    <Compile Include="ProgramState.cs" />
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="Cotrols\SideMenuControl.xaml.cs">
+      <DependentUpon>SideMenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cotrols\SideListControl.xaml.cs">
+      <DependentUpon>SideListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cotrols\SideListItemControl.xaml.cs">
+      <DependentUpon>SideListItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReportPage.xaml.cs">
+      <DependentUpon>ReportPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SetttingPage.xaml.cs">
+      <DependentUpon>SetttingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTools\Logger.cs" />
+    <Compile Include="ServerTools\ParameterGenerator.cs" />
+    <Compile Include="SocketClient\Client.cs" />
+    <Compile Include="SocketClient\Headers.cs" />
+    <Compile Include="SocketClient\Listener.cs" />
+    <Compile Include="SocketClient\Packet\PacketWriter.cs" />
+    <Compile Include="SocketClient\SocketStaus.cs" />
+    <Compile Include="SocketClient\TransferClient.cs" />
+    <Compile Include="SocketClient\TransferQueue.cs" />
+    <Compile Include="StorageBatch\Batch.cs" />
+    <Compile Include="ValueConverters\ApplicationPageValueConverter.cs" />
+    <Compile Include="ValueConverters\BaseValueConverter.cs" />
+    <Compile Include="ValueConverters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="ValueConverters\ImageSourceConverter.cs" />
+    <Compile Include="ValueConverters\StringRGBToBrushConverter.cs" />
+    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Base\IHavePassword.cs" />
+    <Compile Include="ViewModel\Base\RelayParameterizedCommmand.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\WindowsVeiwModles.cs" />
+    <Compile Include="Window\WindowResizer.cs" />
+    <Page Include="Pages\InfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LoadingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Cotrols\SideMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cotrols\SideListControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cotrols\SideListItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Particle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ReportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SetttingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Scroll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Fonts\Font Awesome 5 Free-Regular-400.otf" />
+    <Resource Include="Fonts\Font Awesome 5 Free-Solid-900.otf" />
+    <Resource Include="Fonts\fontawesome-webfont.ttf" />
+    <Resource Include="Fonts\FontAwesome.ttf" />
+    <Resource Include="Fonts\FontAwesomes.otf" />
+    <Resource Include="Fonts\Lato-Black.ttf" />
+    <Resource Include="Fonts\Lato-BlackItalic.ttf" />
+    <Resource Include="Fonts\Lato-Bold.ttf" />
+    <Resource Include="Fonts\Lato-BoldItalic.ttf" />
+    <Resource Include="Fonts\Lato-Hairline.ttf" />
+    <Resource Include="Fonts\Lato-HairlineItalic.ttf" />
+    <Resource Include="Fonts\Lato-Heavy.ttf" />
+    <Resource Include="Fonts\Lato-HeavyItalic.ttf" />
+    <Resource Include="Fonts\Lato-Italic.ttf" />
+    <Resource Include="Fonts\Lato-Light.ttf" />
+    <Resource Include="Fonts\Lato-LightItalic.ttf" />
+    <Resource Include="Fonts\Lato-Medium.ttf" />
+    <Resource Include="Fonts\Lato-MediumItalic.ttf" />
+    <Resource Include="Fonts\Lato-Regular.ttf" />
+    <Resource Include="Fonts\Lato-Semibold.ttf" />
+    <Resource Include="Fonts\Lato-SemiboldItalic.ttf" />
+    <Resource Include="Fonts\Lato-Thin.ttf" />
+    <Resource Include="Fonts\Lato-ThinItalic.ttf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Background\Material-Backgrounds-07-2048-x-1197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-menu-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Font_Image\obf_font_01.gif" />
+    <Resource Include="Font_Image\obf_font_02.gif" />
+    <Resource Include="Font_Image\obf_font_03.gif" />
+    <Resource Include="Font_Image\obf_font_04.gif" />
+    <Resource Include="Font_Image\obf_font_05.gif" />
+    <Resource Include="Font_Image\obf_font_06.gif" />
+    <Resource Include="Font_Image\obf_font_07.gif" />
+    <Resource Include="Font_Image\obf_font_08.gif" />
+    <Resource Include="Font_Image\obf_font_09.gif" />
+    <Resource Include="Font_Image\obf_font_10.gif" />
+    <Resource Include="Font_Image\obf_font_100.gif" />
+    <Resource Include="Font_Image\obf_font_101.gif" />
+    <Resource Include="Font_Image\obf_font_102.gif" />
+    <Resource Include="Font_Image\obf_font_103.gif" />
+    <Resource Include="Font_Image\obf_font_104.gif" />
+    <Resource Include="Font_Image\obf_font_105.gif" />
+    <Resource Include="Font_Image\obf_font_106.gif" />
+    <Resource Include="Font_Image\obf_font_107.gif" />
+    <Resource Include="Font_Image\obf_font_108.gif" />
+    <Resource Include="Font_Image\obf_font_109.gif" />
+    <Resource Include="Font_Image\obf_font_11.gif" />
+    <Resource Include="Font_Image\obf_font_110.gif" />
+    <Resource Include="Font_Image\obf_font_111.gif" />
+    <Resource Include="Font_Image\obf_font_112.gif" />
+    <Resource Include="Font_Image\obf_font_113.gif" />
+    <Resource Include="Font_Image\obf_font_114.gif" />
+    <Resource Include="Font_Image\obf_font_115.gif" />
+    <Resource Include="Font_Image\obf_font_116.gif" />
+    <Resource Include="Font_Image\obf_font_117.gif" />
+    <Resource Include="Font_Image\obf_font_118.gif" />
+    <Resource Include="Font_Image\obf_font_119.gif" />
+    <Resource Include="Font_Image\obf_font_12.gif" />
+    <Resource Include="Font_Image\obf_font_120.gif" />
+    <Resource Include="Font_Image\obf_font_121.gif" />
+    <Resource Include="Font_Image\obf_font_122.gif" />
+    <Resource Include="Font_Image\obf_font_123.gif" />
+    <Resource Include="Font_Image\obf_font_124.gif" />
+    <Resource Include="Font_Image\obf_font_125.gif" />
+    <Resource Include="Font_Image\obf_font_126.gif" />
+    <Resource Include="Font_Image\obf_font_127.gif" />
+    <Resource Include="Font_Image\obf_font_128.gif" />
+    <Resource Include="Font_Image\obf_font_129.gif" />
+    <Resource Include="Font_Image\obf_font_13.gif" />
+    <Resource Include="Font_Image\obf_font_130.gif" />
+    <Resource Include="Font_Image\obf_font_131.gif" />
+    <Resource Include="Font_Image\obf_font_132.gif" />
+    <Resource Include="Font_Image\obf_font_133.gif" />
+    <Resource Include="Font_Image\obf_font_134.gif" />
+    <Resource Include="Font_Image\obf_font_135.gif" />
+    <Resource Include="Font_Image\obf_font_136.gif" />
+    <Resource Include="Font_Image\obf_font_137.gif" />
+    <Resource Include="Font_Image\obf_font_138.gif" />
+    <Resource Include="Font_Image\obf_font_139.gif" />
+    <Resource Include="Font_Image\obf_font_14.gif" />
+    <Resource Include="Font_Image\obf_font_140.gif" />
+    <Resource Include="Font_Image\obf_font_141.gif" />
+    <Resource Include="Font_Image\obf_font_142.gif" />
+    <Resource Include="Font_Image\obf_font_143.gif" />
+    <Resource Include="Font_Image\obf_font_144.gif" />
+    <Resource Include="Font_Image\obf_font_145.gif" />
+    <Resource Include="Font_Image\obf_font_146.gif" />
+    <Resource Include="Font_Image\obf_font_147.gif" />
+    <Resource Include="Font_Image\obf_font_148.gif" />
+    <Resource Include="Font_Image\obf_font_149.gif" />
+    <Resource Include="Font_Image\obf_font_15.gif" />
+    <Resource Include="Font_Image\obf_font_150.gif" />
+    <Resource Include="Font_Image\obf_font_151.gif" />
+    <Resource Include="Font_Image\obf_font_152.gif" />
+    <Resource Include="Font_Image\obf_font_153.gif" />
+    <Resource Include="Font_Image\obf_font_154.gif" />
+    <Resource Include="Font_Image\obf_font_155.gif" />
+    <Resource Include="Font_Image\obf_font_156.gif" />
+    <Resource Include="Font_Image\obf_font_157.gif" />
+    <Resource Include="Font_Image\obf_font_158.gif" />
+    <Resource Include="Font_Image\obf_font_159.gif" />
+    <Resource Include="Font_Image\obf_font_16.gif" />
+    <Resource Include="Font_Image\obf_font_160.gif" />
+    <Resource Include="Font_Image\obf_font_161.gif" />
+    <Resource Include="Font_Image\obf_font_162.gif" />
+    <Resource Include="Font_Image\obf_font_163.gif" />
+    <Resource Include="Font_Image\obf_font_164.gif" />
+    <Resource Include="Font_Image\obf_font_165.gif" />
+    <Resource Include="Font_Image\obf_font_166.gif" />
+    <Resource Include="Font_Image\obf_font_167.gif" />
+    <Resource Include="Font_Image\obf_font_168.gif" />
+    <Resource Include="Font_Image\obf_font_169.gif" />
+    <Resource Include="Font_Image\obf_font_17.gif" />
+    <Resource Include="Font_Image\obf_font_170.gif" />
+    <Resource Include="Font_Image\obf_font_171.gif" />
+    <Resource Include="Font_Image\obf_font_172.gif" />
+    <Resource Include="Font_Image\obf_font_173.gif" />
+    <Resource Include="Font_Image\obf_font_174.gif" />
+    <Resource Include="Font_Image\obf_font_175.gif" />
+    <Resource Include="Font_Image\obf_font_176.gif" />
+    <Resource Include="Font_Image\obf_font_177.gif" />
+    <Resource Include="Font_Image\obf_font_178.gif" />
+    <Resource Include="Font_Image\obf_font_179.gif" />
+    <Resource Include="Font_Image\obf_font_18.gif" />
+    <Resource Include="Font_Image\obf_font_180.gif" />
+    <Resource Include="Font_Image\obf_font_181.gif" />
+    <Resource Include="Font_Image\obf_font_182.gif" />
+    <Resource Include="Font_Image\obf_font_183.gif" />
+    <Resource Include="Font_Image\obf_font_184.gif" />
+    <Resource Include="Font_Image\obf_font_185.gif" />
+    <Resource Include="Font_Image\obf_font_186.gif" />
+    <Resource Include="Font_Image\obf_font_187.gif" />
+    <Resource Include="Font_Image\obf_font_188.gif" />
+    <Resource Include="Font_Image\obf_font_189.gif" />
+    <Resource Include="Font_Image\obf_font_19.gif" />
+    <Resource Include="Font_Image\obf_font_190.gif" />
+    <Resource Include="Font_Image\obf_font_191.gif" />
+    <Resource Include="Font_Image\obf_font_192.gif" />
+    <Resource Include="Font_Image\obf_font_193.gif" />
+    <Resource Include="Font_Image\obf_font_194.gif" />
+    <Resource Include="Font_Image\obf_font_195.gif" />
+    <Resource Include="Font_Image\obf_font_196.gif" />
+    <Resource Include="Font_Image\obf_font_197.gif" />
+    <Resource Include="Font_Image\obf_font_198.gif" />
+    <Resource Include="Font_Image\obf_font_199.gif" />
+    <Resource Include="Font_Image\obf_font_20.gif" />
+    <Resource Include="Font_Image\obf_font_200.gif" />
+    <Resource Include="Font_Image\obf_font_201.gif" />
+    <Resource Include="Font_Image\obf_font_202.gif" />
+    <Resource Include="Font_Image\obf_font_203.gif" />
+    <Resource Include="Font_Image\obf_font_204.gif" />
+    <Resource Include="Font_Image\obf_font_205.gif" />
+    <Resource Include="Font_Image\obf_font_206.gif" />
+    <Resource Include="Font_Image\obf_font_207.gif" />
+    <Resource Include="Font_Image\obf_font_208.gif" />
+    <Resource Include="Font_Image\obf_font_209.gif" />
+    <Resource Include="Font_Image\obf_font_21.gif" />
+    <Resource Include="Font_Image\obf_font_210.gif" />
+    <Resource Include="Font_Image\obf_font_211.gif" />
+    <Resource Include="Font_Image\obf_font_212.gif" />
+    <Resource Include="Font_Image\obf_font_213.gif" />
+    <Resource Include="Font_Image\obf_font_214.gif" />
+    <Resource Include="Font_Image\obf_font_215.gif" />
+    <Resource Include="Font_Image\obf_font_216.gif" />
+    <Resource Include="Font_Image\obf_font_217.gif" />
+    <Resource Include="Font_Image\obf_font_218.gif" />
+    <Resource Include="Font_Image\obf_font_219.gif" />
+    <Resource Include="Font_Image\obf_font_22.gif" />
+    <Resource Include="Font_Image\obf_font_220.gif" />
+    <Resource Include="Font_Image\obf_font_221.gif" />
+    <Resource Include="Font_Image\obf_font_222.gif" />
+    <Resource Include="Font_Image\obf_font_223.gif" />
+    <Resource Include="Font_Image\obf_font_224.gif" />
+    <Resource Include="Font_Image\obf_font_225.gif" />
+    <Resource Include="Font_Image\obf_font_226.gif" />
+    <Resource Include="Font_Image\obf_font_227.gif" />
+    <Resource Include="Font_Image\obf_font_228.gif" />
+    <Resource Include="Font_Image\obf_font_229.gif" />
+    <Resource Include="Font_Image\obf_font_23.gif" />
+    <Resource Include="Font_Image\obf_font_230.gif" />
+    <Resource Include="Font_Image\obf_font_231.gif" />
+    <Resource Include="Font_Image\obf_font_232.gif" />
+    <Resource Include="Font_Image\obf_font_233.gif" />
+    <Resource Include="Font_Image\obf_font_234.gif" />
+    <Resource Include="Font_Image\obf_font_235.gif" />
+    <Resource Include="Font_Image\obf_font_236.gif" />
+    <Resource Include="Font_Image\obf_font_237.gif" />
+    <Resource Include="Font_Image\obf_font_238.gif" />
+    <Resource Include="Font_Image\obf_font_239.gif" />
+    <Resource Include="Font_Image\obf_font_24.gif" />
+    <Resource Include="Font_Image\obf_font_240.gif" />
+    <Resource Include="Font_Image\obf_font_241.gif" />
+    <Resource Include="Font_Image\obf_font_242.gif" />
+    <Resource Include="Font_Image\obf_font_243.gif" />
+    <Resource Include="Font_Image\obf_font_244.gif" />
+    <Resource Include="Font_Image\obf_font_245.gif" />
+    <Resource Include="Font_Image\obf_font_246.gif" />
+    <Resource Include="Font_Image\obf_font_247.gif" />
+    <Resource Include="Font_Image\obf_font_248.gif" />
+    <Resource Include="Font_Image\obf_font_249.gif" />
+    <Resource Include="Font_Image\obf_font_25.gif" />
+    <Resource Include="Font_Image\obf_font_250.gif" />
+    <Resource Include="Font_Image\obf_font_251.gif" />
+    <Resource Include="Font_Image\obf_font_252.gif" />
+    <Resource Include="Font_Image\obf_font_253.gif" />
+    <Resource Include="Font_Image\obf_font_254.gif" />
+    <Resource Include="Font_Image\obf_font_255.gif" />
+    <Resource Include="Font_Image\obf_font_256.gif" />
+    <Resource Include="Font_Image\obf_font_26.gif" />
+    <Resource Include="Font_Image\obf_font_27.gif" />
+    <Resource Include="Font_Image\obf_font_28.gif" />
+    <Resource Include="Font_Image\obf_font_29.gif" />
+    <Resource Include="Font_Image\obf_font_30.gif" />
+    <Resource Include="Font_Image\obf_font_31.gif" />
+    <Resource Include="Font_Image\obf_font_32.gif" />
+    <Resource Include="Font_Image\obf_font_33.gif" />
+    <Resource Include="Font_Image\obf_font_34.gif" />
+    <Resource Include="Font_Image\obf_font_35.gif" />
+    <Resource Include="Font_Image\obf_font_36.gif" />
+    <Resource Include="Font_Image\obf_font_37.gif" />
+    <Resource Include="Font_Image\obf_font_38.gif" />
+    <Resource Include="Font_Image\obf_font_39.gif" />
+    <Resource Include="Font_Image\obf_font_40.gif" />
+    <Resource Include="Font_Image\obf_font_41.gif" />
+    <Resource Include="Font_Image\obf_font_42.gif" />
+    <Resource Include="Font_Image\obf_font_43.gif" />
+    <Resource Include="Font_Image\obf_font_44.gif" />
+    <Resource Include="Font_Image\obf_font_45.gif" />
+    <Resource Include="Font_Image\obf_font_46.gif" />
+    <Resource Include="Font_Image\obf_font_47.gif" />
+    <Resource Include="Font_Image\obf_font_48.gif" />
+    <Resource Include="Font_Image\obf_font_49.gif" />
+    <Resource Include="Font_Image\obf_font_50.gif" />
+    <Resource Include="Font_Image\obf_font_51.gif" />
+    <Resource Include="Font_Image\obf_font_52.gif" />
+    <Resource Include="Font_Image\obf_font_53.gif" />
+    <Resource Include="Font_Image\obf_font_54.gif" />
+    <Resource Include="Font_Image\obf_font_55.gif" />
+    <Resource Include="Font_Image\obf_font_56.gif" />
+    <Resource Include="Font_Image\obf_font_57.gif" />
+    <Resource Include="Font_Image\obf_font_58.gif" />
+    <Resource Include="Font_Image\obf_font_59.gif" />
+    <Resource Include="Font_Image\obf_font_60.gif" />
+    <Resource Include="Font_Image\obf_font_61.gif" />
+    <Resource Include="Font_Image\obf_font_62.gif" />
+    <Resource Include="Font_Image\obf_font_63.gif" />
+    <Resource Include="Font_Image\obf_font_64.gif" />
+    <Resource Include="Font_Image\obf_font_65.gif" />
+    <Resource Include="Font_Image\obf_font_66.gif" />
+    <Resource Include="Font_Image\obf_font_67.gif" />
+    <Resource Include="Font_Image\obf_font_68.gif" />
+    <Resource Include="Font_Image\obf_font_69.gif" />
+    <Resource Include="Font_Image\obf_font_70.gif" />
+    <Resource Include="Font_Image\obf_font_71.gif" />
+    <Resource Include="Font_Image\obf_font_72.gif" />
+    <Resource Include="Font_Image\obf_font_73.gif" />
+    <Resource Include="Font_Image\obf_font_74.gif" />
+    <Resource Include="Font_Image\obf_font_75.gif" />
+    <Resource Include="Font_Image\obf_font_76.gif" />
+    <Resource Include="Font_Image\obf_font_77.gif" />
+    <Resource Include="Font_Image\obf_font_78.gif" />
+    <Resource Include="Font_Image\obf_font_79.gif" />
+    <Resource Include="Font_Image\obf_font_80.gif" />
+    <Resource Include="Font_Image\obf_font_81.gif" />
+    <Resource Include="Font_Image\obf_font_82.gif" />
+    <Resource Include="Font_Image\obf_font_83.gif" />
+    <Resource Include="Font_Image\obf_font_84.gif" />
+    <Resource Include="Font_Image\obf_font_85.gif" />
+    <Resource Include="Font_Image\obf_font_86.gif" />
+    <Resource Include="Font_Image\obf_font_87.gif" />
+    <Resource Include="Font_Image\obf_font_88.gif" />
+    <Resource Include="Font_Image\obf_font_89.gif" />
+    <Resource Include="Font_Image\obf_font_90.gif" />
+    <Resource Include="Font_Image\obf_font_91.gif" />
+    <Resource Include="Font_Image\obf_font_92.gif" />
+    <Resource Include="Font_Image\obf_font_93.gif" />
+    <Resource Include="Font_Image\obf_font_94.gif" />
+    <Resource Include="Font_Image\obf_font_95.gif" />
+    <Resource Include="Font_Image\obf_font_96.gif" />
+    <Resource Include="Font_Image\obf_font_97.gif" />
+    <Resource Include="Font_Image\obf_font_98.gif" />
+    <Resource Include="Font_Image\obf_font_99.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-external-link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\UwpDesktop.10.0.14393.3\analyzers\dotnet\UwpDesktopAnalyzer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-receive-file-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 與 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-gear-outline-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-settings-500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-server-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-settings-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-info-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-info-48.png" />
+    <Resource Include="Images\icons8-server-48.png" />
+    <Resource Include="Images\icons8-settings-48.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets" Condition="Exists('..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets'))" />
+  </Target>
+</Project>

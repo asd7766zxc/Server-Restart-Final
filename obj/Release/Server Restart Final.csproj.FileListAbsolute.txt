@@ -1,0 +1,110 @@
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.exe.config
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.exe
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Expression.Drawing.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Win32.Primitives.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.AppContext.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Console.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Globalization.Calendars.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.Compression.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.Compression.ZipFile.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.FileSystem.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Net.Http.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Net.Sockets.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.UI.Xaml.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.Algorithms.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.Encoding.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.Primitives.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.X509Certificates.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Xml.ReaderWriter.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Calls.CallsVoipContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Calls.LockScreenCallContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Resources.Management.ResourceIndexerContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Search.Core.SearchCoreContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Search.SearchContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.SocialInfo.SocialInfoContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Wallet.WalletContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Devices.Custom.CustomDeviceContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Devices.Portable.PortableDeviceContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Devices.Printers.PrintersContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Devices.Scanners.ScannerDeviceContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Devices.Sms.LegacySmsApiContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Gaming.Preview.GamesEnumerationContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Management.Deployment.Preview.DeploymentPreviewContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Management.Workplace.WorkplaceSettingsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Media.Capture.CameraCaptureUIContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Media.Devices.CallControlContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Media.MediaControlContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Media.Playlists.PlaylistsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Media.Protection.ProtectionRenewalContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Networking.Connectivity.WwanContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Networking.NetworkOperators.LegacyNetworkOperatorsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.Security.ExchangeActiveSyncProvisioning.EasContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.System.Profile.ProfileHardwareTokenContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.System.Profile.ProfileRetailInfoContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.System.Profile.ProfileSharedModeContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.System.Profile.SystemManufacturers.SystemManufacturersContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.System.UserProfile.UserProfileContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.System.UserProfile.UserProfileLockScreenContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.UI.ApplicationSettings.ApplicationsSettingsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.UI.Core.AnimationMetrics.AnimationMetricsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.UI.Core.CoreWindowDialogsContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.UI.Xaml.Hosting.HostingContract.winmd
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.WinMD
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Foundation.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.Pickers.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Expression.Drawing.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Foundation.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Foundation.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.Pickers.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.Pickers.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.UI.Xaml.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Styles\Scroll.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.cache
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.lref
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListItemControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.g.resources
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server_Restart_Final.Properties.Resources.resources
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.CopyComplete
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.baml

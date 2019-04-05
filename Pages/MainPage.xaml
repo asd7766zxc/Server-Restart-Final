@@ -1,0 +1,571 @@
+﻿<Page x:Class="Server_Restart_Final.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Server_Restart_Final"
+      xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+      mc:Ignorable="d" 
+      Margin="0 0 100 100"
+ 
+      Title="MainPage">
+    <Page.Effect>
+        <BlurEffect x:Name="BlurP" Radius="0" />
+    </Page.Effect>
+    
+        <Page.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+                                    Storyboard.TargetName="BlurP"
+            Storyboard.TargetProperty="Radius"
+            To="0" Duration="0:0:0.5" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Unloaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+                                    Storyboard.TargetName="BlurP"
+            Storyboard.TargetProperty="Radius"
+            To="100" Duration="0:0:0.01" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+       <Page.Resources>
+        <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
+        <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
+        <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+        <Style x:Key="OutPutTextBoxStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="#0D555555"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" BorderBrush="#FF000000" BorderThickness="1" Background="#AA181818" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="5" Opacity="0.2"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.Focus.Border}"/>
+                            </Trigger>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation To="#121212" Duration="0:0:0.3" Storyboard.TargetName="border" Storyboard.TargetProperty="Background.Color"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation To="#AA181818" Duration="0:0:0.3" Storyboard.TargetName="border" Storyboard.TargetProperty="Background.Color"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="OutPutTextBoxStyle1" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="#0D555555"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" BorderBrush="#FF000000" BorderThickness="1" Background="#AA36393F" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="5" Opacity="0.2"/>
+                            </Border.Effect>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.Focus.Border}"/>
+                            </Trigger>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation To="#121212" Duration="0:0:0.3" Storyboard.TargetName="border" Storyboard.TargetProperty="Background.Color"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation To="#AA36393F" Duration="0:0:0.3" Storyboard.TargetName="border" Storyboard.TargetProperty="Background.Color"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="StartServerButton" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="#80DEEA" BorderThickness="1 0 0 0" Background="#AA232323" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                               
+                                  
+                     
+                                <Setter Property="Background" TargetName="border" Value="#0DD7CCC8"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#8BC34A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ReStartServerButton" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="#80DEEA" BorderThickness="1 0 0 0" Background="#AA232323" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#0DD7CCC8"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#8BC34A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="StopServerButton" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="#80DEEA" BorderThickness="1 0 0 0" Background="#AA232323" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#AAf44336"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#8BC34A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="StausButton" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="#80DEEA" BorderThickness="0 0 0 0" Background="#AA232323" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#0DD7CCC8"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#8BC34A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Height="Auto" Margin="20" Background="#AA282828">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="2" Grid.Row="0" Width="500">
+            <Label Content="IoC" Foreground="Lime" Padding="1" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+         </Grid>
+        <Grid Grid.Column="2" Grid.Row="1" Width="500">
+            <TextBox FontSize="12" IsReadOnly="True" x:Name="IoCOutPut" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Height="700" Width="500" Margin="0 0 0 0" Background="Black" Foreground="LimeGreen" Style="{DynamicResource OutPutTextBoxStyle}" />
+        </Grid>
+            <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" HorizontalAlignment="Left" x:Name="StartServerBtn" Foreground="White" Content="Start" Height="50" Width="50" Background="White" Click="StartServerBtn_Click" Style="{DynamicResource StartServerButton}" />
+            <Button Grid.Row="1"  x:Name="StopServerBtn" Foreground="White" Content="Stop" Height="50" Width="50" Background="White" Click="StopServerBtn_Click" Style="{DynamicResource StopServerButton}"/>
+            <Button Grid.Row="2"  x:Name="RestartServerBtn" Foreground="White" Content="Restart" Height="50" Width="50" Background="White" Click="RestartServerBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+
+            <Button Grid.Row="4"  x:Name="CommandBtn" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="5"  x:Name="CommandBtn1" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="6"  x:Name="CommandBtn2" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="7"  x:Name="CommandBtn3" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="9"  x:Name="CommandBtn5" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="8"  x:Name="CommandBtn4" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="10"  x:Name="CommandBtn6" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="11"  x:Name="CommandBtn7" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="12"  x:Name="CommandBtn8" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="13"  x:Name="CommandBtn9" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+
+        </Grid>
+        <Canvas Grid.Column="1" Grid.Row="0" x:Name="DrawCanvas"  Margin="0 0 0 0">
+         
+
+            <TextBlock x:Name="Out" Foreground="White" FontSize="23"/>
+        </Canvas>
+        <StackPanel Margin="10" Grid.Column="1" Grid.Row="1" Background="#0D000000">
+            <TextBox IsReadOnly="True" x:Name="OutPut" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Foreground="White" FontSize="10" Height="450" Width="800" Margin="0 0 0 0" Background="Black" Style="{DynamicResource OutPutTextBoxStyle}" />
+            <TextBox FontSize="10" Foreground="White" Background="#36393F" x:Name="ServerInput" Style="{DynamicResource OutPutTextBoxStyle1}" KeyDown="ServerInput_KeyDown"/>
+            <Label FontSize="12" x:Name="ServerState" Foreground="White" Content=""/>
+            <Grid>
+                <Frame Height="Auto" Width="Auto" NavigationUIVisibility="Hidden" Margin="10" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Name="IMainFrame"/> 
+            </Grid>
+        </StackPanel>
+
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" Margin="60 0 100 0" x:Name="CrashOut" Height="20" FontSize="10" Foreground="White" Content="Last Crash:" />
+            <Label Grid.Column="0" Margin="0 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="StoppedOut" FontSize="10" Foreground="White" />
+
+            <StackPanel Grid.Column="1" Height="100" Width="100" HorizontalAlignment="Right">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="Idle" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Grid.Row="1" Content="Starting" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Grid.Row="2" Content="Offline" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Rectangle Grid.Row="0" Fill="#03A9F4" Width="10" Height="10" Margin="10 10 10 10" HorizontalAlignment="Left"/>
+                    <Rectangle  Grid.Row="1" Fill="#FB8C00" Width="10" Height="10" Margin="10 10 10 10" HorizontalAlignment="Left"/>
+                    <Rectangle Grid.Row="2"  Fill="#BDBDBD" Width="10" Height="10" Margin="10 10 10 10" HorizontalAlignment="Left"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Column="4" Height="100" Width="100" HorizontalAlignment="Right">
+                <Border>
+                    <Grid>
+
+                        <ed:Arc x:Name="Arc1" ArcThickness="2" HorizontalAlignment="Right" VerticalAlignment="Top" Fill="#BDBDBD" Width="50" Height="50" StartAngle="0" EndAngle="90" ArcThicknessUnit="Pixel" >
+                            <ed:Arc.RenderTransform>
+                                <RotateTransform CenterX="0" CenterY="50" Angle="-360"/>
+                            </ed:Arc.RenderTransform>
+
+                            <ed:Arc.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            To="0" Duration="0:0:0"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="Unloaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            From="0" To="360" Duration="0:0:0"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ed:Arc.Triggers>
+                        </ed:Arc>
+
+                        <ed:Arc x:Name="Arc2" ArcThickness="2" HorizontalAlignment="Right" VerticalAlignment="Top" Fill="#BDBDBD" Width="50" Height="50" StartAngle="0" EndAngle="90" ArcThicknessUnit="Pixel" >
+                            <ed:Arc.RenderTransform>
+                                <RotateTransform CenterX="0" CenterY="50" Angle="180"/>
+                            </ed:Arc.RenderTransform>
+                            <ed:Arc.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            To="-180" Duration="0:0:0" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="Unloaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            From="0" To="180" Duration="0:0:0"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ed:Arc.Triggers>
+                        </ed:Arc>
+
+                        <ed:Arc x:Name="Arc3" ArcThickness="2" HorizontalAlignment="Right" VerticalAlignment="Top" Fill="#BDBDBD" Width="50" Height="50" StartAngle="0" EndAngle="90" ArcThicknessUnit="Pixel" >
+                            <ed:Arc.RenderTransform>
+                                <RotateTransform CenterX="0" CenterY="50" Angle="45"/>
+                            </ed:Arc.RenderTransform>
+                            <ed:Arc.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            To="-315" Duration="0:0:0" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="Unloaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            From="0" To="45" Duration="0:0:0"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ed:Arc.Triggers>
+                        </ed:Arc>
+
+                        <ed:Arc x:Name="Arc4" ArcThickness="2" HorizontalAlignment="Right" VerticalAlignment="Top" Fill="#BDBDBD" Width="50" Height="50" StartAngle="0" EndAngle="90" ArcThicknessUnit="Pixel" >
+                            <ed:Arc.RenderTransform>
+                                <RotateTransform CenterX="0" CenterY="50" Angle="-90"/>
+                            </ed:Arc.RenderTransform>
+                            <ed:Arc.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            To="-90" Duration="0:0:0" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="Unloaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            From="0" To="-90" Duration="0:0:0"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ed:Arc.Triggers>
+                        </ed:Arc>
+
+                        <ed:Arc x:Name="Arc5" ArcThickness="2" HorizontalAlignment="Right" VerticalAlignment="Top" Fill="#BDBDBD" Width="50" Height="50" StartAngle="0" EndAngle="90" ArcThicknessUnit="Pixel" >
+                            <ed:Arc.RenderTransform>
+                                <RotateTransform CenterX="0" CenterY="50" Angle="-270"/>
+                            </ed:Arc.RenderTransform>
+                            <ed:Arc.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            To="90" Duration="0:0:0" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="Unloaded">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            From="0" To="270" Duration="0:0:0"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ed:Arc.Triggers>
+                        </ed:Arc>
+           
+                        <Viewbox Height="100" Width="100">
+                            <Label Content="Status" Margin="0 0 0 0" FontSize="5" Foreground="White"/>
+                        </Viewbox>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

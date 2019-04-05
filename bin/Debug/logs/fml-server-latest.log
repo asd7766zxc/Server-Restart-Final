@@ -1,0 +1,256 @@
+[20:56:41] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[20:56:42] [main/INFO] [FML/]: Forge Mod Loader version 7.99.36.1558 for Minecraft 1.7.10 loading
+[20:56:42] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_201, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_201
+[20:56:42] [main/DEBUG] [FML/]: Java classpath at launch is Eds.jar
+[20:56:42] [main/DEBUG] [FML/]: Java library path at launch is C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;.
+[20:56:42] [main/DEBUG] [FML/]: Enabling runtime deobfuscation
+[20:56:42] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[20:56:42] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[20:56:42] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[20:56:42] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[20:56:42] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
+[20:56:42] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[20:56:42] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[20:56:42] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\.
+[20:56:42] [main/DEBUG] [FML/]: Discovering coremods
+[20:56:42] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:56:42] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[20:56:42] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:56:42] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:56:42] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:56:42] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
+[20:56:42] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
+[20:56:42] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
+[20:56:42] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+[20:56:42] [main/DEBUG] [FML/]: Injection complete
+[20:56:42] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
+[20:56:42] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[20:56:43] [main/DEBUG] [FML/]: Read 527 binary patches
+[20:56:44] [main/INFO] [FML/]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[20:56:44] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[20:56:44] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:56:44] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[20:56:44] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.classloading.FluidIdTransformer
+[20:56:44] [main/DEBUG] [FML/]: Injection complete
+[20:56:44] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[20:56:44] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[20:56:44] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[20:56:44] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[20:56:44] [main/DEBUG] [FML/]: Loaded 57 rules from AccessTransformer config file fml_at.cfg
+[20:56:44] [main/DEBUG] [FML/]: Loaded 89 rules from AccessTransformer config file forge_at.cfg
+[20:56:44] [main/DEBUG] [FML/]: Validating minecraft
+[20:56:47] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[20:56:47] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[20:56:47] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[20:56:49] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[20:56:53] [Server thread/INFO] [MinecraftForge/]: Attempting early MinecraftForge initialization
+[20:56:53] [Server thread/INFO] [FML/]: MinecraftForge v10.13.4.1558 Initialized
+[20:56:54] [Server thread/INFO] [FML/]: Replaced 183 ore recipies
+[20:56:54] [Server thread/INFO] [MinecraftForge/]: Completed early MinecraftForge initialization
+[20:56:54] [Server thread/DEBUG] [FML/]: File C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\config\injectedDependencies.json not found. No dependencies injected
+[20:56:54] [Server thread/DEBUG] [FML/]: Building injected Mod Containers [cpw.mods.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[20:56:54] [Server thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[20:56:54] [Server thread/DEBUG] [FML/]: Minecraft is a file at C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\Eds.jar, loading
+[20:56:54] [Server thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[20:56:54] [Server thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[20:56:54] [Server thread/INFO] [FML/]: Searching C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\mods for mods
+[20:56:54] [Server thread/DEBUG] [FML/]: Ignoring unknown file desktop.ini in mods directory
+[20:56:54] [Server thread/DEBUG] [FML/]: Examining file Eds.jar for potential mods
+[20:56:54] [Server thread/DEBUG] [FML/]: The mod container Eds.jar appears to be missing an mcmod.info file
+[20:56:55] [Server thread/INFO] [FML/]: Forge Mod Loader has identified 3 mods to load
+[20:56:55] [Server thread/TRACE] [FML/]: Received a system property request ''
+[20:56:55] [Server thread/TRACE] [FML/]: System property request managing the state of 0 mods
+[20:56:55] [Server thread/DEBUG] [FML/]: After merging, found state information for 0 mods
+[20:56:55] [Server thread/DEBUG] [FML/]: Found translations in Eds.jar [en_US, en_US, es_ES, fr_FR, ru_RU, de_DE, af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, el_GR, fa_IR, fi_FI, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW]
+[20:56:55] [Server thread/DEBUG] [FML/]: Found translations in Eds.jar [en_US, en_US, es_ES, fr_FR, ru_RU, de_DE, af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, el_GR, fa_IR, fi_FI, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW]
+[20:56:55] [Server thread/TRACE] [FML/]: Verifying mod requirements are satisfied
+[20:56:55] [Server thread/TRACE] [FML/]: All mod requirements are satisfied
+[20:56:55] [Server thread/TRACE] [FML/]: Sorting mods into an ordered list
+[20:56:55] [Server thread/TRACE] [FML/]: Mod sorting completed successfully
+[20:56:55] [Server thread/DEBUG] [FML/]: Mod sorting data
+[20:56:55] [Server thread/DEBUG] [FML/]: No user mods found to sort
+[20:56:55] [Server thread/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
+[20:56:55] [Server thread/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
+[20:56:55] [Server thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Coder Pack took 0.001s
+[20:56:55] [Server thread/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
+[20:56:55] [Server thread/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
+[20:56:55] [Server thread/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[20:56:55] [Server thread/TRACE] [FML/FML]: The mod FML accepts its own version (7.10.99.99)
+[20:56:55] [Server thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge] at CLIENT
+[20:56:55] [Server thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge] at SERVER
+[20:56:56] [Server thread/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
+[20:56:56] [Server thread/DEBUG] [FML/]: Bar Step: Construction - Forge Mod Loader took 0.853s
+[20:56:56] [Server thread/TRACE] [Forge/Forge]: Sending event FMLConstructionEvent to mod Forge
+[20:56:56] [Server thread/TRACE] [FML/Forge]: Mod Forge is using network checker : No network checking performed
+[20:56:56] [Server thread/TRACE] [FML/Forge]: Testing mod Forge to verify it accepts its own version in a remote connection
+[20:56:56] [Server thread/TRACE] [FML/Forge]: The mod Forge accepts its own version (10.13.4.1558)
+[20:56:56] [Server thread/TRACE] [Forge/Forge]: Sent event FMLConstructionEvent to mod Forge
+[20:56:56] [Server thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Forge took 0.007s
+[20:56:56] [Server thread/DEBUG] [FML/]: Bar Finished: Construction took 0.861s
+[20:56:56] [Server thread/DEBUG] [FML/]: Mod signature data
+[20:56:56] [Server thread/DEBUG] [FML/]:  	Valid Signatures:
+[20:56:56] [Server thread/DEBUG] [FML/]: 		(e3c3d50c7c986df74c645c0ac54639741c90a557) FML	(Forge Mod Loader	7.10.99.99)	Eds.jar
+[20:56:56] [Server thread/DEBUG] [FML/]: 		(e3c3d50c7c986df74c645c0ac54639741c90a557) Forge	(Minecraft Forge	10.13.4.1558)	Eds.jar
+[20:56:56] [Server thread/DEBUG] [FML/]:  	Missing Signatures:
+[20:56:56] [Server thread/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.05)	minecraft.jar
+[20:56:56] [Server thread/INFO] [FML/]: Processing ObjectHolder annotations
+[20:56:56] [Server thread/INFO] [FML/]: Found 341 ObjectHolder annotations
+[20:56:56] [Server thread/INFO] [FML/]: Identifying ItemStackHolder annotations
+[20:56:56] [Server thread/INFO] [FML/]: Found 0 ItemStackHolder annotations
+[20:56:56] [Server thread/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
+[20:56:56] [Server thread/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
+[20:56:56] [Server thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Coder Pack took 0.000s
+[20:56:56] [Server thread/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
+[20:56:56] [Server thread/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
+[20:56:56] [Server thread/DEBUG] [FML/]: Bar Step: PreInitialization - Forge Mod Loader took 0.001s
+[20:56:56] [Server thread/TRACE] [Forge/Forge]: Sending event FMLPreInitializationEvent to mod Forge
+[20:56:56] [Server thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
+[20:56:56] [Server thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
+[20:56:56] [Server thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Forge took 0.074s
+[20:56:56] [Server thread/DEBUG] [FML/]: Bar Finished: PreInitialization took 0.075s
+[20:56:56] [Server thread/INFO] [FML/]: Applying holder lookups
+[20:56:56] [Server thread/INFO] [FML/]: Holder lookups applied
+[20:56:56] [Server thread/INFO] [FML/]: Injecting itemstacks
+[20:56:56] [Server thread/INFO] [FML/]: Itemstack injection complete
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Coder Pack took 0.001s
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: Initialization - Forge Mod Loader took 0.001s
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sending event FMLInitializationEvent to mod Forge
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sent event FMLInitializationEvent to mod Forge
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Forge took 0.005s
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Finished: Initialization took 0.007s
+[20:56:57] [Server thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Coder Pack took 0.006s
+[20:56:57] [Server thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Forge Mod Loader took 0.001s
+[20:56:57] [Server thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod Forge
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sending event IMCEvent to mod Forge
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sent event IMCEvent to mod Forge
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Forge took 0.001s
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Finished: InterModComms$IMC took 0.007s
+[20:56:57] [Server thread/INFO] [FML/]: Injecting itemstacks
+[20:56:57] [Server thread/INFO] [FML/]: Itemstack injection complete
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Coder Pack took 0.000s
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: PostInitialization - Forge Mod Loader took 0.000s
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sending event FMLPostInitializationEvent to mod Forge
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sent event FMLPostInitializationEvent to mod Forge
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Forge took 0.085s
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Finished: PostInitialization took 0.086s
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Coder Pack took 0.002s
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: LoadComplete - Forge Mod Loader took 0.001s
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sending event FMLLoadCompleteEvent to mod Forge
+[20:56:57] [Server thread/DEBUG] [FML/Forge]: Forge RecipeSorter Baking:
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   11: RecipeEntry("Before", UNKNOWN, )
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   10: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   9: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   8: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   7: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   6: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   5: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   4: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   3: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   2: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
+[20:56:57] [Server thread/DEBUG] [FML/Forge]:   1: RecipeEntry("After", UNKNOWN, )
+[20:56:57] [Server thread/DEBUG] [FML/Forge]: Sorting recipies
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sent event FMLLoadCompleteEvent to mod Forge
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Forge took 0.014s
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Finished: LoadComplete took 0.016s
+[20:56:57] [Server thread/DEBUG] [FML/]: Freezing block and item id maps
+[20:56:57] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[20:56:57] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[20:56:57] [Server thread/INFO] [FML/]: Forge Mod Loader has successfully loaded 3 mods
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerAboutToStartEvent to mod mcp
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerAboutToStartEvent to mod mcp
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Coder Pack took 0.002s
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sending event FMLServerAboutToStartEvent to mod FML
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sent event FMLServerAboutToStartEvent to mod FML
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Forge Mod Loader took 0.000s
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerAboutToStartEvent to mod Forge
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerAboutToStartEvent to mod Forge
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Forge took 0.000s
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Finished: ServerAboutToStart took 0.002s
+[20:56:57] [Server thread/INFO] [FML/]: Injecting existing block and item data into this server instance
+[20:56:57] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[20:56:57] [Server thread/DEBUG] [FML/]: Registry consistency check successful
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[20:56:57] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.000s
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[20:56:57] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.003s
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sending event FMLModIdMappingEvent to mod Forge
+[20:56:57] [Server thread/TRACE] [Forge/Forge]: Sent event FMLModIdMappingEvent to mod Forge
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.002s
+[20:56:57] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.005s
+[20:56:57] [Server thread/INFO] [FML/]: Applying holder lookups
+[20:56:57] [Server thread/INFO] [FML/]: Holder lookups applied
+[20:56:57] [Server thread/DEBUG] [FML/]: Loading persistent fluid defaults from world
+[20:56:57] [Server thread/DEBUG] [FML/]: The fluid minecraft:lava has been selected as the default fluid for lava
+[20:56:57] [Server thread/DEBUG] [FML/]: The fluid minecraft:water has been selected as the default fluid for water
+[20:56:58] [Server thread/INFO] [FML/]: Loading dimension 0 (world) (net.minecraft.server.dedicated.DedicatedServer@7fedc382)
+[20:56:58] [Server thread/INFO] [FML/]: Loading dimension 1 (world) (net.minecraft.server.dedicated.DedicatedServer@7fedc382)
+[20:56:58] [Server thread/INFO] [FML/]: Loading dimension -1 (world) (net.minecraft.server.dedicated.DedicatedServer@7fedc382)
+[20:56:59] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartingEvent to mod mcp
+[20:56:59] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartingEvent to mod mcp
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Coder Pack took 0.000s
+[20:56:59] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartingEvent to mod FML
+[20:56:59] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartingEvent to mod FML
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Forge Mod Loader took 0.001s
+[20:56:59] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStartingEvent to mod Forge
+[20:56:59] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStartingEvent to mod Forge
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Forge took 0.006s
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarting took 0.007s
+[20:56:59] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartedEvent to mod mcp
+[20:56:59] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartedEvent to mod mcp
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Coder Pack took 0.001s
+[20:56:59] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartedEvent to mod FML
+[20:56:59] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartedEvent to mod FML
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Forge Mod Loader took 0.000s
+[20:56:59] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStartedEvent to mod Forge
+[20:56:59] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStartedEvent to mod Forge
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Forge took 0.000s
+[20:56:59] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarted took 0.002s
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: java.net.UnknownHostException: files.minecraftforge.net
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.PlainSocketImpl.connect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.SocksSocketImpl.connect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.Socket.connect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.Socket.connect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.NetworkClient.doConnect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.New(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.New(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivileged(Native Method)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivileged(Native Method)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.URL.openStream(Unknown Source)
+[20:57:07] [Forge Version Check/INFO] [STDERR/Forge]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraftforge.common.ForgeVersion$1.run(ForgeVersion.java:90)

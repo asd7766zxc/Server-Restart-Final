@@ -1,0 +1,1484 @@
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary
+	Annotations: [@Reika.DragonAPI.ASM.APIStripper$Strippable(side=NONE, value=[forestry.api.multiblock.IAlvearyComponent, forestry.api.multiblock.IAlvearyComponent$BeeModifier, forestry.api.multiblock.IAlvearyComponent$BeeListener, forestry.api.apiculture.IBeeModifier, forestry.api.apiculture.IBeeListener])]
+	Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.Base.TileEntity.TileEntityRelayPowered
+	Interfaces: [interface Reika.DragonAPI.Interfaces.TileEntity.GuiController]
+	Synthetic: false
+
+
+Internal Classes:
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$ElementalBoostEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.Registry.CrystalElement, class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.Registry.CrystalElement]
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	color
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: class Reika.ChromatiCraft.Registry.CrystalElement
+		Synthetic: false
+
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	isActive
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$PlayerRestrictionEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$EternalEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	lifespanFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticRepairEffectII
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticRepairEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+
+
+Fields:
+
+
+Methods:
+	doRepair
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticRepairEffectI
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticRepairEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+
+
+Fields:
+
+
+Methods:
+	doRepair
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticRepairEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [int, class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [int]
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	tier
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+
+
+Methods:
+	access$1900
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticRepairEffect, class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: true
+
+	getDescription
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	repairQueen
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	doRepair
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	onProductionTick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: void
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$HumidityMatchingEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	worksWhenBeesDoNot
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	tickRate
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: int
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$TemperatureMatchingEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	isHellish
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	worksWhenBeesDoNot
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	tickRate
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: int
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticImprovementEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	geneImprovementChance
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: double
+		Synthetic: false
+
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$ExplorationEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	territoryFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticFluxEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	mutationFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticImmutabilityEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	mutationFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	decayFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticStabilityEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	mutationFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	decayFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$GeneticBalancingEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	pristineConversionChance
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: double
+		Synthetic: false
+
+	geneBalancingChance
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: double
+		Synthetic: false
+
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$HistoryRewriteEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	mateRewriteChance
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: double
+		Synthetic: false
+
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LightningProductionEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AccelerationEffectIII
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AccelerationEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+
+
+Fields:
+
+
+Methods:
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AccelerationEffectII
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AccelerationEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+
+
+Fields:
+
+
+Methods:
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AccelerationEffectI
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AccelerationEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+
+
+Fields:
+
+
+Methods:
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AccelerationEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [int, int, class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [int, int]
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	tickRate
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AutomationEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	tickRate
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: int
+		Synthetic: false
+
+	consumeOnTick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$LumenAlvearyEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.Registry.CrystalElement, int]
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	color
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: class Reika.ChromatiCraft.Registry.CrystalElement
+		Synthetic: false
+
+	requiredEnergy
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+
+
+Methods:
+	isActive
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	consumeOnTick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	consumeEnergy
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary, int]
+		Exceptions: []
+		Return: void
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$ProductionBoostEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$VisAlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+
+
+Methods:
+	getDescription
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	productionFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$VisAlvearyEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AlvearyEffect
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+Fields:
+Methods:
+	isActive
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	consumeOnTick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	consumeEnergy
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary, int]
+		Exceptions: []
+		Return: void
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AlvearyEffect
+	Annotations: []
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class java.lang.Object
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	ID
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+
+
+Methods:
+	isSealed
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	getDescription
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class java.lang.String
+		Synthetic: false
+
+	isActive
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	tick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	getEffectByID
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [int]
+		Exceptions: []
+		Return: class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary$AlvearyEffect
+		Synthetic: false
+
+	isHellish
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	worksWhenBeesDoNot
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	pollinationFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	tickRate
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: int
+		Synthetic: false
+
+	ticksOnClient
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	lifespanFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	productionFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	mutationFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	isSelfLit
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	isSkySimulated
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+	territoryFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	consumeEnergy
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary, int]
+		Exceptions: []
+		Return: void
+		Synthetic: false
+
+	decayFactor
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: float
+		Synthetic: false
+
+	onProductionTick
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.ChromatiCraft.ModInterface.Bees.TileEntityLumenAlveary]
+		Exceptions: []
+		Return: void
+		Synthetic: false
+
+
+
+-------------------------
+
+
+Constructors:
+Fields:
+Methods:

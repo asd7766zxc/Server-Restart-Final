@@ -1,0 +1,129 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 2019/3/10 ÏÂÎç 7:59
+Description: Exception in server tick loop
+
+java.lang.VerifyError: Expecting a stackmap frame at branch target 259
+Exception Details:
+  Location:
+    net/minecraft/world/gen/layer/GenLayerShore.func_75904_a(IIII)[I @260: ifnull
+  Reason:
+    Expected stackmap frame at this location.
+  Bytecode:
+    0x0000000: 2ab4 000e 1b04 641c 0464 1d05 6015 0405
+    0x0000010: 60b6 0012 3a05 1d15 0468 b800 183a 0603
+    0x0000020: 3607 1507 1504 a203 1f03 3608 1508 1da2
+    0x0000030: 0310 2a15 081b 6085 1507 1c60 85b6 001e
+    0x0000040: 1905 1508 0460 1507 0460 1d05 6068 602e
+    0x0000050: 3609 1509 b800 243a 0a15 09b2 0028 b400
+    0x0000060: 2ca0 00a1 1905 1508 0460 1507 0460 0464
+    0x0000070: 1d05 6068 602e 360b 1905 1508 0460 0460
+    0x0000080: 1507 0460 1d05 6068 602e 360c 1905 1508
+    0x0000090: 0460 0464 1507 0460 1d05 6068 602e 360d
+    0x00000a0: 1905 1508 0460 1507 0460 0460 1d05 6068
+    0x00000b0: 602e 360e 150b b200 2fb4 002c 9f00 2415
+    0x00000c0: 0cb2 002f b400 2c9f 0019 150d b200 2fb4
+    0x00000d0: 002c 9f00 0e15 0eb2 002f b400 2ca0 0016
+    0x00000e0: 1906 1508 1507 1d68 60b2 0032 b400 2c4f
+    0x00000f0: a700 0f19 0615 0815 071d 6860 1509 4fa7
+    0x0000100: 023a 190a c6ff ff19 0ab6 0036 1238 a6ff
+    0x0000110: ff19 0515 0804 6015 0704 6004 641d 0560
+    0x0000120: 6860 2e36 0b19 0515 0804 6004 6015 0704
+    0x0000130: 601d 0560 6860 2e36 0c19 0515 0804 6004
+    0x0000140: 6415 0704 601d 0560 6860 2e36 0d19 0515
+    0x0000150: 0804 6015 0704 6004 601d 0560 6860 2e36
+    0x0000160: 0e2a 150b b700 3c99 001e 2a15 0cb7 003c
+    0x0000170: 9900 152a 150d b700 3c99 000c 2a15 0eb7
+    0x0000180: 003c 9a00 1619 0615 0815 071d 6860 b200
+    0x0000190: 3fb4 002c 4fa7 ffff 150b b800 4499 000e
+    0x00001a0: 1509 b200 47b4 002c a000 c819 0515 0804
+    0x00001b0: 6015 0704 6004 641d 0560 6860 2e36 0b19
+    0x00001c0: 0515 0804 6004 6015 0704 601d 0560 6860
+    0x00001d0: 2e36 0c19 0515 0804 6004 6415 0704 601d
+    0x00001e0: 0560 6860 2e36 0d19 0515 0804 6015 0704
+    0x00001f0: 6004 601d 0560 6860 2e36 0e15 0bb8 004a
+    0x0000200: 9a00 1b15 0cb8 004a 9a00 1315 0db8 004a
+    0x0000210: 9a00 0b15 0eb8 004a 9900 1219 0615 0815
+    0x0000220: 071d 6860 1509 4fa7 0046 2a15 0bb7 004d
+    0x0000230: 9900 1e2a 150c b700 4d99 0015 2a15 0db7
+    0x0000240: 004d 9900 0c2a 150e b700 4d9a 0016 1906
+    0x0000250: 1508 1507 1d68 60b2 0050 b400 2c4f a700
+    0x0000260: 0f19 0615 0815 071d 6860 1509 4fa7 00cc
+    0x0000270: 1509 b200 2fb4 002c 9f00 b515 09b2 0053
+    0x0000280: b400 2c9f 00aa 1509 b200 56b4 002c 9f00
+    0x0000290: 9f15 09b2 0059 b400 2c9f 0094 1905 1508
+    0x00002a0: 0460 1507 0460 0464 1d05 6068 602e 360b
+    0x00002b0: 1905 1508 0460 0460 1507 0460 1d05 6068
+    0x00002c0: 602e 360c 1905 1508 0460 0464 1507 0460
+    0x00002d0: 1d05 6068 602e 360d 1905 1508 0460 1507
+    0x00002e0: 0460 0460 1d05 6068 602e 360e 150b b800
+    0x00002f0: 4a9a 001b 150c b800 4a9a 0013 150d b800
+    0x0000300: 4a9a 000b 150e b800 4a99 0015 1906 1508
+    0x0000310: 1507 1d68 6015 09b8 005e 4fa7 000f 1906
+    0x0000320: 1508 1507 1d68 6015 094f a700 0f19 0615
+    0x0000330: 0815 071d 6860 1509 4f84 0801 a7fc f084
+    0x0000340: 0701 a7fc e019 06b0                    
+  Stackmap Table:
+    append_frame(@34,Object[#26],Object[#26],Integer)
+    append_frame(@44,Integer)
+    same_frame_extended(@224)
+    append_frame(@243,Integer)
+    chop_frame(@255,1)
+    append_frame(@258,Integer,Object[#32])
+    chop_frame(@389,2)
+    full_frame(@408,{Object[#2],Integer,Integer,Integer,Integer,Object[#26],Object[#26],Integer,Integer,Integer,Top,Integer,Integer,Integer,Integer},{})
+    same_frame(@427)
+    same_frame_extended(@539)
+    full_frame(@554,{Object[#2],Integer,Integer,Integer,Integer,Object[#26],Object[#26],Integer,Integer,Integer,Top,Integer,Integer,Integer,Integer},{})
+    full_frame(@590,{Object[#2],Integer,Integer,Integer,Integer,Object[#26],Object[#26],Integer,Integer},{})
+    append_frame(@609,Integer)
+    chop_frame(@621,1)
+    append_frame(@624,Integer)
+    chop_frame(@780,1)
+    append_frame(@798,Integer)
+    chop_frame(@810,1)
+    append_frame(@813,Integer)
+    chop_frame(@825,1)
+    chop_frame(@831,1)
+    full_frame(@837,{Top,Top,Top,Top,Top,Top,Object[#26]},{})
+
+	at net.minecraft.world.gen.layer.GenLayer.func_75901_a(GenLayer.java:79)
+	at net.minecraft.world.biome.WorldChunkManager.<init>(WorldChunkManager.java:40)
+	at net.minecraft.world.biome.WorldChunkManager.<init>(WorldChunkManager.java:48)
+	at net.minecraft.world.WorldType.getChunkManager(WorldType.java:143)
+	at net.minecraft.world.WorldProvider.func_76572_b(WorldProvider.java:61)
+	at net.minecraft.world.WorldProvider.func_76558_a(WorldProvider.java:44)
+	at net.minecraft.world.World.<init>(World.java:244)
+	at net.minecraft.world.WorldServer.<init>(WorldServer.java:97)
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:219)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:258)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:387)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_201, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 568543832 bytes (542 MB) / 1065025536 bytes (1015 MB) up to 5359992832 bytes (5111 MB)
+	JVM Flags: 21 total; -Xms1024M -Xmx5120M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxGCPauseMillis=50 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:UseSSE=3 -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -XX:+AggressiveOpts
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAA	FML{7.10.99.99} [Forge Mod Loader] (Eds.jar) 
+	UCHIJAA	Forge{10.13.4.1558} [Minecraft Forge] (Eds.jar) 
+	UCHIJAA	<DragonAPI ASM>{0} [DragonAPI ASM Data Initialization] (minecraft.jar) 
+	UCHIJAA	DragonAPI{v22d} [DragonAPI] (DragonAPI+1.7.10+V22d.jar) 
+	UCHIJAA	ChromatiCraft{v22d} [ChromatiCraft] (ChromatiCraft+1.7.10+V22d.jar) 
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

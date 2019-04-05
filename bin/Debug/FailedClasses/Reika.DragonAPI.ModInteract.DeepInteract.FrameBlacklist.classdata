@@ -1,0 +1,167 @@
+General:
+	Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist
+	Annotations: []
+	Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class java.lang.Object
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+-------------------------
+General:
+	Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist$FrameUsageEvent
+	Annotations: [@cpw.mods.fml.common.eventhandler.Cancelable()]
+	Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class cpw.mods.fml.common.eventhandler.Event
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Synthetic: false
+
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class net.minecraft.world.World, int, int, int, class net.minecraft.block.Block, int, class net.minecraft.tileentity.TileEntity, class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class net.minecraft.world.World, int, int, int, class net.minecraft.block.Block, int, class net.minecraft.tileentity.TileEntity]
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	world
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: class net.minecraft.world.World
+		Synthetic: false
+
+	xCoord
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+	yCoord
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+	zCoord
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+	block
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: class net.minecraft.block.Block
+		Synthetic: false
+
+	metadata
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: int
+		Synthetic: false
+
+	tile
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: class net.minecraft.tileentity.TileEntity
+		Synthetic: false
+
+	LISTENER_LIST
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: class cpw.mods.fml.common.eventhandler.ListenerList
+		Synthetic: false
+
+
+
+Methods:
+	setup
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: void
+		Synthetic: false
+
+	getListenerList
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: class cpw.mods.fml.common.eventhandler.ListenerList
+		Synthetic: false
+
+	isCancelable
+		Annotations: []
+		Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: []
+		Exceptions: []
+		Return: boolean
+		Synthetic: false
+
+
+
+-------------------------
+-------------------------
+General:
+	Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist$FramezHandler
+	Annotations: [@Reika.DragonAPI.ASM.APIStripper$Strippable(side=NONE, value=[com.amadornes.framez.api.movement.IMovementHandler])]
+	Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class java.lang.Object
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist, class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PUBLIC, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Signature: [class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist]
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	this$0
+		Annotations: []
+		Modifiers: [PUBLIC, PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+		Type: class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist
+		Synthetic: true
+
+
+
+Methods:
+-------------------------
+
+
+Constructors:
+Fields:
+Methods:

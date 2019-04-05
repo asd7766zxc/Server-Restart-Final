@@ -1,0 +1,110 @@
+﻿<Page x:Class="Server_Restart_Final.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Server_Restart_Final"
+      mc:Ignorable="d" 
+      Margin="0 0 500 500"
+      d:DesignHeight="50" d:DesignWidth="50"
+      Title="InfoPage">
+    <Page.Effect>
+        <BlurEffect x:Name="BlurP" Radius="0" />
+    </Page.Effect>
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+                                    Storyboard.TargetName="BlurP"
+            Storyboard.TargetProperty="Radius"
+            To="0" Duration="0:0:0.5" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Unloaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+                                    Storyboard.TargetName="BlurP"
+            Storyboard.TargetProperty="Radius"
+            To="100" Duration="0:0:0.01" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+
+    <Grid Background="#FF202020">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+        <Viewbox Grid.Column="12" Grid.Row="4">
+            <Image Name="six" Source="../Font_Image/obf_font_55.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="11" Grid.Row="4">
+            <Image Name="sixs" Source="../Font_Image/obf_font_55.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="9" Grid.Row="4">
+            <Image Name="Seven" Source="../Font_Image/obf_font_56.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="10" Grid.Row="4">
+            <Image Name="Sevens" Source="../Font_Image/obf_font_56.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="8" Grid.Row="4">
+            <Image Name="d" Source="../Font_Image/obf_font_101.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="7" Grid.Row="4">
+            <Image Name="s" Source="../Font_Image/obf_font_116.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="6" Grid.Row="4">
+            <Image Name="a" Source="../Font_Image/obf_font_98.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="1" Grid.Row="4">
+            <Image Name="y" Source="../Font_Image/obf_font_123.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="13" Grid.Row="4">
+            <Image Name="z" Source="../Font_Image/obf_font_124.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="14" Grid.Row="4">
+            <Image Name="x" Source="../Font_Image/obf_font_122.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="15" Grid.Row="4">
+            <Image Name="c" Source="../Font_Image/obf_font_100.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="0" Grid.Row="4">
+            <Image Name="B" Source="../Font_Image/obf_font_51.gif" Width="20" Height="20" Margin="10"/>
+        </Viewbox>
+            <Viewbox Grid.Column="2" Grid.Row="4">
+                <Image  Width="20" Height="20" Margin="10"/>
+            </Viewbox>
+        </Grid>
+        </Grid>
+</Page>

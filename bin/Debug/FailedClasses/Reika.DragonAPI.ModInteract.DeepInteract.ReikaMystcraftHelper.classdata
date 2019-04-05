@@ -1,0 +1,13 @@
+General:
+	Reika.DragonAPI.ModInteract.DeepInteract.ReikaMystcraftHelper
+	Annotations: []
+	Modifiers: [PRIVATE, PROTECTED, STATIC, FINAL, SYNCHRONIZED, VOLATILE, TRANSIENT, NATIVE, INTERFACE, ABSTRACT, STRICT]
+	Superclass: class java.lang.Object
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+Constructors:
+Fields:
+Methods:

@@ -1,0 +1,1291 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XPlat.Storage</name>
+    </assembly>
+    <members>
+        <member name="T:XPlat.Storage.ApplicationData">
+            <summary>Provides access to the application data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationData.Current">
+            <summary>Gets the current app data store associated with the app's app package.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationData.LocalFolder">
+            <summary>Gets the root folder in the local app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationData.LocalSettings">
+            <summary>Gets the application settings container in the local app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationData.RoamingFolder">
+            <summary>Gets the root folder in the roaming app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationData.RoamingSettings">
+            <summary>Gets the application settings container in the roaming app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationData.TemporaryFolder">
+            <summary>Gets the root folder in the temporary app data store.</summary>
+        </member>
+        <member name="M:XPlat.Storage.ApplicationData.ClearAsync">
+            <summary>Removes all application data from the local, roaming, and temporary app data stores.</summary>
+            <returns>An object that is used to manage the asynchronous clear operation.</returns>
+        </member>
+        <member name="M:XPlat.Storage.ApplicationData.ClearAsync(XPlat.Storage.ApplicationDataLocality)">
+            <summary>Removes all application data from the specified app data store.</summary>
+            <returns>An object that is used to manage the asynchronous clear operation.</returns>
+            <param name="locality">One of the enumeration values.</param>
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainer.#ctor(Windows.Storage.ApplicationDataContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XPlat.Storage.ApplicationDataContainer"/> class.
+            </summary>
+            <param name="container">
+            The Windows ApplicationDataContainer.
+            </param>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainer.Locality">
+            <summary>Gets the type (local or roaming) of the app data store that is associated with the current settings container.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainer.Name">
+            <summary>Gets the name of the current settings container.</summary>
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainer.Values">
+            <summary>Gets an object that represents the settings in this settings container.</summary>
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainer.CreateContainer(System.String,XPlat.Storage.ApplicationDataCreateDisposition)">
+            <summary>Creates or opens the specified settings container in the current settings container.</summary>
+            <returns>The settings container.</returns>
+            <param name="name">The name of the container.</param>
+            <param name="disposition">One of the enumeration values.</param>
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainer.DeleteContainer(System.String)">
+            <summary>Deletes the specified settings container, its subcontainers, and all application settings in the hierarchy.</summary>
+            <param name="name">The name of the settings container.</param>
+        </member>
+        <member name="T:XPlat.Storage.ApplicationDataContainerSettings">
+            <summary>
+            Provides access to the settings in a settings container. The ApplicationDataContainer.Values property returns an object that can be cast to this type.
+            </summary>
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.#ctor(Windows.Foundation.Collections.IPropertySet)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XPlat.Storage.ApplicationDataContainerSettings"/> class.
+            </summary>
+            <param name="propertySet">
+            The property set.
+            </param>
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <inheritdoc />
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainerSettings.Count">
+            <inheritdoc />
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainerSettings.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.Add(System.String,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.ContainsKey(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.Remove(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:XPlat.Storage.ApplicationDataContainerSettings.TryGetValue(System.String,System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainerSettings.Item(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainerSettings.Keys">
+            <inheritdoc />
+        </member>
+        <member name="P:XPlat.Storage.ApplicationDataContainerSettings.Values">
+            <inheritdoc />
+        </member>
+        <member name="E:XPlat.Storage.ApplicationDataContainerSettings.MapChanged">
+            <inheritdoc />
+        </member>
+        <member name="T:XPlat.Storage.ApplicationDataCreateDisposition">
+            <summary>Specifies options for creating application data containers or returning existing containers. This enumeration is used by the ApplicationDataContainer.CreateContainer method.</summary>
+        </member>
+        <member name="F:XPlat.Storage.ApplicationDataCreateDisposition.Always">
+            <summary>Always returns the specified container. Creates the container if it does not exist.</summary>
+        </member>
+        <member name="F:XPlat.Storage.ApplicationDataCreateDisposition.Existing">
+            <summary>Returns the specified container only if it already exists. Raises an exception of type System.Exception if the specified container does not exist.</summary>
+        </member>
+        <member name="T:XPlat.Storage.ApplicationDataLocality">
+            <summary>Specifies the type of an application data store.</summary>
+        </member>
+        <member name="F:XPlat.Storage.ApplicationDataLocality.Local">
+            <summary>The data resides in the local application data store.</summary>
+        </member>
+        <member name="F:XPlat.Storage.ApplicationDataLocality.Roaming">
+            <summary>The data resides in the roaming application data store.</summary>
+        </member>
+        <member name="F:XPlat.Storage.ApplicationDataLocality.Temporary">
+            <summary>The data resides in the temporary application data store.</summary>
+        </member>
+        <member name="F:XPlat.Storage.ApplicationDataLocality.LocalCache">
+            <summary>The data resides in the local cache for the application data store.</summary>
+        </member>
+        <member name="T:XPlat.Storage.CreationCollisionOption">
+            <summary>Specifies what to do if a file or folder with the specified name already exists in the current folder when you create a new file or folder.</summary>
+        </member>
+        <member name="F:XPlat.Storage.CreationCollisionOption.GenerateUniqueName">
+            <summary>Automatically append a number to the base of the specified name if the file or folder already exists.For example, if MyFile.txt already exists, then the new file is named MyFile (2).txt. If MyFolder already exists, then the new folder is named MyFolder (2).</summary>
+        </member>
+        <member name="F:XPlat.Storage.CreationCollisionOption.ReplaceExisting">
+            <summary>Replace the existing item if the file or folder already exists.</summary>
+        </member>
+        <member name="F:XPlat.Storage.CreationCollisionOption.FailIfExists">
+            <summary>Raise an exception of type System.Exception if the file or folder already exists. Methods that don't explicitly pass a value from the CreationCollisionOption enumeration use the FailIfExists value as the default when you try to create, rename, copy, or move a file or folder.</summary>
+        </member>
+        <member name="F:XPlat.Storage.CreationCollisionOption.OpenIfExists">
+            <summary>Return the existing item if the file or folder already exists.</summary>
+        </member>
+        <member name="T:XPlat.Storage.Extensions.StorageItemContentPropertiesExtensions">
+            <summary>
+            Defines a collection of common extensions for the Storage namespace.
+            </summary>
+        </member>
+        <member name="M:XPlat.Storage.Extensions.StorageItemContentPropertiesExtensions.GetAllMediaPropertiesAsync(XPlat.Storage.FileProperties.IStorageItemContentProperties)">
+            <summary>
+            Gets all the media properties from a storage item.
+            </summary>
+            <param name="storageProps">
+            The storage properties.
+            </param>
+            <returns>
+            When complete, this method returns a dictionary of key value pairs containing the media property and it's value.
+            </returns>
+        </member>
+        <member name="T:XPlat.Storage.FileAccessMode">
+            <summary>Specifies whether to access a file in read-only mode or in read/write mode.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAccessMode.Read">
+            <summary>Access the file stream in read-only mode. Keep read-only file streams open only while your app is actively reading from the file. You can use multiple independent read-only streams to read a file. If the file is changed while you're reading it, subsequent read operations fail.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAccessMode.ReadWrite">
+            <summary>Access the file stream in read/write mode. A file supports a single stream for writing. Writing is non-transactional and occurs in place; that is, data is written immediately to the target file without using a temporary file. Use read/write mode only when you're ready to write immediately in order to avoid conflicts with other operations.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileAttributes">
+            <summary>Describes the attributes of a file or folder.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAttributes.Normal">
+            <summary>The item is normal. That is, the item doesn't have any of the other values in the enumeration.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAttributes.ReadOnly">
+            <summary>The item is read-only.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAttributes.Directory">
+            <summary>The item is a directory.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAttributes.Archive">
+            <summary>The item is archived.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAttributes.Temporary">
+            <summary>The item is a temporary file.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileAttributes.LocallyIncomplete">
+            <summary>The item is locally incomplete. Windows only.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.BasicProperties">
+            <summary>Provides access to the basic properties, like the size of the item or the date the item was last modified, of the item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.BasicProperties.DateModified">
+            <summary>Gets the timestamp of the last time the file was modified.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.BasicProperties.Size">
+            <summary>Gets the size of the file.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.IBasicProperties">
+            <summary>Provides access to the basic properties, like the size of the item or the date the item was last modified, of the item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IBasicProperties.DateModified">
+            <summary>Gets the timestamp of the last time the file was modified.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IBasicProperties.Size">
+            <summary>Gets the size of the file.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.IImageProperties">
+            <summary>Provides access to the image-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Title">
+            <summary>Gets the title of the image.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Rating">
+            <summary>Gets the rating associated with an image file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.DateTaken">
+            <summary>Gets the date when the image was taken.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.CameraModel">
+            <summary>Gets the model of the camera that took the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.CameraManufacturer">
+            <summary>Gets the manufacturer of the camera that took the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Latitude">
+            <summary>Gets the latitude coordinate where the photo was taken.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Longitude">
+            <summary>Gets the longitude coordinate where the photo was taken.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Orientation">
+            <summary>Gets the Exchangeable Image File (EXIF) orientation flag of the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.PeopleNames">
+            <summary>Gets the names of people who are tagged in the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Height">
+            <summary>Gets the height of the image.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Keywords">
+            <summary>Gets the collection of keywords associated with the image.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IImageProperties.Width">
+            <summary>Gets the width of the image.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.ImageProperties">
+            <summary>Provides access to the image-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Title">
+            <summary>Gets the title of the image.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Rating">
+            <summary>Gets the rating associated with an image file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.DateTaken">
+            <summary>Gets the date when the image was taken.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.CameraModel">
+            <summary>Gets the model of the camera that took the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.CameraManufacturer">
+            <summary>Gets the manufacturer of the camera that took the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Latitude">
+            <summary>Gets the latitude coordinate where the photo was taken.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Longitude">
+            <summary>Gets the longitude coordinate where the photo was taken.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Orientation">
+            <summary>Gets the Exchangeable Image File (EXIF) orientation flag of the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.PeopleNames">
+            <summary>Gets the names of people who are tagged in the photo.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Height">
+            <summary>Gets the height of the image.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Keywords">
+            <summary>Gets the collection of keywords associated with the image.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.ImageProperties.Width">
+            <summary>Gets the width of the image.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.IMusicProperties">
+            <summary>Provides access to the music-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Rating">
+            <summary>Gets the rating associated with a music file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.AlbumArtist">
+            <summary>Gets the name of the album artist of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Artist">
+            <summary>Gets the artists that contributed to the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Album">
+            <summary>Gets the name of the album that contains the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Publisher">
+            <summary>Gets the publisher of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Year">
+            <summary>Gets the year that the song was released.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.TrackNumber">
+            <summary>Gets the track number of the song on the song's album.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Title">
+            <summary>Gets the title of the song</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Subtitle">
+            <summary>Gets the subtitle of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Producers">
+            <summary>Gets the producers of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Composers">
+            <summary>Gets the composers of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Conductors">
+            <summary>Gets the conductors of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Duration">
+            <summary>Gets the duration of the song in milliseconds.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Writers">
+            <summary>Gets the songwriters.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Genre">
+            <summary>Gets the names of music genres that the song belongs to.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IMusicProperties.Bitrate">
+            <summary>Gets the bit rate of the song file.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.IStorageItemContentProperties">
+            <summary>Provides access to the content-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="M:XPlat.Storage.FileProperties.IStorageItemContentProperties.GetMusicPropertiesAsync">
+            <summary>Retrieves the music properties of the item (like a file of folder).</summary>
+            <returns>When this method completes successfully, it returns a musicProperties object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.FileProperties.IStorageItemContentProperties.GetVideoPropertiesAsync">
+            <summary>Retrieves the video properties of the item (like a file of folder).</summary>
+            <returns>When this method completes successfully, it returns a videoProperties object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.FileProperties.IStorageItemContentProperties.GetImagePropertiesAsync">
+            <summary>Retrieves the image properties of the item (like a file of folder).</summary>
+            <returns>When this method completes successfully, it returns an imageProperties object.</returns>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.IVideoProperties">
+            <summary>Provides access to the video-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Year">
+            <summary>Gets the year that the video was shot or released.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Title">
+            <summary>Gets the title of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Subtitle">
+            <summary>Gets the subtitle of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Publisher">
+            <summary>Gets the publisher of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Rating">
+            <summary>Gets the rating associated with a video file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Latitude">
+            <summary>Gets the latitude coordinate where the video was shot.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Orientation">
+            <summary>Gets a VideoOrientation value that indicates how the video should be rotated to display it correctly.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Duration">
+            <summary>Gets the duration of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Bitrate">
+            <summary>Gets the sum audio and video bitrate of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Producers">
+            <summary>Gets the producers of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Directors">
+            <summary>Gets the directors of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Height">
+            <summary>Gets the height of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Width">
+            <summary>Gets the width of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Longitude">
+            <summary>Gets the longitude coordinate where the video was shot.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Writers">
+            <summary>Gets the script writers for the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.IVideoProperties.Keywords">
+            <summary>Gets the collection of keywords associated with the video.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.MusicProperties">
+            <summary>Provides access to the music-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Rating">
+            <summary>Gets the rating associated with a music file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.AlbumArtist">
+            <summary>Gets the name of the album artist of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Artist">
+            <summary>Gets the artists that contributed to the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Album">
+            <summary>Gets the name of the album that contains the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Publisher">
+            <summary>Gets the publisher of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Year">
+            <summary>Gets the year that the song was released.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.TrackNumber">
+            <summary>Gets the track number of the song on the song's album.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Title">
+            <summary>Gets the title of the song</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Subtitle">
+            <summary>Gets the subtitle of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Producers">
+            <summary>Gets the producers of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Composers">
+            <summary>Gets the composers of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Conductors">
+            <summary>Gets the conductors of the song.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Duration">
+            <summary>Gets the duration of the song in milliseconds.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Writers">
+            <summary>Gets the songwriters.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Genre">
+            <summary>Gets the names of music genres that the song belongs to.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.MusicProperties.Bitrate">
+            <summary>Gets the bit rate of the song file.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.PhotoOrientation">
+            <summary>Indicates the Exchangeable Image File (EXIF) orientation flag of the photo. This flag describes how to rotate the photo to display it correctly.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.Unspecified">
+            <summary>An orientation flag is not set.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.Normal">
+            <summary>No rotation needed. The photo can be displayed using its current orientation.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.FlipHorizontal">
+            <summary>Flip the photo horizontally.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.Rotate180">
+            <summary>Rotate the photo 180 degrees.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.FlipVertical">
+            <summary>Flip the photo vertically.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.Transpose">
+            <summary>Rotate the photo counter-clockwise 90 degrees and then flip it horizontally.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.Rotate270">
+            <summary>Rotate the photo counter-clockwise 270 degrees.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.Transverse">
+            <summary>Rotate the photo counter-clockwise 270 degrees and then flip it horizontally.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.PhotoOrientation.Rotate90">
+            <summary>Rotate the photo counter-clockwise 90 degrees.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.StorageItemContentProperties">
+            <summary>Provides access to the content-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="M:XPlat.Storage.FileProperties.StorageItemContentProperties.#ctor(System.WeakReference)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XPlat.Storage.FileProperties.StorageItemContentProperties"/> class.
+            </summary>
+            <param name="itemReference">
+            The IStorageItem reference.
+            </param>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.StorageItemContentProperties.Item">
+            <summary>
+            Gets the instance of the IStorageItem passed by the weak reference.
+            </summary>
+        </member>
+        <member name="M:XPlat.Storage.FileProperties.StorageItemContentProperties.GetMusicPropertiesAsync">
+            <summary>Retrieves the music properties of the item (like a file of folder).</summary>
+            <returns>When this method completes successfully, it returns a musicProperties object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.FileProperties.StorageItemContentProperties.GetVideoPropertiesAsync">
+            <summary>Retrieves the video properties of the item (like a file of folder).</summary>
+            <returns>When this method completes successfully, it returns a videoProperties object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.FileProperties.StorageItemContentProperties.GetImagePropertiesAsync">
+            <summary>Retrieves the image properties of the item (like a file of folder).</summary>
+            <returns>When this method completes successfully, it returns an imageProperties object.</returns>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.VideoOrientation">
+            <summary>Indicates how to rotate the video to display it correctly.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.VideoOrientation.Normal">
+            <summary>No rotation needed. The video can be displayed using its current orientation.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.VideoOrientation.Rotate90">
+            <summary>Rotate the video 90 degrees.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.VideoOrientation.Rotate180">
+            <summary>Rotate the video counter-clockwise 180 degrees.</summary>
+        </member>
+        <member name="F:XPlat.Storage.FileProperties.VideoOrientation.Rotate270">
+            <summary>Rotate the video counter-clockwise 270 degrees.</summary>
+        </member>
+        <member name="T:XPlat.Storage.FileProperties.VideoProperties">
+            <summary>Provides access to the video-related properties of an item (like a file or folder).</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Year">
+            <summary>Gets the year that the video was shot or released.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Title">
+            <summary>Gets the title of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Subtitle">
+            <summary>Gets the subtitle of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Publisher">
+            <summary>Gets the publisher of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Rating">
+            <summary>Gets the rating associated with a video file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Latitude">
+            <summary>Gets the latitude coordinate where the video was shot.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Orientation">
+            <summary>Gets a VideoOrientation value that indicates how the video should be rotated to display it correctly.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Duration">
+            <summary>Gets the duration of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Bitrate">
+            <summary>Gets the sum audio and video bitrate of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Producers">
+            <summary>Gets the producers of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Directors">
+            <summary>Gets the directors of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Height">
+            <summary>Gets the height of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Width">
+            <summary>Gets the width of the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Longitude">
+            <summary>Gets the longitude coordinate where the video was shot.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Writers">
+            <summary>Gets the script writers for the video.</summary>
+        </member>
+        <member name="P:XPlat.Storage.FileProperties.VideoProperties.Keywords">
+            <summary>Gets the collection of keywords associated with the video.</summary>
+        </member>
+        <member name="T:XPlat.Storage.IApplicationData">
+            <summary>Provides access to the application data store.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IApplicationData.ClearAsync">
+            <summary>Removes all application data from the local, roaming, and temporary app data stores.</summary>
+            <returns>An object that is used to manage the asynchronous clear operation.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IApplicationData.ClearAsync(XPlat.Storage.ApplicationDataLocality)">
+            <summary>Removes all application data from the specified app data store.</summary>
+            <returns>An object that is used to manage the asynchronous clear operation.</returns>
+            <param name="locality">One of the enumeration values.</param>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationData.LocalFolder">
+            <summary>Gets the root folder in the local app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationData.LocalSettings">
+            <summary>Gets the application settings container in the local app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationData.RoamingFolder">
+            <summary>Gets the root folder in the roaming app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationData.RoamingSettings">
+            <summary>Gets the application settings container in the roaming app data store.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationData.TemporaryFolder">
+            <summary>Gets the root folder in the temporary app data store.</summary>
+        </member>
+        <member name="T:XPlat.Storage.IApplicationDataContainer">
+            <summary>Represents a container for app settings.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationDataContainer.Locality">
+            <summary>Gets the type (local or roaming) of the app data store that is associated with the current settings container.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationDataContainer.Name">
+            <summary>Gets the name of the current settings container.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IApplicationDataContainer.Values">
+            <summary>Gets an object that represents the settings in this settings container.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IApplicationDataContainer.CreateContainer(System.String,XPlat.Storage.ApplicationDataCreateDisposition)">
+            <summary>Creates or opens the specified settings container in the current settings container.</summary>
+            <returns>The settings container.</returns>
+            <param name="name">The name of the container.</param>
+            <param name="disposition">One of the enumeration values.</param>
+        </member>
+        <member name="M:XPlat.Storage.IApplicationDataContainer.DeleteContainer(System.String)">
+            <summary>Deletes the specified settings container, its subcontainers, and all application settings in the hierarchy.</summary>
+            <param name="name">The name of the settings container.</param>
+        </member>
+        <member name="T:XPlat.Storage.IStorageFile">
+            <summary>Represents a file. Provides information about the file and its contents, and ways to manipulate them.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageFile.FileType">
+            <summary>Gets the type (file name extension) of the file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageFile.ContentType">
+            <summary>Gets the MIME type of the contents of the file.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.OpenAsync(XPlat.Storage.FileAccessMode)">
+            <summary>Opens a stream over the file.</summary>
+            <returns>When this method completes, it returns the stream.</returns>
+            <param name="accessMode">The type of access to allow.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.CopyAsync(XPlat.Storage.IStorageFolder)">
+            <summary>Creates a copy of the file in the specified folder.</summary>
+            <returns>When this method completes, it returns a StorageFile that represents the copy.</returns>
+            <param name="destinationFolder">The destination folder where the copy is created.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.CopyAsync(XPlat.Storage.IStorageFolder,System.String)">
+            <summary>Creates a copy of the file in the specified folder, using the desired name.</summary>
+            <returns>When this method completes, it returns a StorageFile that represents the copy.</returns>
+            <param name="destinationFolder">The destination folder where the copy is created.</param>
+            <param name="desiredNewName">The desired name of the copy. If there is an existing file in the destination folder that already has the specified desiredNewName, Windows generates a unique name for the copy.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.CopyAsync(XPlat.Storage.IStorageFolder,System.String,XPlat.Storage.NameCollisionOption)">
+            <summary>Creates a copy of the file in the specified folder, using the desired name. This method also specifies what to do if an existing file in the specified folder has the same name.</summary>
+            <returns>When this method completes, it returns a StorageFile that represents the copy.</returns>
+            <param name="destinationFolder">The destination folder where the copy is created.</param>
+            <param name="desiredNewName">The desired name of the copy. If there is an existing file in the destination folder that already has the specified desiredNewName, the specified NameCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="option">An enum value that determines how Windows responds if the desiredNewName is the same as the name of an existing file in the destination folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.CopyAndReplaceAsync(XPlat.Storage.IStorageFile)">
+            <summary>Replaces the specified file with a copy of the current file.</summary>
+            <returns>No object or value is returned when this method completes.</returns>
+            <param name="fileToReplace">The file to replace.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.MoveAsync(XPlat.Storage.IStorageFolder)">
+            <summary>Moves the current file to the specified folder.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="destinationFolder">The destination folder where the file is moved. This destination folder must be a physical location. Otherwise, if the destination folder exists only in memory, like a file group, this method fails and throws an exception.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.MoveAsync(XPlat.Storage.IStorageFolder,System.String)">
+            <summary>Moves the current file to the specified folder and renames the file according to the desired name.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="destinationFolder">The destination folder where the file is moved. This destination folder must be a physical location. Otherwise, if the destination folder exists only in memory, like a file group, this method fails and throws an exception.</param>
+            <param name="desiredNewName">The desired name of the file after it is moved. If there is an existing file in the destination folder that already has the specified desiredNewName, Windows generates a unique name for the file.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.MoveAsync(XPlat.Storage.IStorageFolder,System.String,XPlat.Storage.NameCollisionOption)">
+            <summary>Moves the current file to the specified folder and renames the file according to the desired name. This method also specifies what to do if a file with the same name already exists in the specified folder.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="destinationFolder">The destination folder where the file is moved. This destination folder must be a physical location. Otherwise, if the destination folder exists only in memory, like a file group, this method fails and throws an exception.</param>
+            <param name="desiredNewName">The desired name of the file after it is moved. If there is an existing file in the destination folder that already has the specified desiredNewName, the specified NameCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="option">An enum value that determines how Windows responds if the desiredNewName is the same as the name of an existing file in the destination folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFile.MoveAndReplaceAsync(XPlat.Storage.IStorageFile)">
+            <summary>Moves the current file to the location of the specified file and replaces the specified file in that location.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="fileToReplace">The file to replace.</param>
+        </member>
+        <member name="T:XPlat.Storage.IStorageFileExtras">
+            <summary>Provides additional extra methods for manipulating data for storage files.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFileExtras.OpenReadAsync">
+            <summary>
+            Opens a stream over the current file for reading file contents.
+            </summary>
+            <returns>
+            When this method completes, it returns the stream.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFileExtras.WriteTextAsync(System.String)">
+            <summary>
+            Writes a string to the current file.
+            </summary>
+            <param name="text">
+            The text to write out.
+            </param>
+            <returns>
+            An object that is used to manage the asynchronous operation.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFileExtras.ReadTextAsync">
+            <summary>
+            Reads the current file as a string.
+            </summary>
+            <returns>
+            When this method completes, it returns the file's content as a string.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFileExtras.WriteBytesAsync(System.Byte[])">
+            <summary>
+            Writes a byte array to the current file.
+            </summary>
+            <param name="bytes">
+            The byte array to write out.
+            </param>
+            <returns>
+            An object that is used to manage the asynchronous operation.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFileExtras.ReadBytesAsync">
+            <summary>
+            Reads the current file as a byte array.
+            </summary>
+            <returns>
+            When this method completes, it returns the file's content as a byte array.
+            </returns>
+        </member>
+        <member name="T:XPlat.Storage.IStorageFolder">
+            <summary>Manipulates folders and their contents, and provides information about them.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.CreateFileAsync(System.String)">
+            <summary>Creates a new file in the current folder.</summary>
+            <returns>When this method completes, it returns the new file as a StorageFile.</returns>
+            <param name="desiredName">The desired name of the file to create.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.CreateFileAsync(System.String,XPlat.Storage.CreationCollisionOption)">
+            <summary>Creates a new file in the current folder, and specifies what to do if a file with the same name already exists in the current folder.</summary>
+            <returns>When this method completes, it returns the new file as a StorageFile.</returns>
+            <param name="desiredName">The desired name of the file to create. If there is an existing file in the current folder that already has the specified desiredName, the specified CreationCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="options">The enum value that determines how Windows responds if the desiredName is the same as the name of an existing file in the current folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.CreateFolderAsync(System.String)">
+            <summary>Creates a new folder in the current folder.</summary>
+            <returns>When this method completes, it returns the new folder as a StorageFolder.</returns>
+            <param name="desiredName">The desired name of the folder to create.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.CreateFolderAsync(System.String,XPlat.Storage.CreationCollisionOption)">
+            <summary>Creates a new folder in the current folder, and specifies what to do if a folder with the same name already exists in the current folder.</summary>
+            <returns>When this method completes, it returns the new folder as a StorageFolder.</returns>
+            <param name="desiredName">The desired name of the folder to create. If there is an existing folder in the current folder that already has the specified desiredName, the specified CreationCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="options">The enum value that determines how Windows responds if the desiredName is the same as the name of an existing folder in the current folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.GetFileAsync(System.String)">
+            <summary>Gets the specified file from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a StorageFile that represents the file.</returns>
+            <param name="name">The name (or path relative to the current folder) of the file to retrieve.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.GetFolderAsync(System.String)">
+            <summary>Gets the specified folder from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a StorageFolder that represents the child folder.</returns>
+            <param name="name">The name of the child folder to retrieve.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.GetItemAsync(System.String)">
+            <summary>Gets the specified item from the IStorageFolder.</summary>
+            <returns>When this method completes successfully, it returns the file or folder (type IStorageItem).</returns>
+            <param name="name">The name of the item to retrieve.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.GetFilesAsync">
+            <summary>Gets the files from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a list of the files (type IVectorView) in the folder. Each file in the list is represented by a StorageFile object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.GetFoldersAsync">
+            <summary>Gets the folders in the current folder.</summary>
+            <returns>When this method completes successfully, it returns a list of the files (type IVectorView). Each folder in the list is represented by a StorageFolder.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder.GetItemsAsync">
+            <summary>Gets the items from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a list of the files and folders (type IVectorView). The files and folders in the list are represented by objects of type IStorageItem.</returns>
+        </member>
+        <member name="T:XPlat.Storage.IStorageFolder2">
+            <summary>Manipulates folders and their contents, and provides information about them.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolder2.TryGetItemAsync(System.String)">
+            <summary>Try to get a single file or sub-folder from the current folder by using the name of the item.</summary>
+            <returns>When this method completes successfully, it returns the file or folder (type IStorageItem).</returns>
+            <param name="name">The name (or path relative to the current folder) of the file or sub-folder to try to retrieve.</param>
+        </member>
+        <member name="T:XPlat.Storage.IStorageFolderExtras">
+            <summary>Provides additional extra methods for getting items from within storage folders.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolderExtras.GetFileAsync(System.String,System.Boolean)">
+            <summary>Gets the specified file from the current folder.</summary>
+            <param name="name">The name of the file to retrieve. If the file does not exist in the current folder, the createIfNotExists flag will allow the API to create the file if set to true.</param>
+            <param name="createIfNotExists">A value indicating whether to create the file if it does not exist.</param>
+            <returns>When this method completes successfully, it returns an IStorageFile that represents the file.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolderExtras.GetFolderAsync(System.String,System.Boolean)">
+            <summary>Gets the specified folder from the current folder.</summary>
+            <param name="name">The name of the child folder to retrieve. If the child folder does not exist in the current folder, the createIfNotExists flag will allow the API to create the folder if set to true.</param>
+            <param name="createIfNotExists">A value indicating whether to create the child folder if it does not exist.</param>
+            <returns>When this method completes successfully, it returns an IStorageFolder that represents the child folder.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageFolderExtras.ClearAsync">
+            <summary>Clears the folder of it's contents.</summary>
+            <returns>An object that is used to manage the asynchronous clear operation.</returns>
+        </member>
+        <member name="T:XPlat.Storage.IStorageItem">
+            <summary>Manipulates storage items (files and folders) and their contents, and provides information about them.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IStorageItem.RenameAsync(System.String)">
+            <summary>Renames the current item.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+            <param name="desiredName">The desired, new name of the item.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageItem.RenameAsync(System.String,XPlat.Storage.NameCollisionOption)">
+            <summary>Renames the current item. This method also specifies what to do if an existing item in the current item's location has the same name.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+            <param name="desiredName">The desired, new name of the current item. If there is an existing item in the current item's location that already has the specified desiredName, the specified NameCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="option">The enum value that determines how the system responds if the desiredName is the same as the name of an existing item in the current item's location.</param>
+        </member>
+        <member name="M:XPlat.Storage.IStorageItem.DeleteAsync">
+            <summary>Deletes the current item.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageItem.GetBasicPropertiesAsync">
+            <summary>Gets the basic properties of the current item (like a file or folder).</summary>
+            <returns>When this method completes successfully, it returns the basic properties of the current item as a BasicProperties object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageItem.IsOfType(XPlat.Storage.StorageItemTypes)">
+            <summary>Determines whether the current IStorageItem matches the specified StorageItemTypes value.</summary>
+            <returns>True if the IStorageItem matches the specified value; otherwise false.</returns>
+            <param name="type">The value to match against.</param>
+        </member>
+        <member name="P:XPlat.Storage.IStorageItem.Attributes">
+            <summary>Gets the attributes of a storage item.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageItem.DateCreated">
+            <summary>Gets the date and time when the current item was created.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageItem.Name">
+            <summary>Gets the name of the item including the file name extension if there is one.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageItem.Path">
+            <summary>Gets the full file-system path of the item, if the item has a path.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageItem.Exists">
+            <summary>Gets a value indicating whether the item exists.</summary>
+        </member>
+        <member name="T:XPlat.Storage.IStorageItem2">
+            <summary>Manipulates storage items (files and folders) and their contents, and provides information about them.</summary>
+        </member>
+        <member name="M:XPlat.Storage.IStorageItem2.GetParentAsync">
+            <summary>Gets the parent folder of the current storage item.</summary>
+            <returns>When this method completes, it returns the parent folder as a StorageFolder.</returns>
+        </member>
+        <member name="M:XPlat.Storage.IStorageItem2.IsEqual(XPlat.Storage.IStorageItem)">
+            <summary>Indicates whether the current item is the same as the specified item.</summary>
+            <returns>Returns true if the current storage item is the same as the specified storage item; otherwise false.</returns>
+            <param name="item">The IStorageItem object that represents a storage item to compare against.</param>
+        </member>
+        <member name="T:XPlat.Storage.IStorageItemProperties">
+            <summary>Provides access to common and content properties on items (like files and folders).</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageItemProperties.DisplayName">
+            <summary>Gets the user-friendly name of the item.</summary>
+        </member>
+        <member name="P:XPlat.Storage.IStorageItemProperties.Properties">
+            <summary>Gets an object that provides access to the content-related properties of the item.</summary>
+        </member>
+        <member name="T:XPlat.Storage.KnownFolders">
+            <summary>Provides access to common locations that contain user content.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.CameraRoll">
+            <summary>Gets the Camera Roll folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.Playlists">
+            <summary>Gets the play lists folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.SavedPictures">
+            <summary>Gets the Saved Pictures folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.DocumentsLibrary">
+            <summary>Gets the Documents library. The Documents library is not intended for general use.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.HomeGroup">
+            <summary>Gets the HomeGroup folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.MediaServerDevices">
+            <summary>Gets the folder of media server (Digital Living Network Alliance (DLNA)) devices.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.MusicLibrary">
+            <summary>Gets the Music library.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.PicturesLibrary">
+            <summary>Gets the Pictures library.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.RemovableDevices">
+            <summary>Gets the removable devices folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.VideosLibrary">
+            <summary>Gets the Videos library.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.Objects3D">
+            <summary>Gets the Objects 3D folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.RecordedCalls">
+            <summary>Gets the recorded calls folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.KnownFolders.AppCaptures">
+            <summary>Gets the App Captures folder.</summary>
+        </member>
+        <member name="T:XPlat.Storage.NameCollisionOption">
+            <summary>Specifies what to do if a file or folder with the specified name already exists in the current folder when you copy, move, or rename a file or folder.</summary>
+        </member>
+        <member name="F:XPlat.Storage.NameCollisionOption.GenerateUniqueName">
+            <summary>Automatically append a number to the base of the specified name if the file or folder already exists.For example, if MyFile.txt already exists, then the new file is named MyFile (2).txt. If MyFolder already exists, then the new folder is named MyFolder (2).</summary>
+        </member>
+        <member name="F:XPlat.Storage.NameCollisionOption.ReplaceExisting">
+            <summary>Replace the existing item if the file or folder already exists.</summary>
+        </member>
+        <member name="F:XPlat.Storage.NameCollisionOption.FailIfExists">
+            <summary>Raise an exception of type System.Exception if the file or folder already exists.Methods that don't explicitly pass a value from the NameCollisionOption enumeration use the FailIfExists value as the default when you try to create, rename, copy, or move a file or folder.</summary>
+        </member>
+        <member name="T:XPlat.Storage.Search.IStorageFolderQueryOperations">
+            <summary>Provides methods to create search queries and retrieve files from a folder. This interface is implemented by StorageFolder objects, which can represent file system folders, libraries, or virtual folders that are automatically generated when queries are created using group-based CommonFolderQuery values like GroupByAlbum.</summary>
+        </member>
+        <member name="M:XPlat.Storage.Search.IStorageFolderQueryOperations.GetItemsAsync(System.Int32,System.Int32)">
+            <summary>Retrieves a list items like files, folders, or file groups, in a specified range (shallow enumeration).</summary>
+            <returns>When this method completes successfully, it returns a list (type IVectorView) of items. Each item is the IStorageItem type and represents a file, folder, or file group. In this list, files are represented by StorageFile objects, and folders or file groups are represented by StorageFolder objects.</returns>
+            <param name="startIndex">The zero-based index of the first item in the range. This parameter defaults to 0.</param>
+            <param name="maxItemsToRetrieve">The maximum number of items to retrieve. Use -1 to retrieve all items.</param>
+        </member>
+        <member name="T:XPlat.Storage.StorageFile">
+            <summary>Represents a file. Provides information about the file and its contents, and ways to manipulate them.</summary>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.#ctor(Windows.Storage.StorageFile)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XPlat.Storage.StorageFile"/> class.
+            </summary>
+            <param name="file">
+            The associated <see cref="T:XPlat.Storage.StorageFile"/>.
+            </param>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.Originator">
+            <summary>Gets the instance of the <see cref="T:Windows.Storage.StorageFile"/> object associated with this file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.DateCreated">
+            <summary>Gets the date and time when the current item was created.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.Name">
+            <summary>Gets the name of the item including the file name extension if there is one.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.DisplayName">
+            <summary>Gets the user-friendly name of the item.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.Path">
+            <summary>Gets the full file-system path of the item, if the item has a path.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.Exists">
+            <summary>Gets a value indicating whether the item exists.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.Attributes">
+            <summary>Gets the attributes of a storage item.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.FileType">
+            <summary>Gets the type (file name extension) of the file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.ContentType">
+            <summary>Gets the MIME type of the contents of the file.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFile.Properties">
+            <summary>Gets an object that provides access to the content-related properties of the item.</summary>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.RenameAsync(System.String)">
+            <summary>Renames the current item.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+            <param name="desiredName">The desired, new name of the item.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.RenameAsync(System.String,XPlat.Storage.NameCollisionOption)">
+            <summary>Renames the current item. This method also specifies what to do if an existing item in the current item's location has the same name.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+            <param name="desiredName">The desired, new name of the current item. If there is an existing item in the current item's location that already has the specified desiredName, the specified NameCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="option">The enum value that determines how the system responds if the desiredName is the same as the name of an existing item in the current item's location.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.DeleteAsync">
+            <summary>Deletes the current item.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.IsOfType(XPlat.Storage.StorageItemTypes)">
+            <summary>Determines whether the current IStorageItem matches the specified StorageItemTypes value.</summary>
+            <returns>True if the IStorageItem matches the specified value; otherwise false.</returns>
+            <param name="type">The value to match against.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.GetBasicPropertiesAsync">
+            <summary>Gets the basic properties of the current item (like a file or folder).</summary>
+            <returns>When this method completes successfully, it returns the basic properties of the current item as a BasicProperties object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.GetParentAsync">
+            <summary>Gets the parent folder of the current storage item.</summary>
+            <returns>When this method completes, it returns the parent folder as a StorageFolder.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.IsEqual(XPlat.Storage.IStorageItem)">
+            <summary>Indicates whether the current item is the same as the specified item.</summary>
+            <returns>Returns true if the current storage item is the same as the specified storage item; otherwise false.</returns>
+            <param name="item">The IStorageItem object that represents a storage item to compare against.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.OpenReadAsync">
+            <summary>
+            Opens a stream over the current file for reading file contents.
+            </summary>
+            <returns>
+            When this method completes, it returns the stream.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.OpenAsync(XPlat.Storage.FileAccessMode)">
+            <summary>Opens a stream over the file.</summary>
+            <returns>When this method completes, it returns the stream.</returns>
+            <param name="accessMode">The type of access to allow.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.CopyAsync(XPlat.Storage.IStorageFolder)">
+            <summary>Creates a copy of the file in the specified folder.</summary>
+            <returns>When this method completes, it returns a StorageFile that represents the copy.</returns>
+            <param name="destinationFolder">The destination folder where the copy is created.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.CopyAsync(XPlat.Storage.IStorageFolder,System.String)">
+            <summary>Creates a copy of the file in the specified folder, using the desired name.</summary>
+            <returns>When this method completes, it returns a StorageFile that represents the copy.</returns>
+            <param name="destinationFolder">The destination folder where the copy is created.</param>
+            <param name="desiredNewName">The desired name of the copy. If there is an existing file in the destination folder that already has the specified desiredNewName, Windows generates a unique name for the copy.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.CopyAsync(XPlat.Storage.IStorageFolder,System.String,XPlat.Storage.NameCollisionOption)">
+            <summary>Creates a copy of the file in the specified folder, using the desired name. This method also specifies what to do if an existing file in the specified folder has the same name.</summary>
+            <returns>When this method completes, it returns a StorageFile that represents the copy.</returns>
+            <param name="destinationFolder">The destination folder where the copy is created.</param>
+            <param name="desiredNewName">The desired name of the copy. If there is an existing file in the destination folder that already has the specified desiredNewName, the specified NameCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="option">An enum value that determines how Windows responds if the desiredNewName is the same as the name of an existing file in the destination folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.CopyAndReplaceAsync(XPlat.Storage.IStorageFile)">
+            <summary>Replaces the specified file with a copy of the current file.</summary>
+            <returns>No object or value is returned when this method completes.</returns>
+            <param name="fileToReplace">The file to replace.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.MoveAsync(XPlat.Storage.IStorageFolder)">
+            <summary>Moves the current file to the specified folder.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="destinationFolder">The destination folder where the file is moved. This destination folder must be a physical location. Otherwise, if the destination folder exists only in memory, like a file group, this method fails and throws an exception.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.MoveAsync(XPlat.Storage.IStorageFolder,System.String)">
+            <summary>Moves the current file to the specified folder and renames the file according to the desired name.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="destinationFolder">The destination folder where the file is moved. This destination folder must be a physical location. Otherwise, if the destination folder exists only in memory, like a file group, this method fails and throws an exception.</param>
+            <param name="desiredNewName">The desired name of the file after it is moved. If there is an existing file in the destination folder that already has the specified desiredNewName, Windows generates a unique name for the file.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.MoveAsync(XPlat.Storage.IStorageFolder,System.String,XPlat.Storage.NameCollisionOption)">
+            <summary>Moves the current file to the specified folder and renames the file according to the desired name. This method also specifies what to do if a file with the same name already exists in the specified folder.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="destinationFolder">The destination folder where the file is moved. This destination folder must be a physical location. Otherwise, if the destination folder exists only in memory, like a file group, this method fails and throws an exception.</param>
+            <param name="desiredNewName">The desired name of the file after it is moved. If there is an existing file in the destination folder that already has the specified desiredNewName, the specified NameCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="option">An enum value that determines how Windows responds if the desiredNewName is the same as the name of an existing file in the destination folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.MoveAndReplaceAsync(XPlat.Storage.IStorageFile)">
+            <summary>Moves the current file to the location of the specified file and replaces the specified file in that location.</summary>
+            <returns>No object or value is returned by this method.</returns>
+            <param name="fileToReplace">The file to replace.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.WriteTextAsync(System.String)">
+            <summary>
+            Writes a string to the current file.
+            </summary>
+            <param name="text">
+            The text to write out.
+            </param>
+            <returns>
+            An object that is used to manage the asynchronous operation.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.ReadTextAsync">
+            <summary>
+            Reads the current file as a string.
+            </summary>
+            <returns>
+            When this method completes, it returns the file's content as a string.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.WriteBytesAsync(System.Byte[])">
+            <summary>
+            Writes a byte array to the current file.
+            </summary>
+            <param name="bytes">
+            The byte array to write out.
+            </param>
+            <returns>
+            An object that is used to manage the asynchronous operation.
+            </returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFile.ReadBytesAsync">
+            <summary>
+            Reads the current file as a byte array.
+            </summary>
+            <returns>
+            When this method completes, it returns the file's content as a byte array.
+            </returns>
+        </member>
+        <member name="T:XPlat.Storage.StorageFolder">
+            <summary>
+            Defines an application folder.
+            </summary>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.#ctor(Windows.Storage.StorageFolder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XPlat.Storage.StorageFolder"/> class.
+            </summary>
+            <param name="folder">
+            The associated <see cref="T:XPlat.Storage.StorageFolder"/>
+            </param>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.Originator">
+            <summary>Gets the instance of the <see cref="T:Windows.Storage.StorageFolder"/> object associated with this folder.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.DateCreated">
+            <summary>Gets the date and time when the current item was created.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.Name">
+            <summary>Gets the name of the item including the file name extension if there is one.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.DisplayName">
+            <summary>Gets the user-friendly name of the item.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.Properties">
+            <summary>Gets an object that provides access to the content-related properties of the item.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.Path">
+            <summary>Gets the full file-system path of the item, if the item has a path.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.Exists">
+            <summary>Gets a value indicating whether the item exists.</summary>
+        </member>
+        <member name="P:XPlat.Storage.StorageFolder.Attributes">
+            <summary>Gets the attributes of a storage item.</summary>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.RenameAsync(System.String)">
+            <summary>Renames the current item.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+            <param name="desiredName">The desired, new name of the item.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.RenameAsync(System.String,XPlat.Storage.NameCollisionOption)">
+            <summary>Renames the current item. This method also specifies what to do if an existing item in the current item's location has the same name.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+            <param name="desiredName">The desired, new name of the current item. If there is an existing item in the current item's location that already has the specified desiredName, the specified NameCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="option">The enum value that determines how the system responds if the desiredName is the same as the name of an existing item in the current item's location.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.DeleteAsync">
+            <summary>Deletes the current item.</summary>
+            <returns>No object or value is returned by this method when it completes.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.IsOfType(XPlat.Storage.StorageItemTypes)">
+            <summary>Determines whether the current IStorageItem matches the specified StorageItemTypes value.</summary>
+            <returns>True if the IStorageItem matches the specified value; otherwise false.</returns>
+            <param name="type">The value to match against.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetBasicPropertiesAsync">
+            <summary>Gets the basic properties of the current item (like a file or folder).</summary>
+            <returns>When this method completes successfully, it returns the basic properties of the current item as a BasicProperties object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetParentAsync">
+            <summary>Gets the parent folder of the current storage item.</summary>
+            <returns>When this method completes, it returns the parent folder as a StorageFolder.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.IsEqual(XPlat.Storage.IStorageItem)">
+            <summary>Indicates whether the current item is the same as the specified item.</summary>
+            <returns>Returns true if the current storage item is the same as the specified storage item; otherwise false.</returns>
+            <param name="item">The IStorageItem object that represents a storage item to compare against.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.CreateFileAsync(System.String)">
+            <summary>Creates a new file in the current folder.</summary>
+            <returns>When this method completes, it returns the new file as a StorageFile.</returns>
+            <param name="desiredName">The desired name of the file to create.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.CreateFileAsync(System.String,XPlat.Storage.CreationCollisionOption)">
+            <summary>Creates a new file in the current folder, and specifies what to do if a file with the same name already exists in the current folder.</summary>
+            <returns>When this method completes, it returns the new file as a StorageFile.</returns>
+            <param name="desiredName">The desired name of the file to create. If there is an existing file in the current folder that already has the specified desiredName, the specified CreationCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="options">The enum value that determines how Windows responds if the desiredName is the same as the name of an existing file in the current folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.CreateFolderAsync(System.String)">
+            <summary>Creates a new folder in the current folder.</summary>
+            <returns>When this method completes, it returns the new folder as a StorageFolder.</returns>
+            <param name="desiredName">The desired name of the folder to create.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.CreateFolderAsync(System.String,XPlat.Storage.CreationCollisionOption)">
+            <summary>Creates a new folder in the current folder, and specifies what to do if a folder with the same name already exists in the current folder.</summary>
+            <returns>When this method completes, it returns the new folder as a StorageFolder.</returns>
+            <param name="desiredName">The desired name of the folder to create. If there is an existing folder in the current folder that already has the specified desiredName, the specified CreationCollisionOption determines how Windows responds to the conflict.</param>
+            <param name="options">The enum value that determines how Windows responds if the desiredName is the same as the name of an existing folder in the current folder.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetFileAsync(System.String)">
+            <summary>Gets the specified file from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a StorageFile that represents the file.</returns>
+            <param name="name">The name (or path relative to the current folder) of the file to retrieve.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetFileAsync(System.String,System.Boolean)">
+            <summary>Gets the specified file from the current folder.</summary>
+            <param name="name">The name of the file to retrieve. If the file does not exist in the current folder, the createIfNotExists flag will allow the API to create the file if set to true.</param>
+            <param name="createIfNotExists">A value indicating whether to create the file if it does not exist.</param>
+            <returns>When this method completes successfully, it returns an IStorageFile that represents the file.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetFolderAsync(System.String)">
+            <summary>Gets the specified folder from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a StorageFolder that represents the child folder.</returns>
+            <param name="name">The name of the child folder to retrieve.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetFolderAsync(System.String,System.Boolean)">
+            <summary>Gets the specified folder from the current folder.</summary>
+            <param name="name">The name of the child folder to retrieve. If the child folder does not exist in the current folder, the createIfNotExists flag will allow the API to create the folder if set to true.</param>
+            <param name="createIfNotExists">A value indicating whether to create the child folder if it does not exist.</param>
+            <returns>When this method completes successfully, it returns an IStorageFolder that represents the child folder.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.ClearAsync">
+            <summary>Clears the folder of it's contents.</summary>
+            <returns>An object that is used to manage the asynchronous clear operation.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetItemAsync(System.String)">
+            <summary>Gets the specified item from the IStorageFolder.</summary>
+            <returns>When this method completes successfully, it returns the file or folder (type IStorageItem).</returns>
+            <param name="name">The name of the item to retrieve.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetFilesAsync">
+            <summary>Gets the files from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a list of the files (type IVectorView) in the folder. Each file in the list is represented by a StorageFile object.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetFoldersAsync">
+            <summary>Gets the folders in the current folder.</summary>
+            <returns>When this method completes successfully, it returns a list of the files (type IVectorView). Each folder in the list is represented by a StorageFolder.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetItemsAsync">
+            <summary>Gets the items from the current folder.</summary>
+            <returns>When this method completes successfully, it returns a list of the files and folders (type IVectorView). The files and folders in the list are represented by objects of type IStorageItem.</returns>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.GetItemsAsync(System.Int32,System.Int32)">
+            <summary>Retrieves a list items like files, folders, or file groups, in a specified range (shallow enumeration).</summary>
+            <returns>When this method completes successfully, it returns a list (type IVectorView) of items. Each item is the IStorageItem type and represents a file, folder, or file group. In this list, files are represented by StorageFile objects, and folders or file groups are represented by StorageFolder objects.</returns>
+            <param name="startIndex">The zero-based index of the first item in the range. This parameter defaults to 0.</param>
+            <param name="maxItemsToRetrieve">The maximum number of items to retrieve. Use -1 to retrieve all items.</param>
+        </member>
+        <member name="M:XPlat.Storage.StorageFolder.TryGetItemAsync(System.String)">
+            <summary>Try to get a single file or sub-folder from the current folder by using the name of the item.</summary>
+            <returns>When this method completes successfully, it returns the file or folder (type IStorageItem).</returns>
+            <param name="name">The name (or path relative to the current folder) of the file or sub-folder to try to retrieve.</param>
+        </member>
+        <member name="T:XPlat.Storage.StorageItemTypes">
+            <summary>Describes whether an item that implements the IStorageItem interface is a file or a folder.</summary>
+        </member>
+        <member name="F:XPlat.Storage.StorageItemTypes.None">
+            <summary>A storage item that is neither a file nor a folder.</summary>
+        </member>
+        <member name="F:XPlat.Storage.StorageItemTypes.File">
+            <summary>A file that is represented as a StorageFile instance.</summary>
+        </member>
+        <member name="F:XPlat.Storage.StorageItemTypes.Folder">
+            <summary>A folder that is represented as a StorageFolder instance.</summary>
+        </member>
+    </members>
+</doc>

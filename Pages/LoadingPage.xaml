@@ -1,0 +1,299 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="Server_Restart_Final.Pages.LoadingPage" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+      Title="LoadingPage">
+    <Page.Background>
+        <SolidColorBrush x:Name="LBrush" Color="#00000000"/>
+    </Page.Background>
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ColorAnimation Storyboard.TargetName="LBrush" Storyboard.TargetProperty="Color" To="#AF000000" Duration="0:0:1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+    <Grid>
+        <Grid Height="500" Width="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ed:Arc ArcThickness="5" ArcThicknessUnit="Pixel" EndAngle="90"  Fill="#03A9F4" HorizontalAlignment="Center" Height="150" Margin="0 0 0 0" Stretch="None" Stroke="Transparent" StartAngle="0" VerticalAlignment="Center" Width="150">
+
+            <ed:Arc.RenderTransform>
+                <RotateTransform CenterX="75" CenterY="75" Angle="0"/>
+            </ed:Arc.RenderTransform>
+
+            <ed:Arc.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+            Storyboard.TargetProperty="(ed:Arc.RenderTransform).(RotateTransform.Angle)"
+            To="360" Duration="0:0:5" RepeatBehavior="Forever">
+                                <DoubleAnimation.EasingFunction>
+                                    <CircleEase EasingMode="EaseInOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </ed:Arc.Triggers>
+        </ed:Arc>
+        <Label HorizontalAlignment="Center" Margin="0 0 0 0"  VerticalAlignment="Center" Content="Connecting" Padding="1" FontSize="15" >
+            <Label.Foreground>
+                <SolidColorBrush x:Name="SCB" Color="White">
+
+                </SolidColorBrush>
+            </Label.Foreground>
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetName="SCB" Storyboard.TargetProperty="Color" From="#0DFFFFFF" To="#FFFFFF" Duration="0:0:2" RepeatBehavior="Forever" AutoReverse="True">
+
+                            </ColorAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Label.Triggers>
+        </Label>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" BorderThickness=" 0 0 0 0" BorderBrush="#03A9F4">
+                <Grid Grid.Row="0">
+                    <Label x:Name="IoCLoadLabel" HorizontalAlignment="Center" Margin="0 0 0 0"  VerticalAlignment="Center" Padding="1" FontSize="15"  Content="Connect to IoC">
+                        <Label.Foreground>
+                            <SolidColorBrush x:Name="IoCBrush" Color="White">
+
+                            </SolidColorBrush>
+                        </Label.Foreground>
+                        <Label.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="IoCBrush" Storyboard.TargetProperty="Color" From="#0DFFFFFF" To="#FFFFFF" Duration="0:0:1" RepeatBehavior="Forever" AutoReverse="True">
+
+                                        </ColorAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label  HorizontalAlignment="Center" Margin="0 0 0 0"  VerticalAlignment="Center" Padding="1" FontSize="15"  Content="Connect to IoC">
+                        <Label.Foreground>
+                            <SolidColorBrush x:Name="IoCLoadLabelDoneBrush" Color="Transparent">
+
+                            </SolidColorBrush>
+                        </Label.Foreground>
+                    </Label>
+                    <Rectangle Fill="#03A9F4" HorizontalAlignment="Left" Height="10"  Margin="100 0 0 0" VerticalAlignment="Center" Width="10">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform CenterX="5" CenterY="5" Angle="0"/>
+                        </Rectangle.RenderTransform>
+
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+            Storyboard.TargetProperty="(Rectangle.RenderTransform).(RotateTransform.Angle)"
+            To="360" Duration="0:0:2" RepeatBehavior="Forever">
+                                            <DoubleAnimation.EasingFunction>
+                                                <CircleEase EasingMode="EaseInOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle Fill="#03A9F4" HorizontalAlignment="Right" Height="10"  Margin="0 0 100 0" VerticalAlignment="Center" Width="10">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform CenterX="5" CenterY="5" Angle="0"/>
+                        </Rectangle.RenderTransform>
+
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+            Storyboard.TargetProperty="(Rectangle.RenderTransform).(RotateTransform.Angle)"
+            To="360" Duration="0:0:2" RepeatBehavior="Forever">
+                                            <DoubleAnimation.EasingFunction>
+                                                <CircleEase EasingMode="EaseInOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="1" BorderThickness="0 0 0 0" BorderBrush="#03A9F4">
+                <Grid Grid.Row="1">
+                    <Label Grid.Row="1" x:Name="BotLoadLabel" HorizontalAlignment="Center" Margin="0 0 0 0"  VerticalAlignment="Center" Padding="1" FontSize="15"  Content="Connect to Bot">
+                        <Label.Foreground>
+                            <SolidColorBrush x:Name="BotBrush" Color="White">
+
+                            </SolidColorBrush>
+                        </Label.Foreground>
+                        <Label.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="BotBrush" Storyboard.TargetProperty="Color" From="#0DFFFFFF" To="#FFFFFF" Duration="0:0:1" RepeatBehavior="Forever" AutoReverse="True">
+
+                                        </ColorAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Grid.Row="1" HorizontalAlignment="Center" Margin="0 0 0 0"  VerticalAlignment="Center" Padding="1" FontSize="15"  Content="Connect to Bot">
+                        <Label.Foreground>
+                            <SolidColorBrush x:Name="BotLoadLabelDoneBrush" Color="Transparent">
+
+                            </SolidColorBrush>
+                        </Label.Foreground>
+                    </Label>
+                    <Rectangle Fill="#03A9F4" HorizontalAlignment="Left" Height="10"  Margin="100 0 0 0" VerticalAlignment="Center" Width="10">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform CenterX="5" CenterY="5" Angle="0"/>
+                        </Rectangle.RenderTransform>
+
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+            Storyboard.TargetProperty="(Rectangle.RenderTransform).(RotateTransform.Angle)"
+            To="360" Duration="0:0:2" RepeatBehavior="Forever">
+                                            <DoubleAnimation.EasingFunction>
+                                                <CircleEase EasingMode="EaseInOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle Fill="#03A9F4" HorizontalAlignment="Right" Height="10"  Margin="0 0 100 0" VerticalAlignment="Center" Width="10">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform CenterX="5" CenterY="5" Angle="0"/>
+                        </Rectangle.RenderTransform>
+
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+            Storyboard.TargetProperty="(Rectangle.RenderTransform).(RotateTransform.Angle)"
+            To="360" Duration="0:0:2" RepeatBehavior="Forever">
+                                            <DoubleAnimation.EasingFunction>
+                                                <CircleEase EasingMode="EaseInOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2" BorderThickness="0 0 0 0" BorderBrush="#03A9F4">
+                <Grid Grid.Row="2">
+                    <Label Grid.Row="2" x:Name="TransferLoadLabel" HorizontalAlignment="Center" Margin="0 0 0 0"  VerticalAlignment="Center" Padding="1" FontSize="15"  Content="Connect to Transfer-Server">
+                        <Label.Foreground>
+                            <SolidColorBrush x:Name="TransferBrush" Color="White">
+
+                            </SolidColorBrush>
+                        </Label.Foreground>
+                        <Label.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation Storyboard.TargetName="TransferBrush" Storyboard.TargetProperty="Color" From="#0DFFFFFF" To="#FFFFFF" Duration="0:0:1" RepeatBehavior="Forever" AutoReverse="True">
+
+                                        </ColorAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Grid.Row="2" HorizontalAlignment="Center" Margin="0 0 0 0"  VerticalAlignment="Center" Padding="1" FontSize="15"  Content="Connect to Transfer-Server">
+                        <Label.Foreground>
+                            <SolidColorBrush x:Name="TransferLoadLabelDoneBrush" Color="Transparent">
+
+                            </SolidColorBrush>
+                        </Label.Foreground>
+                    </Label>
+                    <Rectangle Fill="#03A9F4" HorizontalAlignment="Left" Height="10"  Margin="75 0 0 0" VerticalAlignment="Center" Width="10">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform CenterX="5" CenterY="5" Angle="0"/>
+                        </Rectangle.RenderTransform>
+
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+            Storyboard.TargetProperty="(Rectangle.RenderTransform).(RotateTransform.Angle)"
+            To="360" Duration="0:0:2" RepeatBehavior="Forever">
+                                            <DoubleAnimation.EasingFunction>
+                                                <CircleEase EasingMode="EaseInOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+
+                    <Rectangle Fill="#03A9F4" HorizontalAlignment="Right" Height="10"  Margin="0 0 75 0" VerticalAlignment="Center" Width="10">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform CenterX="5" CenterY="5" Angle="0"/>
+                        </Rectangle.RenderTransform>
+
+                        <Rectangle.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+            Storyboard.TargetProperty="(Rectangle.RenderTransform).(RotateTransform.Angle)"
+            To="360" Duration="0:0:2" RepeatBehavior="Forever">
+                                            <DoubleAnimation.EasingFunction>
+                                                <CircleEase EasingMode="EaseInOut"/>
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Rectangle.Triggers>
+                    </Rectangle>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+        <Frame x:Name="PraticleFrame"  Margin="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Page>
