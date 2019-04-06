@@ -231,11 +231,18 @@
     </WindowChrome.WindowChrome>
     <Border Height="Auto" Width="Auto">
         <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-          <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="MainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="Auto"/>
 
+            </Grid.RowDefinitions>
+            <local:TopMenuControl />
+            <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="MainGrid">
+ 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -250,10 +257,10 @@
                 <local:SideMenuControl Grid.Column="0" Grid.Row="0" Margin="0 300 0 0" x:Name="SideMenu" HorizontalAlignment="Center">
                     <local:SideListControl/>
                 </local:SideMenuControl>
+                <local:LeftSideMenuControl Grid.Column="2"/>
             </Grid>
             <Frame Name="LoadingFrame"  Margin="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden"/>
 
-
-        </Grid>
+         </Grid>
     </Border>
 </Window>

@@ -158,7 +158,6 @@ namespace Server_Restart_Final
             ProcessCheckStatus.CheckUserExit.Elapsed += CheckUserExit_Elapsed;
             ProcessCheckStatus.CheckUserExit.Enabled = ProcessCheckStatus.data.UserFroceTiming;
             SideMenu.Width = 60;
-
             Global.GlobalSigh.lf = this.LoadingFrame;
             this.WindowState = WindowState.Normal;
             Global.GlobalSigh.sidem = this.SideMenu;

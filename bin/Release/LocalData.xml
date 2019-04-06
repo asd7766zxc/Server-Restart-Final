@@ -11,10 +11,6 @@
       <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>Command</command>
-      <commandindex>0</commandindex>
-    </Commands>
-    <Commands>
       <command>help </command>
       <commandindex>2</commandindex>
     </Commands>
@@ -45,6 +41,10 @@
     <Commands>
       <command>save-all</command>
       <commandindex>9</commandindex>
+    </Commands>
+    <Commands>
+      <command>RRR</command>
+      <commandindex>1</commandindex>
     </Commands>
   </command>
   <Memory>-Xmx1693M</Memory>

@@ -108,3 +108,9 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\TopMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\TopMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\LeftSideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\LeftSideMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.baml

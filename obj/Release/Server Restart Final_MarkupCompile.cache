@@ -10,11 +10,11 @@ none
 false
 TRACE
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\App.xaml
-111299393308
+14-1784751775
 
-63-330396591
+71-1018395354
 13457105634
-Pages\InfoPage.xaml;Pages\LoadingPage.xaml;Pages\MainPage.xaml;MainWindow.xaml;Cotrols\SideMenuControl.xaml;Cotrols\SideListControl.xaml;Cotrols\SideListItemControl.xaml;Pages\Particle.xaml;Pages\ReportPage.xaml;Pages\SetttingPage.xaml;Styles\Scroll.xaml;
+Cotrols\LeftSideMenuControl.xaml;Cotrols\TopMenuControl.xaml;Pages\InfoPage.xaml;Pages\LoadingPage.xaml;Pages\MainPage.xaml;MainWindow.xaml;Cotrols\SideMenuControl.xaml;Cotrols\SideListControl.xaml;Cotrols\SideListItemControl.xaml;Pages\Particle.xaml;Pages\ReportPage.xaml;Pages\SetttingPage.xaml;Pages\TopMenuPage.xaml;Styles\Scroll.xaml;
 
 False
 

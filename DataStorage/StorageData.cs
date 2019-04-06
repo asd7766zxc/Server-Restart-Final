@@ -12,18 +12,19 @@ namespace Server_Restart_Final.DataStorage
     public static class StorageData
     {
         public static bool NewLineOnAttributes { get; set; }
-        public static void SaveData(object obj,string FilePath)
+        public static void SaveData(object obj, string FilePath)
         {
-             Type T = obj.GetType(); 
+            Type T = obj.GetType();
             var xs = new XmlSerializer(T);
             var ws = new XmlWriterSettings { Indent = true, NewLineOnAttributes = NewLineOnAttributes, OmitXmlDeclaration = true };
-            using (XmlWriter writer = XmlWriter.Create(FilePath,ws))
+            using (XmlWriter writer = XmlWriter.Create(FilePath, ws))
             {
-                xs.Serialize(writer,obj);
-            }  
+                xs.Serialize(writer, obj);
+            }
         }
         public static T FromXmlFile<T>(string filePath)
-        {   if (File.Exists(filePath))
+        {
+            if (File.Exists(filePath))
             {
                 StreamReader sr = new StreamReader(filePath);
                 try
@@ -42,7 +43,7 @@ namespace Server_Restart_Final.DataStorage
             }
             else
             {
-               return IFFileNotExists<T>();
+                return IFFileNotExists<T>();
             }
         }
         public static T IFFileNotExists<T>()

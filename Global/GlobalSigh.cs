@@ -23,6 +23,7 @@ namespace Server_Restart_Final.Global
         public static Frame fr { get; set; }
         public static Frame lf { get; set; }
         public static Particles pe { get; set; }
+        public static TopMenuPage tmp { get; set; }
         public static ServerType AcServerType { get; set; }
         public static List<ChatlistItemViewModel> _Item { get; set; }
         public static MainPage mp=new MainPage();

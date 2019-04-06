@@ -146,6 +146,13 @@
     <Compile Include="Animation\PageAnimation.cs" />
     <Compile Include="Animation\PageAnimations.cs" />
     <Compile Include="Animation\StoryboardHelpers.cs" />
+    <Compile Include="Cotrols\LeftSideMenuControl.xaml.cs">
+      <DependentUpon>LeftSideMenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cotrols\Namespace.cs" />
+    <Compile Include="Cotrols\TopMenuControl.xaml.cs">
+      <DependentUpon>TopMenuControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataModuels\ApplicationPage.cs" />
     <Compile Include="DataModuels\ServerType.cs" />
     <Compile Include="DataStorage\Data.cs" />
@@ -157,6 +164,10 @@
     <Compile Include="Expressions\ExpressionHelpers.cs" />
     <Compile Include="File_Control_IO\GetSetFile.cs" />
     <Compile Include="Global\GlobalSigh.cs" />
+    <Compile Include="ListItemViewModel\Design\TopMenuDesignViewModel.cs" />
+    <Compile Include="ListItemViewModel\Design\TopMenuItemDesignModel.cs" />
+    <Compile Include="ListItemViewModel\TopMenuItemViewModel.cs" />
+    <Compile Include="ListItemViewModel\TopMenuViewModel.cs" />
     <Compile Include="Log\Logging.cs" />
     <Compile Include="Pages\InfoPage.xaml.cs">
       <DependentUpon>InfoPage.xaml</DependentUpon>
@@ -176,6 +187,9 @@
     </Compile>
     <Compile Include="Pages\Particle.xaml.cs">
       <DependentUpon>Particle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TopMenuPage.xaml.cs">
+      <DependentUpon>TopMenuPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Particle\Ellipse_Particle.cs" />
     <Compile Include="Particle\Particle.cs" />
@@ -219,6 +233,14 @@
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\WindowsVeiwModles.cs" />
     <Compile Include="Window\WindowResizer.cs" />
+    <Page Include="Cotrols\LeftSideMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cotrols\TopMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\InfoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -264,6 +286,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\SetttingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TopMenuPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -629,7 +655,9 @@
     <Resource Include="Images\icons8-server-48.png" />
     <Resource Include="Images\icons8-settings-48.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\icons8-flag-2-20.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets" Condition="Exists('..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
