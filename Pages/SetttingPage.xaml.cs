@@ -103,7 +103,10 @@ namespace Server_Restart_Final
             ServerFileName = ProcessCheckStatus.data.ServerFileLocationName;
             ServerFilePath = ProcessCheckStatus.data.ServerFileLocation;
             parameter.Text = ProcessCheckStatus.data.parameter;
-            parameter.Text = StorageBatch.Batch.LoadBatch();
+
+            if(File.Exists(ProcessCheckStatus.data.ServerFileLocationName))
+                parameter.Text = StorageBatch.Batch.LoadBatch();
+
             foreach (var item in od_command)
             {
                 CommandEditList.Items.Add(item);
