@@ -121,3 +121,4 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.CopyComplete
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csprojAssemblyReference.cache

@@ -487,14 +487,12 @@
 
     </UserControl.Resources>
     <Grid  DataContext="{x:Static local:TopMenuDesignViewModel.HalfInstance}">
-      
-            <ItemsControl ItemsSource="{Binding items}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <local:TopMenuItemControl />
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-  
+        <ItemsControl ItemsSource="{Binding items}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <local:TopMenuItemControl />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </UserControl>

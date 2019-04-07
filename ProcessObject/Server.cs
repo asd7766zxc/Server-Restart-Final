@@ -26,8 +26,8 @@ namespace Server_Restart_Final
         public ServerType AuicalType;
         private string log = "";
         private Process[] processlist;
-        private string od_Text="";
-        private string nw_Text="";
+        private string od_Text = "";
+        private string nw_Text = "";
         public string OutPutLog;
         public string ExitCode_Server;
         public Timer timer1 = new Timer();
@@ -40,7 +40,7 @@ namespace Server_Restart_Final
         public delegate void Invokes(string sp);
         public delegate void Invoker();
 
-        public Server(TextBox tb,Page win,Label lab,MainPage _mp)
+        public Server(TextBox tb, Page win, Label lab, MainPage _mp)
         {
             Tb = tb;
             Win = win;
@@ -54,41 +54,42 @@ namespace Server_Restart_Final
         public void StartServer()
         {
             Win.Dispatcher.Invoke(() => { Tb.Text = ""; });
-            try { 
-            fi = di.GetFiles();
-            foreach (var value in fi)
+            try
             {
-                od_Text += value.Name;
-            }
+                fi = di.GetFiles();
+                foreach (var value in fi)
+                {
+                    od_Text += value.Name;
+                }
 
-            var path0 = "\"" +ProcessCheckStatus.data.ServerFileLocationName + "\"";
-            var path1 =ProcessCheckStatus.data.ServerFileLocation;
-            var processInfo = new ProcessStartInfo("cmd.exe","/c "+path0);
+                var path0 = "\"" + ProcessCheckStatus.data.ServerFileLocationName + "\"";
+                var path1 = ProcessCheckStatus.data.ServerFileLocation;
+                var processInfo = new ProcessStartInfo("cmd.exe", "/c " + path0);
                 processInfo.WorkingDirectory = ProcessCheckStatus.data.ServerFileLocation;
-            processInfo.CreateNoWindow = false;
-            processInfo.UseShellExecute = false;
-            processInfo.RedirectStandardInput = true;
-            processInfo.RedirectStandardError = true;
-            processInfo.RedirectStandardOutput = true;
+                processInfo.CreateNoWindow = false;
+                processInfo.UseShellExecute = false;
+                processInfo.RedirectStandardInput = true;
+                processInfo.RedirectStandardError = true;
+                processInfo.RedirectStandardOutput = true;
                 Logger.CreateLog();
-            ServerObject = Process.Start(processInfo);
-            Global.GlobalSigh.ServerObjectProc = ServerObject;
-            ServerObject.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
-            ServerObject.BeginOutputReadLine();
+                ServerObject = Process.Start(processInfo);
+                Global.GlobalSigh.ServerObjectProc = ServerObject;
+                ServerObject.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
+                ServerObject.BeginOutputReadLine();
 
-            ServerObject.ProcessorAffinity = (IntPtr)2;
-           
+                ServerObject.ProcessorAffinity = (IntPtr)2;
 
-            ServerObject.ErrorDataReceived += new DataReceivedEventHandler(OutputHandler);
-            ServerObject.BeginErrorReadLine();
 
-            ServerObject.Exited += new EventHandler(Process_Exited);
-            ServerObject.WaitForExit();
+                ServerObject.ErrorDataReceived += new DataReceivedEventHandler(OutputHandler);
+                ServerObject.BeginErrorReadLine();
 
-            
+                ServerObject.Exited += new EventHandler(Process_Exited);
+                ServerObject.WaitForExit();
 
-            ExitCode_Server = "" + ServerObject.ExitCode;
-            ServerObject.Close();
+
+
+                ExitCode_Server = "" + ServerObject.ExitCode;
+                ServerObject.Close();
             }
             catch { }
         }
@@ -100,11 +101,11 @@ namespace Server_Restart_Final
                 Enabled = true,
                 Interval = 1,
                 AutoReset = true,
-                
+
             };
-       
+
             timer1.Elapsed += Timer1_Tick;
-           
+
         }
 
         public bool lockmessage = true;
@@ -127,9 +128,9 @@ namespace Server_Restart_Final
                     if (lockmessage)
                     {
                         try
-                        { 
-                        await Global.GlobalSigh._client.Send(Encoding.UTF8.GetBytes("SRF-Bot|" + "Server Start Done " + DateTime.Now));
-                        lockmessage = false;
+                        {
+                            await Global.GlobalSigh._client.Send(Encoding.UTF8.GetBytes("SRF-Bot|" + "Server Start Done " + DateTime.Now));
+                            lockmessage = false;
                         }
                         catch { }
                     }
@@ -147,7 +148,7 @@ namespace Server_Restart_Final
                         mp.Arc5.Fill = new SolidColorBrush(_color);
                     });
                 }
-                
+
             }
         }
 
@@ -182,13 +183,13 @@ namespace Server_Restart_Final
             var tss = "";
             try
             {
-                 tss = nw_Text.Remove(0, od_Text.Length);
+                tss = nw_Text.Remove(0, od_Text.Length);
             }
             catch { }
             nw_Text = "";
             od_Text = "";
             OutPutLog = tss;
-            if (File.Exists(ProcessCheckStatus.data.ServerFileLocation+ "\\crash-reports\\"+tss))
+            if (File.Exists(ProcessCheckStatus.data.ServerFileLocation + "\\crash-reports\\" + tss))
             {
 
                 Type = ServerType.Crash;
@@ -198,10 +199,11 @@ namespace Server_Restart_Final
             }
             else
             {
-               
+
             }
-            Win.Dispatcher.Invoke(() => { Lab.Content = "Last Crash: "+tss; });
-            Win.Dispatcher.Invoke(() => {
+            Win.Dispatcher.Invoke(() => { Lab.Content = "Last Crash: " + tss; });
+            Win.Dispatcher.Invoke(() =>
+            {
                 var _color = new Color();
 
                 _color = Color.FromRgb(189, 189, 189);
@@ -237,9 +239,9 @@ namespace Server_Restart_Final
 
         private void OutputHandler(object sender, DataReceivedEventArgs e)
         {
-            log += e.Data+"\n";
+            log += e.Data + "\n";
             Logger.Log(e.Data + "\n");
-            Win.Dispatcher.Invoke(()=> { Tb.AppendText(e.Data + "\n"); Tb.ScrollToEnd(); });
+            Win.Dispatcher.Invoke(() => { Tb.AppendText(e.Data + "\n"); Tb.ScrollToEnd(); });
         }
 
         public void CloseServer()
@@ -247,7 +249,7 @@ namespace Server_Restart_Final
             if (ServerObject == null) return;
 
             killProc(ServerObject);
-           
+
         }
         public void killProc(Process target)
         {

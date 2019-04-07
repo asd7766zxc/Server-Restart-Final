@@ -167,6 +167,7 @@
     </Compile>
     <Compile Include="DataModuels\ApplicationPage.cs" />
     <Compile Include="DataModuels\ServerType.cs" />
+    <Compile Include="DataModuels\SideMenuPage.cs" />
     <Compile Include="DataStorage\Data.cs" />
     <Compile Include="DataStorage\StorageData.cs" />
     <Compile Include="Event Handler\Basic_Handler.cs" />
@@ -200,6 +201,7 @@
     <Compile Include="Pages\Particle.xaml.cs">
       <DependentUpon>Particle.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SideMenuPage\SideMenuCurrentPage.cs" />
     <Compile Include="Pages\TopMenuPage.xaml.cs">
       <DependentUpon>TopMenuPage.xaml</DependentUpon>
     </Compile>

@@ -261,7 +261,7 @@
             </Grid>
             <Frame Name="LoadingFrame"  Margin="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden"/>
             <local:LeftSideMenuControl Grid.Row="1" Width="80" HorizontalAlignment="Right"/>
-            <local:TopMenuListControl Height="80" Width="500" />
+            <local:TopMenuListControl  />
         </Grid>
     </Border>
 </Window>
