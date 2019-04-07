@@ -232,11 +232,10 @@
     <Border Height="Auto" Width="Auto">
         <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
                 <RowDefinition Height="Auto"/>
 
             </Grid.RowDefinitions>
-            <local:TopMenuControl />
+          
             <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="MainGrid">
  
                 <Grid.ColumnDefinitions>
@@ -248,6 +247,7 @@
                     <RowDefinition Height="*" />
 
                 </Grid.RowDefinitions>
+      
                 <Grid.Background>
                     <ImageBrush ViewportUnits="Absolute" Viewport="0 0 2948 1197" ImageSource="/Background/Material-Backgrounds-07-2048-x-1197.png"/>
                 </Grid.Background>

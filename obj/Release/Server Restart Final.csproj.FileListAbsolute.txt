@@ -78,9 +78,6 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListItemControl.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.g.cs
@@ -91,9 +88,6 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideMenuControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\SideListItemControl.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.g.resources
@@ -108,9 +102,15 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\TopMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\TopMenuControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\LeftSideMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Cotrols\LeftSideMenuControl.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListItemControl.baml

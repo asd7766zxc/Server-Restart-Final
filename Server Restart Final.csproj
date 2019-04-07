@@ -146,11 +146,11 @@
     <Compile Include="Animation\PageAnimation.cs" />
     <Compile Include="Animation\PageAnimations.cs" />
     <Compile Include="Animation\StoryboardHelpers.cs" />
-    <Compile Include="Cotrols\LeftSideMenuControl.xaml.cs">
+    <Compile Include="Controls\LeftSideMenuControl.xaml.cs">
       <DependentUpon>LeftSideMenuControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cotrols\Namespace.cs" />
-    <Compile Include="Cotrols\TopMenuControl.xaml.cs">
+    <Compile Include="Controls\Namespace.cs" />
+    <Compile Include="Controls\TopMenuControl.xaml.cs">
       <DependentUpon>TopMenuControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataModuels\ApplicationPage.cs" />
@@ -197,13 +197,13 @@
     <Compile Include="ProcessObject\Server.cs" />
     <Compile Include="ProgramState.cs" />
     <Compile Include="RelayCommand.cs" />
-    <Compile Include="Cotrols\SideMenuControl.xaml.cs">
+    <Compile Include="Controls\SideMenuControl.xaml.cs">
       <DependentUpon>SideMenuControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cotrols\SideListControl.xaml.cs">
+    <Compile Include="Controls\SideListControl.xaml.cs">
       <DependentUpon>SideListControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cotrols\SideListItemControl.xaml.cs">
+    <Compile Include="Controls\SideListItemControl.xaml.cs">
       <DependentUpon>SideListItemControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ReportPage.xaml.cs">
@@ -233,11 +233,11 @@
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\WindowsVeiwModles.cs" />
     <Compile Include="Window\WindowResizer.cs" />
-    <Page Include="Cotrols\LeftSideMenuControl.xaml">
+    <Page Include="Controls\LeftSideMenuControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Cotrols\TopMenuControl.xaml">
+    <Page Include="Controls\TopMenuControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -265,15 +265,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Cotrols\SideMenuControl.xaml">
+    <Page Include="Controls\SideMenuControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Cotrols\SideListControl.xaml">
+    <Page Include="Controls\SideListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Cotrols\SideListItemControl.xaml">
+    <Page Include="Controls\SideListItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
