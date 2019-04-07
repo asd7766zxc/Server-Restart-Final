@@ -150,8 +150,20 @@
       <DependentUpon>LeftSideMenuControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Namespace.cs" />
-    <Compile Include="Controls\TopMenuControl.xaml.cs">
+    <Compile Include="Controls\SideMenu\SideMenuListControl .xaml.cs">
+      <DependentUpon>SideMenuListControl .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SideMenu\SideMenuListItemControl.xaml.cs">
+      <DependentUpon>SideMenuListItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopMenu\TopMenuControl.xaml.cs">
       <DependentUpon>TopMenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopMenu\TopMenuItemControl.xaml.cs">
+      <DependentUpon>TopMenuItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopMenu\TopMenuListControl.xaml.cs">
+      <DependentUpon>TopMenuListControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataModuels\ApplicationPage.cs" />
     <Compile Include="DataModuels\ServerType.cs" />
@@ -197,13 +209,13 @@
     <Compile Include="ProcessObject\Server.cs" />
     <Compile Include="ProgramState.cs" />
     <Compile Include="RelayCommand.cs" />
-    <Compile Include="Controls\SideMenuControl.xaml.cs">
+    <Compile Include="Controls\SideList\SideMenuControl.xaml.cs">
       <DependentUpon>SideMenuControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\SideListControl.xaml.cs">
+    <Compile Include="Controls\SideList\SideListControl.xaml.cs">
       <DependentUpon>SideListControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\SideListItemControl.xaml.cs">
+    <Compile Include="Controls\SideList\SideListItemControl.xaml.cs">
       <DependentUpon>SideListItemControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ReportPage.xaml.cs">
@@ -237,7 +249,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TopMenuControl.xaml">
+    <Page Include="Controls\SideMenu\SideMenuListControl .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SideMenu\SideMenuListItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TopMenu\TopMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TopMenu\TopMenuItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TopMenu\TopMenuListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -265,15 +293,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Controls\SideMenuControl.xaml">
+    <Page Include="Controls\SideList\SideMenuControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\SideListControl.xaml">
+    <Page Include="Controls\SideList\SideListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\SideListItemControl.xaml">
+    <Page Include="Controls\SideList\SideListItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -661,6 +689,7 @@
   <ItemGroup>
     <Resource Include="Images\icons8-flag-2-25.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets" Condition="Exists('..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -13,7 +13,7 @@ namespace Server_Restart_Final
 
         public TopMenuItemDesignModel()
         {
-            ImageSource = "";
+            ImageSource = "/Images/icons8-server-96.png";
         }
     }
 }

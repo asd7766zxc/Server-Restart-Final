@@ -74,22 +74,46 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.Pickers.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.UI.Xaml.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Styles\Scroll.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListControl .g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuListControl.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\GeneratedInternalTypeHelper.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.cache
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.lref
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListControl .baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListItemControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuItemControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuListControl.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListItemControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.g.resources
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server_Restart_Final.Properties.Resources.resources
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.GenerateResource.cache
@@ -97,20 +121,3 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.CopyComplete
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.pdb
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csprojAssemblyReference.cache
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListItemControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenuControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideListItemControl.baml

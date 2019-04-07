@@ -9,7 +9,7 @@ namespace Server_Restart_Final
     public class TopMenuViewModel : BaseViewModel
     {
 
-        public TopMenuItemViewModel Items { get; set; }
+        public TopMenuItemViewModel items { get; set; }
 
     }
 }

@@ -12,7 +12,7 @@ namespace Server_Restart_Final
       => new TopMenuDesignViewModel();
         public TopMenuDesignViewModel()
         {
-            Items = new TopMenuItemViewModel
+            items = new TopMenuItemViewModel
             { 
                   ImageSource = "/Images/icons8-flag-2-25.png"
 

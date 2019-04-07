@@ -11,6 +11,7 @@
             <Label.RenderTransform>
                 <RotateTransform CenterX="40" CenterY="40" Angle="90"/>
             </Label.RenderTransform>
+
         </Label>
     </Grid>
 </UserControl>

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Windows;
+using System.Windows.Data;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace Server_Restart_Final
 {
@@ -11,7 +13,6 @@ namespace Server_Restart_Final
         private Window mWindow;
         private int mOuterMarginSize = 10;
         private int mWindowRadius = 1;
-
 
         public double WidowMinimumWidth { get; set; } = 800;
 
