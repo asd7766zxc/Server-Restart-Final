@@ -232,7 +232,7 @@
     <Border Height="Auto" Width="Auto">
         <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
-                <RowDefinition Height="0"/>
+                <RowDefinition Height="80"/>
                 <RowDefinition Height="Auto"/>
 
             </Grid.RowDefinitions>

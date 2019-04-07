@@ -15,6 +15,7 @@ namespace Server_Restart_Final
         public bool IsSelected { get; set; } 
         public ApplicationPage TypeOfPage { get; set; }
         public ICommand OpenPageCommand { get; set; }
+        public string ImageSource = "/Images/icons8-flag-2-25.png";
         public ChatlistItemViewModel()
         {
             OpenPageCommand = new RelayCommand(OpenPage);

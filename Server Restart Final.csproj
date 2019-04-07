@@ -658,6 +658,9 @@
   <ItemGroup>
     <Resource Include="Images\icons8-flag-2-20.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-flag-2-25.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets" Condition="Exists('..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
