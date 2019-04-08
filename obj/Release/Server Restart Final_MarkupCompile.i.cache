@@ -10,11 +10,11 @@ none
 false
 TRACE
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\App.xaml
-181472221329
+211001039
 
-81974994884
+841364861706
 13457105634
-Controls\LeftSideMenuControl.xaml;Controls\SideMenu\SideMenuListControl .xaml;Controls\SideMenu\SideMenuListItemControl.xaml;Controls\TopMenu\TopMenuControl.xaml;Controls\TopMenu\TopMenuItemControl.xaml;Controls\TopMenu\TopMenuListControl.xaml;Pages\InfoPage.xaml;Pages\LoadingPage.xaml;Pages\MainPage.xaml;MainWindow.xaml;Controls\SideList\SideMenuControl.xaml;Controls\SideList\SideListControl.xaml;Controls\SideList\SideListItemControl.xaml;Pages\Particle.xaml;Pages\ReportPage.xaml;Pages\SetttingPage.xaml;Pages\TopMenuPage.xaml;Styles\Scroll.xaml;
+ContentResizer\ResizerStyle.xaml;Controls\LeftSideMenuControl.xaml;Controls\SideMenu\SideMenuListControl .xaml;Controls\SideMenu\SideMenuListItemControl.xaml;Controls\TopMenu\TopMenuControl.xaml;Controls\TopMenu\TopMenuItemControl.xaml;Controls\TopMenu\TopMenuListControl.xaml;Pages\InfoPage.xaml;Pages\LoadingPage.xaml;Pages\MainPage.xaml;MainWindow.xaml;Controls\SideList\SideMenuControl.xaml;Controls\SideList\SideListControl.xaml;Controls\SideList\SideListItemControl.xaml;Pages\Particle.xaml;Pages\ReportPage.xaml;Pages\SetttingPage.xaml;Pages\SideMenuPage\SideManuTreeViewPage.xaml;Pages\TopMenuPage.xaml;Styles\Button.xaml;Styles\Scroll.xaml;
 
-True
+False
 

@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:Server_Restart_Final"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary Source="Styles/Scroll.xaml"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Scroll.xaml"/>
+                <ResourceDictionary Source="ContentResizer/ResizerStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

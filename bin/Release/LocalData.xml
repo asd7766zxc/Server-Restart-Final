@@ -1,51 +1,67 @@
 ﻿<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ServerFileLocation>D:\minecraft\小型伺服器\</ServerFileLocation>
-  <ServerFileLocationName>D:\minecraft\小型伺服器\ServerStart.bat</ServerFileLocationName>
-  <SQLServerLoaction>cr-reports.ddns.net</SQLServerLoaction>
+  <ServerFileLocation>C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\</ServerFileLocation>
+  <ServerFileLocationName>C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\Server_Start.bat</ServerFileLocationName>
+  <SQLServerLoaction>192.168.1.102</SQLServerLoaction>
   <UserFroceTiming>true</UserFroceTiming>
-  <ServerRestartTimes>1</ServerRestartTimes>
-  <parameter>java -server -Xms1024M -Xmx5120M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxGCPauseMillis=50 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:UseSSE=3 -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -XX:+AggressiveOpts -jar Eds.jar nogui                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </parameter>
+  <ServerRestartTimes>6</ServerRestartTimes>
+  <parameter>java -server -Xms1024M -Xmx5120M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxGCPauseMillis=50 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:UseSSE=3 -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -XX:+AggressiveOpts -jar Eds.jar nogui</parameter>
   <command>
     <Commands>
-      <command>xu__killmobs</command>
-      <commandindex>3</commandindex>
+      <command>Command</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>difficulty 1</command>
-      <commandindex>4</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>difficulty 3</command>
-      <commandindex>5</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>tp asd7766zxc 0 -30 0</command>
-      <commandindex>6</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>kick asd7766zxc</command>
-      <commandindex>6</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>tp asd7766zxc 0 -30 0</command>
-      <commandindex>7</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>0000</command>
-      <commandindex>8</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>0000</command>
-      <commandindex>8</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>1111</command>
-      <commandindex>8</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>1111</command>
-      <commandindex>9</commandindex>
+      <command>s</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>s</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>s</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>s</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>s</command>
+      <commandindex>0</commandindex>
     </Commands>
   </command>
-  <Memory>-Xmx5120M</Memory>
+  <Memory />
 </Data>

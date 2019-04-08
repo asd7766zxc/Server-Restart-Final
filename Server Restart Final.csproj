@@ -146,6 +146,8 @@
     <Compile Include="Animation\PageAnimation.cs" />
     <Compile Include="Animation\PageAnimations.cs" />
     <Compile Include="Animation\StoryboardHelpers.cs" />
+    <Compile Include="ContentResizer\ResizablePanel.cs" />
+    <Compile Include="ContentResizer\Resizer.cs" />
     <Compile Include="Controls\LeftSideMenuControl.xaml.cs">
       <DependentUpon>LeftSideMenuControl.xaml</DependentUpon>
     </Compile>
@@ -201,6 +203,9 @@
     <Compile Include="Pages\Particle.xaml.cs">
       <DependentUpon>Particle.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SideMenuPage\SideManuTreeViewPage.xaml.cs">
+      <DependentUpon>SideManuTreeViewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SideMenuPage\SideMenuCurrentPage.cs" />
     <Compile Include="Pages\TopMenuPage.xaml.cs">
       <DependentUpon>TopMenuPage.xaml</DependentUpon>
@@ -247,6 +252,10 @@
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\WindowsVeiwModles.cs" />
     <Compile Include="Window\WindowResizer.cs" />
+    <Page Include="ContentResizer\ResizerStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\LeftSideMenuControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -319,7 +328,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\SideMenuPage\SideManuTreeViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\TopMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Button.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -691,7 +708,12 @@
   <ItemGroup>
     <Resource Include="Images\icons8-flag-2-25.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\icons8-folder-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-opened-folder-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets" Condition="Exists('..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

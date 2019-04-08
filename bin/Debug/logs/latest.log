@@ -1,8 +1,8 @@
-[13:35:58] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[13:36:01] [Server thread/INFO]: Loading properties
-[13:36:01] [Server thread/INFO]: Default game type: SURVIVAL
-[13:36:01] [Server thread/INFO]: Generating keypair
-[13:36:01] [Server thread/INFO]: Starting Minecraft server on *:25565
-[13:36:01] [Server thread/INFO]: Preparing level "world"
-[13:36:03] [Server thread/INFO]: Preparing start region for level 0
-[13:36:03] [Server thread/INFO]: Done (2.129s)! For help, type "help" or "?"
+[05:57:11] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[05:57:13] [Server thread/INFO]: Loading properties
+[05:57:13] [Server thread/INFO]: Default game type: SURVIVAL
+[05:57:13] [Server thread/INFO]: Generating keypair
+[05:57:14] [Server thread/INFO]: Starting Minecraft server on *:25565
+[05:57:14] [Server thread/INFO]: Preparing level "world"
+[05:57:15] [Server thread/INFO]: Preparing start region for level 0
+[05:57:16] [Server thread/INFO]: Done (2.165s)! For help, type "help" or "?"

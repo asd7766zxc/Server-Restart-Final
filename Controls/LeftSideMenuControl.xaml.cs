@@ -22,7 +22,14 @@ namespace Server_Restart_Final
     {
         public LeftSideMenuControl()
         {
+            
             InitializeComponent();
+            this.Loaded += LeftSideMenuControl_Loaded;
+        }
+
+        private void LeftSideMenuControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.PageContent.Content = new SideManuTreeViewPage();
         }
     }
 }

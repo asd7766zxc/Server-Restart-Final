@@ -12,6 +12,7 @@ namespace Server_Restart_Final
 {
     public static class ProcessCheckStatus
     {
+       
         public static bool ServerCrash { get; set; } = false;
         public static bool UserControl { get; set; } = false;
         public static bool ServerClose { get; set; } = false;

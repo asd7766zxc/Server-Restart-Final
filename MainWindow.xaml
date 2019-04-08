@@ -174,6 +174,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
         <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
         <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#AA121212"/>
@@ -220,6 +221,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+    
     </Window.Resources>
     <WindowChrome.WindowChrome>
         <WindowChrome
@@ -236,9 +238,9 @@
                 <RowDefinition Height="Auto"/>
 
             </Grid.RowDefinitions>
-     
+
             <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="MainGrid">
- 
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -248,7 +250,7 @@
                     <RowDefinition Height="*" />
 
                 </Grid.RowDefinitions>
-      
+
                 <Grid.Background>
                     <ImageBrush ViewportUnits="Absolute" Viewport="0 0 2948 1197" ImageSource="/Background/Material-Backgrounds-07-2048-x-1197.png"/>
                 </Grid.Background>
@@ -257,11 +259,12 @@
                 <local:SideMenuControl Grid.Column="0" Grid.Row="0" Margin="0 300 0 0" x:Name="SideMenu" HorizontalAlignment="Center">
                     <local:SideListControl/>
                 </local:SideMenuControl>
-               
+
             </Grid>
+     
             <Frame Name="LoadingFrame"  Margin="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden"/>
-            <local:LeftSideMenuControl Grid.Row="1" Width="80" HorizontalAlignment="Right"/>
-            <local:TopMenuListControl  />
+            <local:LeftSideMenuControl Grid.Row="1" Width="220" HorizontalAlignment="Right"/>
+            <local:TopMenuListControl   />
         </Grid>
     </Border>
 </Window>

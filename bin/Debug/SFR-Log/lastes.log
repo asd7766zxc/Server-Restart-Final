@@ -1,85 +1,55 @@
 
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug>java -server -Xms1024M -Xmx1693M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxGCPauseMillis=50 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:UseSSE=3 -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -XX:+AggressiveOpts -jar Eds.jar nogui                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-[13:35:46] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
-[13:35:46] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
-[13:35:46] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLServerTweaker
-[13:35:46] [main/INFO] [FML]: Forge Mod Loader version 7.99.36.1558 for Minecraft 1.7.10 loading
-[13:35:46] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_201, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_201
-[13:35:46] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[13:35:46] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[13:35:46] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[13:35:46] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[13:35:46] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[13:35:48] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
-[13:35:48] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[13:35:48] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[13:35:51] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
-[13:35:51] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
-[13:35:53] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
-[13:35:58] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[13:35:58] [Server thread/INFO] [MinecraftForge]: Attempting early MinecraftForge initialization
-[13:35:58] [Server thread/INFO] [FML]: MinecraftForge v10.13.4.1558 Initialized
-[13:35:58] [Server thread/INFO] [FML]: Replaced 183 ore recipies
-[13:35:58] [Server thread/INFO] [MinecraftForge]: Completed early MinecraftForge initialization
-[13:35:59] [Server thread/INFO] [FML]: Found 0 mods from the command line. Injecting into mod discoverer
-[13:35:59] [Server thread/INFO] [FML]: Searching C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\mods for mods
-[13:36:00] [Server thread/INFO] [FML]: Forge Mod Loader has identified 3 mods to load
-[13:36:00] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge] at CLIENT
-[13:36:00] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge] at SERVER
-[13:36:01] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
-[13:36:01] [Server thread/INFO] [FML]: Found 341 ObjectHolder annotations
-[13:36:01] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
-[13:36:01] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
-[13:36:01] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[13:36:01] [Server thread/INFO] [FML]: Applying holder lookups
-[13:36:01] [Server thread/INFO] [FML]: Holder lookups applied
-[13:36:01] [Server thread/INFO] [FML]: Injecting itemstacks
-[13:36:01] [Server thread/INFO] [FML]: Itemstack injection complete
-[13:36:01] [Server thread/INFO]: Loading properties
-[13:36:01] [Server thread/INFO]: Default game type: SURVIVAL
-[13:36:01] [Server thread/INFO]: Generating keypair
-[13:36:01] [Server thread/INFO]: Starting Minecraft server on *:25565
-[13:36:01] [Server thread/INFO] [FML]: Injecting itemstacks
-[13:36:01] [Server thread/INFO] [FML]: Itemstack injection complete
-[13:36:01] [Server thread/INFO] [FML]: Forge Mod Loader has successfully loaded 3 mods
-[13:36:01] [Server thread/INFO]: Preparing level "world"
-[13:36:01] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
-[13:36:01] [Server thread/INFO] [FML]: Applying holder lookups
-[13:36:01] [Server thread/INFO] [FML]: Holder lookups applied
-[13:36:02] [Server thread/INFO] [FML]: Loading dimension 0 (world) (net.minecraft.server.dedicated.DedicatedServer@2049c891)
-[13:36:02] [Server thread/INFO] [FML]: Loading dimension 1 (world) (net.minecraft.server.dedicated.DedicatedServer@2049c891)
-[13:36:03] [Server thread/INFO] [FML]: Loading dimension -1 (world) (net.minecraft.server.dedicated.DedicatedServer@2049c891)
-[13:36:03] [Server thread/INFO]: Preparing start region for level 0
-[13:36:03] [Server thread/INFO]: Done (2.129s)! For help, type "help" or "?"
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: java.net.UnknownHostException: files.minecraftforge.net
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.PlainSocketImpl.connect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.SocksSocketImpl.connect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.Socket.connect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.Socket.connect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.NetworkClient.doConnect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.<init>(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.New(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.http.HttpClient.New(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivileged(Native Method)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivileged(Native Method)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at java.net.URL.openStream(Unknown Source)
-[13:36:13] [Forge Version Check/INFO] [STDERR]: [java.lang.Throwable$WrappedPrintStream:println:-1]: 	at net.minecraftforge.common.ForgeVersion$1.run(ForgeVersion.java:90)
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug>java -server -Xms1024M -Xmx5120M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxGCPauseMillis=50 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:UseSSE=3 -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -XX:+AggressiveOpts -jar Eds.jar nogui 
+[05:56:58] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[05:56:59] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[05:56:59] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLServerTweaker
+[05:56:59] [main/INFO] [FML]: Forge Mod Loader version 7.99.36.1558 for Minecraft 1.7.10 loading
+[05:56:59] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_201, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_201
+[05:56:59] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[05:56:59] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[05:56:59] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[05:56:59] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[05:56:59] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[05:57:01] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[05:57:01] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[05:57:01] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[05:57:04] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[05:57:04] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[05:57:06] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[05:57:11] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[05:57:11] [Server thread/INFO] [MinecraftForge]: Attempting early MinecraftForge initialization
+[05:57:11] [Server thread/INFO] [FML]: MinecraftForge v10.13.4.1558 Initialized
+[05:57:11] [Server thread/INFO] [FML]: Replaced 183 ore recipies
+[05:57:11] [Server thread/INFO] [MinecraftForge]: Completed early MinecraftForge initialization
+[05:57:12] [Server thread/INFO] [FML]: Found 0 mods from the command line. Injecting into mod discoverer
+[05:57:12] [Server thread/INFO] [FML]: Searching C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\mods for mods
+[05:57:12] [Server thread/INFO] [FML]: Forge Mod Loader has identified 3 mods to load
+[05:57:13] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge] at CLIENT
+[05:57:13] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge] at SERVER
+[05:57:13] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
+[05:57:13] [Server thread/INFO] [FML]: Found 341 ObjectHolder annotations
+[05:57:13] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[05:57:13] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[05:57:13] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[05:57:13] [Server thread/INFO] [FML]: Applying holder lookups
+[05:57:13] [Server thread/INFO] [FML]: Holder lookups applied
+[05:57:13] [Server thread/INFO] [FML]: Injecting itemstacks
+[05:57:13] [Server thread/INFO] [FML]: Itemstack injection complete
+[05:57:13] [Server thread/INFO]: Loading properties
+[05:57:13] [Server thread/INFO]: Default game type: SURVIVAL
+[05:57:13] [Server thread/INFO]: Generating keypair
+[05:57:14] [Server thread/INFO]: Starting Minecraft server on *:25565
+[05:57:14] [Server thread/INFO] [FML]: Injecting itemstacks
+[05:57:14] [Server thread/INFO] [FML]: Itemstack injection complete
+[05:57:14] [Server thread/INFO] [FML]: Forge Mod Loader has successfully loaded 3 mods
+[05:57:14] [Server thread/INFO]: Preparing level "world"
+[05:57:14] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
+[05:57:14] [Server thread/INFO] [FML]: Applying holder lookups
+[05:57:14] [Server thread/INFO] [FML]: Holder lookups applied
+[05:57:15] [Server thread/INFO] [FML]: Loading dimension 0 (world) (net.minecraft.server.dedicated.DedicatedServer@11ab9051)
+[05:57:15] [Server thread/INFO] [FML]: Loading dimension 1 (world) (net.minecraft.server.dedicated.DedicatedServer@11ab9051)
+[05:57:15] [Server thread/INFO] [FML]: Loading dimension -1 (world) (net.minecraft.server.dedicated.DedicatedServer@11ab9051)
+[05:57:15] [Server thread/INFO]: Preparing start region for level 0
+[05:57:16] [Server thread/INFO]: Done (2.165s)! For help, type "help" or "?"
 
 ^C
-

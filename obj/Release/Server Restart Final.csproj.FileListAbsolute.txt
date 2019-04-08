@@ -121,4 +121,8 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.CopyComplete
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\ContentResizer\ResizerStyle.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Styles\Button.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideManuTreeViewPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideManuTreeViewPage.baml
