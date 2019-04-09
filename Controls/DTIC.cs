@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
 
@@ -15,7 +17,15 @@ namespace Server_Restart_Final
         public static DTIC Instance = new DTIC();
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            var path = (string)value;
+            if (path == null)
+                return null;
+
+            string cmd = "explorer.exe";
+            string arg = "/select, " + path;
+            Process.Start(cmd, arg);
+
+            return new RelayCommand(Global.GlobalSigh.TreeViewItemClick);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
