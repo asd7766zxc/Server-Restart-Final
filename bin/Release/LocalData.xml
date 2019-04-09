@@ -1,6 +1,7 @@
 ﻿<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ServerFileLocation>C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\</ServerFileLocation>
   <ServerFileLocationName>C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Debug\Server_Start.bat</ServerFileLocationName>
+  <ServerFileLocationFloder>C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\</ServerFileLocationFloder>
   <SQLServerLoaction>192.168.1.102</SQLServerLoaction>
   <UserFroceTiming>true</UserFroceTiming>
   <ServerRestartTimes>6</ServerRestartTimes>

@@ -61,10 +61,23 @@
                     <Setter Property="HeaderTemplate">
                         <Setter.Value>
                             <DataTemplate>
-                                <StackPanel Orientation="Vertical">
-                                    <Image Source="/Images/icons8-folder-48.png"/>
-                                    <TextBlock HorizontalAlignment="Center" Text="{Binding}" />
-                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Height="25" Width="25" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Center"  Source="{Binding 
+                                            RelativeSource={RelativeSource 
+                                            Mode=FindAncestor,
+                                            AncestorType={x:Type TreeViewItem}},
+                                            Path=Tag,
+                                            Converter={x:Static local:HTIC.Instance}}" />
+                                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Text="{Binding}" Foreground="White" />
+                                    <StackPanel.InputBindings>
+                                        <MouseBinding MouseAction="RightClick" Command="{Binding  
+                                            RelativeSource={RelativeSource  
+                                            Mode=FindAncestor,
+                                            AncestorType={x:Type TreeViewItem}}, 
+                                             Path=Tag,
+                                            Converter={x:Static local:DTIC.Instance}}" />
+                                    </StackPanel.InputBindings>
+                                   </StackPanel>
                             </DataTemplate>
                         </Setter.Value>
                     </Setter>

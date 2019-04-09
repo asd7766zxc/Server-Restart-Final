@@ -13,7 +13,7 @@ namespace Server_Restart_Final
         private Window mWindow;
         private int mOuterMarginSize = 10;
         private int mWindowRadius = 1;
-
+        
         public double WidowMinimumWidth { get; set; } = 800;
 
         public double WidowMinimumHeight { get; set; } = 800;

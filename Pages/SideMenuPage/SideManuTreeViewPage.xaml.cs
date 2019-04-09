@@ -29,11 +29,12 @@ namespace Server_Restart_Final
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             if (!Directory.Exists(ProcessCheckStatus.data.ServerFileLocation)) return;
-            foreach (var val in Directory.GetDirectories(ProcessCheckStatus.data.ServerFileLocation))
+            foreach (var val in Directory.GetDirectories(ProcessCheckStatus.data.ServerFileLocationFloder))
             {
+         
                 var item = new TreeViewItem()
                 {
-                    Header = val,
+                    Header = val.Remove(0, ProcessCheckStatus.data.ServerFileLocationFloder.Length),
                     Tag = val
                 };
 
@@ -114,5 +115,7 @@ namespace Server_Restart_Final
                 return s;
             return s.Substring(LI + 1);
         }
+
+       
     }
 }

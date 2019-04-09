@@ -54,6 +54,7 @@ namespace Server_Restart_Final
         
         public string ServerFileName = "";
         public string ServerFilePath = "";
+        public string ServerFileFloder = "";
         public bool USerForCe = false;
         private void OpenFilePicker_Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -70,12 +71,17 @@ namespace Server_Restart_Final
                 {
                     ServerFilePath += ServerFiles[i] + "\\";
                 }
+                for (int i = 0; i < ServerFiles.Length - 2; i++)
+                {
+                    ServerFileFloder += ServerFiles[i] + "\\";
+                }
             }
         }
 
         private void SaveFilePicker_Btn_Click(object sender, RoutedEventArgs e)
         {
             ProcessCheckStatus.data.command = command;
+            ProcessCheckStatus.data.ServerFileLocationFloder = ServerFileFloder;
             ProcessCheckStatus.data.Memory = ValueSearch.Text;
             ProcessCheckStatus.data.parameter = parameter.Text;
             ProcessCheckStatus.data.ServerRestartTimes = int.Parse(ServerRestartTimes.Text);
@@ -94,7 +100,7 @@ namespace Server_Restart_Final
             ProcessCheckStatus.data = StorageData.FromXmlFile<Data>(System.Windows.Forms.Application.StartupPath + "\\LocalData.xml");
             command = ProcessCheckStatus.data.command;
             od_command = command;
-            Settings.Content = "伺服器批次檔:  " + ProcessCheckStatus.data.ServerFileLocationName + "\n" + "伺服器位置:  " + ProcessCheckStatus.data.ServerFileLocation + "\n" + "使用者停滯自動掌管:  " + ProcessCheckStatus.data.UserFroceTiming + "\n" + "Server Crash Report - Server:  " + ProcessCheckStatus.data.SQLServerLoaction + "\n" + "RestartTimes: " + ProcessCheckStatus.data.ServerRestartTimes;
+            Settings.Content = "伺服器批次檔:  " + ProcessCheckStatus.data.ServerFileLocationName + "\n" + "伺服器位置:  " + ProcessCheckStatus.data.ServerFileLocation + "\n" + "伺服器資料夾:  " + ProcessCheckStatus.data.ServerFileLocationFloder  + "\n" + "使用者停滯自動掌管:  " + ProcessCheckStatus.data.UserFroceTiming + "\n" + "Server Crash Report - Server:  " + ProcessCheckStatus.data.SQLServerLoaction + "\n" + "RestartTimes: " + ProcessCheckStatus.data.ServerRestartTimes;
             ValueSearch.Text = ProcessCheckStatus.data.Memory;
             odMemory = ProcessCheckStatus.data.Memory;
             UserFroceCheck.IsChecked = ProcessCheckStatus.data.UserFroceTiming;
@@ -115,7 +121,7 @@ namespace Server_Restart_Final
         public void UpdatePage()
         {
             ProcessCheckStatus.data = StorageData.FromXmlFile<Data>(System.Windows.Forms.Application.StartupPath + "\\LocalData.xml");
-            Settings.Content = "伺服器批次檔:  " + ProcessCheckStatus.data.ServerFileLocationName + "\n" + "伺服器位置:  " + ProcessCheckStatus.data.ServerFileLocation + "\n" + "使用者停滯自動掌管:  " + ProcessCheckStatus.data.UserFroceTiming + "\n" + "Server Crash Report - Server:  " + ProcessCheckStatus.data.SQLServerLoaction + "\n" + "RestartTimes: " + ProcessCheckStatus.data.ServerRestartTimes;
+            Settings.Content = "伺服器批次檔:  " + ProcessCheckStatus.data.ServerFileLocationName + "\n" + "伺服器位置:  " + ProcessCheckStatus.data.ServerFileLocation + "\n" + "伺服器資料夾:  " + ProcessCheckStatus.data.ServerFileLocationFloder + "\n" + "使用者停滯自動掌管:  " + ProcessCheckStatus.data.UserFroceTiming + "\n" + "Server Crash Report - Server:  " + ProcessCheckStatus.data.SQLServerLoaction + "\n" + "RestartTimes: " + ProcessCheckStatus.data.ServerRestartTimes;
         }
 
         private void SQLServerLocation_MouseDown(object sender, MouseButtonEventArgs e)

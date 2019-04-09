@@ -10,6 +10,7 @@ namespace Server_Restart_Final.DataStorage
     {
         public string ServerFileLocation { get; set; }
         public string ServerFileLocationName { get; set; }
+        public string ServerFileLocationFloder { get; set; }
         public string SQLServerLoaction { get; set; }
         public bool UserFroceTiming { get; set; }
         public int ServerRestartTimes { get; set; }

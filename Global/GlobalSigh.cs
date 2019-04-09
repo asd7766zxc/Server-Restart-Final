@@ -54,6 +54,10 @@ namespace Server_Restart_Final.Global
             }
             fr.Content = CurrentPages(pages);
         }
+        public static void TreeViewItemClick(string Path)
+        {
+
+        }
         public static void SendComplete(string msg)
         {
         }
