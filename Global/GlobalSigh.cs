@@ -15,6 +15,7 @@ namespace Server_Restart_Final.Global
    
     public static class GlobalSigh 
     {
+        public static string TreeViewItemTag { get; set; }
         public static SocketStaus SS = new SocketStaus(ProcessCheckStatus.data.SQLServerLoaction,10270);
         public static Client _client = new Client();
         public static ApplicationPage PageType { get; set; }
@@ -56,7 +57,9 @@ namespace Server_Restart_Final.Global
         }
         public static void TreeViewItemClick()
         {
-
+            string cmd = "explorer.exe";
+            string arg = "/select, " + TreeViewItemTag;
+            Process.Start(cmd, arg);
         }
         public static void SendComplete(string msg)
         {

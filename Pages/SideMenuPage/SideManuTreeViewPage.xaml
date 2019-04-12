@@ -4,10 +4,15 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Server_Restart_Final"
+      xmlns:e="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
       Loaded="Page_Loaded"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SideManuTreeViewPage">
+    <Page.DataContext>
+        <local:PostsViewModel />
+    </Page.DataContext>
+
     <Page.Resources>
         <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
         <Style x:Key="TreeItemViewStyle" TargetType="{x:Type TreeView}">
@@ -21,7 +26,7 @@
             <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
             <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
-           
+
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TreeView}">
@@ -54,14 +59,19 @@
             </Style.Triggers>
         </Style>
     </Page.Resources>
-    <Grid Background="#1E1E1E">
-        <TreeView x:Name="ServerItemViewer" Style="{DynamicResource TreeItemViewStyle}" >
+    <Grid Background="#1E1E1E" x:Name="MainGrid">
+
+        <TreeView x:Name="ServerItemViewer" Style="{DynamicResource TreeItemViewStyle}"  >
+            <e:Interaction.Behaviors>
+                <local:BindableSelectedItemBehavior  SelectedItem="{Binding SelectedItem, Mode=TwoWay}" />
+            </e:Interaction.Behaviors>
             <TreeView.Resources>
-                <Style TargetType="{x:Type TreeViewItem}">
+               
+                <Style TargetType="{x:Type TreeViewItem}" >
                     <Setter Property="HeaderTemplate">
                         <Setter.Value>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
+                                <StackPanel Orientation="Horizontal" MouseRightButtonDown="StackPanel_MouseRightButtonDown" LostFocus="StackPanel_LostFocus">
                                     <Image Height="25" Width="25" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Center"  Source="{Binding 
                                             RelativeSource={RelativeSource 
                                             Mode=FindAncestor,
@@ -70,18 +80,14 @@
                                             Converter={x:Static local:HTIC.Instance}}" />
                                     <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Text="{Binding}" Foreground="White" />
                                     <StackPanel.InputBindings>
-                                        <MouseBinding MouseAction="RightClick" Command="{Binding  
-                                            RelativeSource={RelativeSource  
-                                            Mode=FindAncestor,
-                                            AncestorType={x:Type TreeViewItem}}, 
-                                             Path=Tag,
-                                            Converter={x:Static local:DTIC.Instance}}" />
+                                       
                                     </StackPanel.InputBindings>
                                    </StackPanel>
                             </DataTemplate>
                         </Setter.Value>
                     </Setter>
                 </Style>
+              
             </TreeView.Resources>
         </TreeView>
     </Grid>

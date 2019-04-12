@@ -114,6 +114,7 @@
     </Reference>
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -148,12 +149,17 @@
     <Compile Include="Animation\StoryboardHelpers.cs" />
     <Compile Include="ContentResizer\ResizablePanel.cs" />
     <Compile Include="ContentResizer\Resizer.cs" />
+    <Compile Include="Controls\BindableSelectedItemBehavior.cs" />
     <Compile Include="Controls\DTIC.cs" />
     <Compile Include="Controls\HTIC.cs" />
     <Compile Include="Controls\LeftSideMenuControl.xaml.cs">
       <DependentUpon>LeftSideMenuControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Namespace.cs" />
+    <Compile Include="Controls\PostsViewModel .cs" />
+    <Compile Include="Controls\SideMenuFloatWindow\SideFloatWindowControl.xaml.cs">
+      <DependentUpon>SideFloatWindowControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SideMenu\SideMenuListControl .xaml.cs">
       <DependentUpon>SideMenuListControl .xaml</DependentUpon>
     </Compile>
@@ -233,6 +239,7 @@
     <Compile Include="Pages\SetttingPage.xaml.cs">
       <DependentUpon>SetttingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelayCommands.cs" />
     <Compile Include="ServerTools\Logger.cs" />
     <Compile Include="ServerTools\ParameterGenerator.cs" />
     <Compile Include="SocketClient\Client.cs" />
@@ -259,6 +266,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\LeftSideMenuControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SideMenuFloatWindow\SideFloatWindowControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -771,6 +782,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\icons8-lock-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-zip-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets" Condition="Exists('..\packages\UwpDesktop.10.0.14393.3\build\portable-net45+uap\UwpDesktop.targets')" />

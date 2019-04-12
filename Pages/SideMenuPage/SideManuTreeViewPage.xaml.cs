@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -25,13 +26,13 @@ namespace Server_Restart_Final
         {
             InitializeComponent();
         }
-  
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             if (!Directory.Exists(ProcessCheckStatus.data.ServerFileLocation)) return;
             foreach (var val in Directory.GetDirectories(ProcessCheckStatus.data.ServerFileLocationFloder))
             {
-         
+
                 var item = new TreeViewItem()
                 {
                     Header = val.Remove(0, ProcessCheckStatus.data.ServerFileLocationFloder.Length),
@@ -44,7 +45,7 @@ namespace Server_Restart_Final
 
                 ServerItemViewer.Items.Add(item);
             }
-            
+
         }
 
         private void Folder_Expanded(object sender, RoutedEventArgs e)
@@ -115,7 +116,33 @@ namespace Server_Restart_Final
                 return s;
             return s.Substring(LI + 1);
         }
+        public SideFloatWindowControl SideFW = new SideFloatWindowControl();
+        private void StackPanel_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (ServerItemViewer.SelectedItem == null)
+                return;
 
-       
+            var PosY = e.GetPosition(this).Y;
+            var PosX = e.GetPosition(this).X;
+            int MainHeight = (int)this.ActualHeight;
+            int MainWidth = (int)this.ActualWidth;
+            var MarginHeight = MainHeight - (PosY);
+            var MarginWidth = MainWidth - (PosX);
+
+            this.MainGrid.Children.Remove(SideFW);
+          
+            this.MainGrid.Children.Add(SideFW);
+            SideFW.Margin = new Thickness(PosX-150 , PosY , MarginWidth, MarginHeight-150);
+
+            string cmd = "explorer.exe";
+            string arg = "/select, " + Global.GlobalSigh.TreeViewItemTag;
+            Process.Start(cmd, arg);
+            MessageBox.Show("dsds" + e.GetPosition(Global.GlobalSigh.mw));
+        }
+
+        private void StackPanel_LostFocus(object sender, RoutedEventArgs e)
+        {
+            this.MainGrid.Children.Remove(SideFW);
+        }
     }
 }

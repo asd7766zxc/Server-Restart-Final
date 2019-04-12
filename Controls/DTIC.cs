@@ -21,9 +21,7 @@ namespace Server_Restart_Final
             if (path == null)
                 return null;
 
-            string cmd = "explorer.exe";
-            string arg = "/select, " + path;
-            Process.Start(cmd, arg);
+           
 
             return new RelayCommand(Global.GlobalSigh.TreeViewItemClick);
         }

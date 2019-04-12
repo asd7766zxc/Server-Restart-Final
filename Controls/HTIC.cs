@@ -58,6 +58,8 @@ namespace Server_Restart_Final
                 image = "Images/icons8-antivirus-48.png";
             else if (pach[pach.Length - 1].ToLower() == "lock")
                 image = "Images/icons8-lock-48.png";
+            else if (pach[pach.Length - 1].ToLower() == "gz")
+                image = "Images/icons8-zip-48.png";
 
 
             return new BitmapImage(new Uri($"pack://application:,,,/{image}"));
