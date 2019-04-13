@@ -106,3 +106,17 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Server Restart Final.csprojAssemblyReference.cache
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Pages\LoadingPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Pages\LoadingPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\LeftSideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\SideMenuFloatWindow\SideFloatWindowControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\SideMenu\SideMenuListControl .g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\SideMenu\SideMenuListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\TopMenu\TopMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\TopMenu\TopMenuItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\TopMenu\TopMenuListControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\SideList\SideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\SideList\SideListControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Controls\SideList\SideListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Pages\Particle.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Pages\SideMenuPage\SideManuTreeViewPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Pages\SideMenuPage\SideMenuPerformace.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Debug\Pages\TopMenuPage.g.cs

@@ -30,7 +30,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TreeView}">
-                        <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                        <Border x:Name="Bd" BorderBrush="#2D2D30" BorderThickness="2 0 0 0" SnapsToDevicePixels="true">
                             <ScrollViewer x:Name="_tv_scrollviewer_" Background="#00000000" CanContentScroll="false" Focusable="false" HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}">
                                 <ItemsPresenter/>
                             </ScrollViewer>
@@ -60,13 +60,22 @@
         </Style>
     </Page.Resources>
     <Grid Background="#1E1E1E" x:Name="MainGrid">
-
-        <TreeView x:Name="ServerItemViewer" Style="{DynamicResource TreeItemViewStyle}"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Rectangle>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#007ACC"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="Solution Explorer" Foreground="White"/>
+        <TreeView Grid.Row="1" x:Name="ServerItemViewer" Style="{DynamicResource TreeItemViewStyle}"  >
             <e:Interaction.Behaviors>
                 <local:BindableSelectedItemBehavior  SelectedItem="{Binding SelectedItem, Mode=TwoWay}" />
             </e:Interaction.Behaviors>
             <TreeView.Resources>
-               
+
                 <Style TargetType="{x:Type TreeViewItem}" >
                     <Setter Property="HeaderTemplate">
                         <Setter.Value>
@@ -80,14 +89,13 @@
                                             Converter={x:Static local:HTIC.Instance}}" />
                                     <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Text="{Binding}" Foreground="White" />
                                     <StackPanel.InputBindings>
-                                       
+
                                     </StackPanel.InputBindings>
-                                   </StackPanel>
+                                </StackPanel>
                             </DataTemplate>
                         </Setter.Value>
                     </Setter>
                 </Style>
-              
             </TreeView.Resources>
         </TreeView>
     </Grid>

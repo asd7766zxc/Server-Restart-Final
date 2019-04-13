@@ -9,15 +9,20 @@ using System.Windows.Controls;
 using Server_Restart_Final.Event_Handler;
 using Server_Restart_Final.Pages;
 using Server_Restart_Final.SocketClient;
+using ServerRestartFinal.Core.IoC;
 
 namespace Server_Restart_Final.Global
 {
    
     public static class GlobalSigh 
     {
+        
+        public static PerformanceCounter pc = new PerformanceCounter();
+        public static ParameterBuilder PB;
         public static string TreeViewItemTag { get; set; }
         public static SocketStaus SS = new SocketStaus(ProcessCheckStatus.data.SQLServerLoaction,10270);
         public static Client _client = new Client();
+        public static Task LoggerTask { get; set; }
         public static ApplicationPage PageType { get; set; }
         public static MainWindow mw { get; set; }
         public static SideMenuControl sidem { get; set; }

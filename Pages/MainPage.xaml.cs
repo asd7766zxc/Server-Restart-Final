@@ -75,7 +75,6 @@ namespace Server_Restart_Final
             {
                 try
                 {
-
                     this.ServerState.Content = "" + Global.GlobalSigh._server.ServerObject.StartTime + "\n" + Global.GlobalSigh._server.ServerObject.TotalProcessorTime + "\n" + Global.GlobalSigh._server.ServerObject.WorkingSet64;
                 }
                 catch { timer1.Enabled = false; }

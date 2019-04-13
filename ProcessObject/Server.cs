@@ -61,7 +61,7 @@ namespace Server_Restart_Final
                 {
                     od_Text += value.Name;
                 }
-
+            
                 var path0 = "\"" + ProcessCheckStatus.data.ServerFileLocationName + "\"";
                 var path1 = ProcessCheckStatus.data.ServerFileLocation;
                 var processInfo = new ProcessStartInfo("cmd.exe", "/c " + path0);
@@ -154,6 +154,7 @@ namespace Server_Restart_Final
 
         private void Process_Exited(object sender, EventArgs e)
         {
+
             Logger.DoneClearLog();
             if (Type == ServerType.UserControl) return;
             outerhandle();
@@ -240,7 +241,6 @@ namespace Server_Restart_Final
         private void OutputHandler(object sender, DataReceivedEventArgs e)
         {
             log += e.Data + "\n";
-            Logger.Log(e.Data + "\n");
             Win.Dispatcher.Invoke(() => { Tb.AppendText(e.Data + "\n"); Tb.ScrollToEnd(); });
         }
 

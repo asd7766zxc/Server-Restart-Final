@@ -18,6 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Timer = System.Timers.Timer;
 using Server_Restart_Final.DataStorage;
+using ServerRestartFinal.Core.IoC;
 
 namespace Server_Restart_Final
 {
@@ -26,6 +27,7 @@ namespace Server_Restart_Final
     /// </summary>
     public partial class MainWindow : Window
     {
+      
         public double WindowHeight { get { return Application.Current.MainWindow.Height; } set { Main.Height = value; } }
         public ApplicationPage CurrentPage = Global.GlobalSigh.PageType;
         public Timer timer1;
@@ -140,6 +142,7 @@ namespace Server_Restart_Final
         }
         public void Move_Control(object sender, Point p)
         {
+      
             Point MousePoint = p;
             var PosX = (int)(MousePoint.X - 115 - 50);
             var PosY = (int)(MousePoint.Y - 55 - 50);

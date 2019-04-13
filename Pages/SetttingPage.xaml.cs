@@ -109,6 +109,7 @@ namespace Server_Restart_Final
             ServerFileName = ProcessCheckStatus.data.ServerFileLocationName;
             ServerFilePath = ProcessCheckStatus.data.ServerFileLocation;
             parameter.Text = ProcessCheckStatus.data.parameter;
+            ServerFileFloder = ProcessCheckStatus.data.ServerFileLocationFloder;
 
             if(File.Exists(ProcessCheckStatus.data.ServerFileLocationName))
                 parameter.Text = StorageBatch.Batch.LoadBatch();

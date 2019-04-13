@@ -9,6 +9,6 @@
                 <ResourceDictionary Source="Styles/Scroll.xaml"/>
                 <ResourceDictionary Source="ContentResizer/ResizerStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        </ResourceDictionary> 
     </Application.Resources>
 </Application>

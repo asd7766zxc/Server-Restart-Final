@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Server_Restart_Final.Pages.SideMenuPage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,11 +26,25 @@ namespace Server_Restart_Final
             
             InitializeComponent();
             this.Loaded += LeftSideMenuControl_Loaded;
+          
         }
 
         private void LeftSideMenuControl_Loaded(object sender, RoutedEventArgs e)
         {
-            this.PageContent.Content = new SideManuTreeViewPage();
+           
+        }
+        public SideManuTreeViewPage SMTVP = new SideManuTreeViewPage();
+        public SideMenuPerformace SMP = new SideMenuPerformace();
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.PageContent.Content = SMTVP;
+            Maincanvas.Visibility ^= Visibility.Collapsed;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.PageContent.Content = SMP;
+            Maincanvas.Visibility ^= Visibility.Collapsed;
         }
     }
 }

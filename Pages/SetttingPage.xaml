@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Server_Restart_Final"
       mc:Ignorable="d" 
-      Margin="100"
+      Margin="0 0 0 120"
       Loaded="Page_Loaded"
       d:DesignHeight="850" d:DesignWidth="900"
       Title="SetttingPage">
@@ -460,7 +460,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="border" BorderBrush="#80DEEA" BorderThickness="1 0 0 0" Background="#AA232323" SnapsToDevicePixels="true">
+                        <Border x:Name="border" BorderBrush="#80DEEA" BorderThickness="0 0 0 0" Background="#AA232323" SnapsToDevicePixels="true">
                             <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -554,10 +554,12 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <Slider Foreground="White" Width="200" x:Name="MemorySlider" Height="30"  VerticalAlignment="Center" HorizontalAlignment="Center" ValueChanged="MemorySlider_ValueChanged" Style="{DynamicResource SliderStyle1}" />
-                        <TextBox Grid.Row="1" Foreground="White" Height="200" Width="200" x:Name="parameter" TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Parameter"  KeyDown="Parameter_KeyDown" Style="{DynamicResource OutPutTextBoxStyle1}"/>
-                        <TextBox Grid.Row="2" Foreground="White" Height="30" Width="200"  TextWrapping="Wrap" x:Name="ValueSearch"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="-Xmx4096M" KeyDown="ValueSearch_KeyDown" Style="{DynamicResource OutPutTextBoxStyle1}"/>
+                        <Slider Grid.Row="3" Foreground="White" Width="200" x:Name="MemorySlider" Height="30"  VerticalAlignment="Center" HorizontalAlignment="Center" ValueChanged="MemorySlider_ValueChanged" Style="{DynamicResource SliderStyle1}" />
+                        <TextBox Grid.Row="1" Foreground="White" Height="30" Width="200" x:Name="parameter" TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Parameter"  KeyDown="Parameter_KeyDown" Style="{DynamicResource OutPutTextBoxStyle1}"/>
+                        <TextBox Grid.Row="2" Foreground="White" Height="30" Width="100"  TextWrapping="Wrap" Margin="10 0 0 0" x:Name="ValueSearch"  VerticalAlignment="Center" HorizontalAlignment="Left" Text="-Xmx4096M" KeyDown="ValueSearch_KeyDown" Style="{DynamicResource OutPutTextBoxStyle1}"/>
+                        <TextBox Grid.Row="2" Foreground="White" Height="30" Width="100"  TextWrapping="Wrap" Margin="0 0 40 0" x:Name="ValueSearchMinimize"  VerticalAlignment="Center" HorizontalAlignment="Right" Text="-Xms4096M" KeyDown="ValueSearch_KeyDown" Style="{DynamicResource OutPutTextBoxStyle1}"/>
 
                     </Grid>
                     <Label Grid.Column="1" Content="Edit Data" BorderThickness="0 0 0 1" BorderBrush="#6CB2EF" VerticalAlignment="Top" FontSize="17" Margin="0 0 0 0" HorizontalAlignment="Center" Foreground="White"/>

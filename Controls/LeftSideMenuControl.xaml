@@ -33,7 +33,7 @@
                             </Grid.RowDefinitions>
                           
 
-                            <local:Resizer Cursor="SizeWE" Background="Black" Width="3" 
+                            <local:Resizer Cursor="SizeWE" Background="Transparent" Width="3" 
                                               Grid.Row="1" Grid.Column="0" ThumbDirection="Left"/>
 
                            
@@ -107,14 +107,22 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="25"/>
+            
         </Grid.ColumnDefinitions>
-        <Canvas x:Name="Maincanvas" Height="Auto" Width="Auto">
+       
+        <Canvas x:Name="Maincanvas" Height="Auto" Width="Auto" >
             <local:ResizablePanel Grid.Column="0" Canvas.Left="0" Canvas.Top="0"  Height="{Binding ActualHeight,ElementName=Maincanvas}" Width="{Binding ActualWidth,ElementName=Maincanvas}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
             <Frame x:Name="PageContent" Margin="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden" />
         </local:ResizablePanel>
             </Canvas>
-        <Grid Grid.Column="1" Width="25" Height="Auto" HorizontalAlignment="Right" Background="	#2d2d30">
-            <Button Content="fgdfsgdsfgsdfsdf" Style="{DynamicResource SideMenuButton}" Height="25" Width="99" />
+        <Grid Grid.Column="1" Width="25" Height="Auto" HorizontalAlignment="Right" Background="#2d2d30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="105"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Solution Explorer" Click="Button_Click" Margin="0 -25 0 0" Style="{DynamicResource SideMenuButton}" Height="25" Width="101" />
+            <Button Grid.Row="1" Content="Performance View" Click="Button_Click_1" Margin="0 -35 0 0" Style="{DynamicResource SideMenuButton}" Height="25" Width="110" />
         </Grid>
 
     </Grid>

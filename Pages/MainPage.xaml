@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Server_Restart_Final"
       xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
       mc:Ignorable="d" 
-      Margin="0 0 100 100"
+      Margin="0 0 100 200"
  
       Title="MainPage">
     <Page.Effect>

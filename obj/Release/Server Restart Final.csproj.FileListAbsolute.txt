@@ -2,25 +2,9 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.exe
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.pdb
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Expression.Drawing.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Win32.Primitives.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.AppContext.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Console.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Diagnostics.DiagnosticSource.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Globalization.Calendars.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.Compression.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.Compression.ZipFile.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.FileSystem.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.IO.FileSystem.Primitives.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Net.Http.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Net.Sockets.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.UI.Xaml.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.Algorithms.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.Encoding.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.Primitives.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Security.Cryptography.X509Certificates.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Xml.ReaderWriter.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd
@@ -139,3 +123,10 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuFloatWindow\SideFloatWindowControl.g.cs
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuFloatWindow\SideFloatWindowControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideMenuPerformace.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideMenuPerformace.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe.config
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Ninject.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.dll.config

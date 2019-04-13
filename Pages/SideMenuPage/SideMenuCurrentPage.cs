@@ -10,4 +10,9 @@ namespace Server_Restart_Final
     {
       
     }
+    public enum SideMenuPages
+    {
+        Performance =0 ,
+        TreeView,
+    }
 }

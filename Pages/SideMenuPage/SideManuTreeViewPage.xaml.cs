@@ -25,6 +25,7 @@ namespace Server_Restart_Final
         public SideManuTreeViewPage()
         {
             InitializeComponent();
+            
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -130,19 +131,37 @@ namespace Server_Restart_Final
             var MarginWidth = MainWidth - (PosX);
 
             this.MainGrid.Children.Remove(SideFW);
-          
+        
             this.MainGrid.Children.Add(SideFW);
-            SideFW.Margin = new Thickness(PosX-150 , PosY , MarginWidth, MarginHeight-150);
+            Grid.SetRow(SideFW, 1);
+            SideFW.Margin = new Thickness(PosX-150 , PosY-30 , MarginWidth, MarginHeight-150);
 
-            string cmd = "explorer.exe";
-            string arg = "/select, " + Global.GlobalSigh.TreeViewItemTag;
-            Process.Start(cmd, arg);
-            MessageBox.Show("dsds" + e.GetPosition(Global.GlobalSigh.mw));
+            SideFW.Focusable = true;
+            SideFW.IsEnabled = true;
+
+            SideFW.LostFocus += SideFW_LostFocus;
+            SideFW.Loaded += SideFW_Loaded;
+            this.LostFocus += SideManuTreeViewPage_LostFocus;
+        }
+
+        private void SideManuTreeViewPage_LostFocus(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void SideFW_Loaded(object sender, RoutedEventArgs e)
+        {
+            SideFW.Focus();
+        }
+
+        private void SideFW_LostFocus(object sender, RoutedEventArgs e)
+        {
+            this.MainGrid.Children.Remove(SideFW);
         }
 
         private void StackPanel_LostFocus(object sender, RoutedEventArgs e)
         {
-            this.MainGrid.Children.Remove(SideFW);
+           
         }
     }
 }
