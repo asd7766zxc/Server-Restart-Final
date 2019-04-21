@@ -22,11 +22,12 @@ namespace Server_Restart_Final.Pages.SideMenuPage
     /// </summary>
     public partial class SideMenuPerformace : Page
     {
-        List<LineSegment> ListPerformance = new List<LineSegment>();
+        List<RectangleGeometry> ListPerformance = new List<RectangleGeometry>();
         DispatcherTimer UpdateServerPerformance = new DispatcherTimer();
         PathSegmentCollection CollectSegment = new PathSegmentCollection();
         PathFigureCollection CollectFigure = new PathFigureCollection();
         PathGeometry GeometryPath = new PathGeometry();
+        GeometryCollection gc = new GeometryCollection();
         public SideMenuPerformace()
         {
             InitializeComponent();
@@ -44,7 +45,6 @@ namespace Server_Restart_Final.Pages.SideMenuPage
 
         private void SideMenuPerformace_Loaded(object sender, RoutedEventArgs e)
         {
-
             UpdateServerPerformance.Start();
         }
 
@@ -52,18 +52,18 @@ namespace Server_Restart_Final.Pages.SideMenuPage
         int tilesum = 0;
         private void UpdateServerPerformance_Tick(object sender, EventArgs e)
         {
+            var rec = new Rect();
             try
             {
-                ListPerformance.Add(new LineSegment());
-                ListPerformance[ListPerformance.Count - 1].Point = new Point(movensum, Environment.WorkingSet / 1024 / 1024);
-                movensum += 10;
+                movensum += 5;
                 if (ListPerformance.Count >= this.ActualWidth)
                 {
                     tilesum++;
-                    CollectSegment.Remove(ListPerformance[tilesum]);
+                    PerformaceStartPoint1.Figures[tilesum].Segments.RemoveAt(tilesum);
                 }
-                CollectSegment.Add(ListPerformance[ListPerformance.Count - 1]);
-                this.PerformaceStartPoint.Segments = CollectSegment;
+                Out.Content = $"本機運作時間 - {Environment.TickCount/1000/60/60} : {(Environment.TickCount / 1000 / 60)-((Environment.TickCount / 1000 / 60 / 60)*60)} : {(Environment.TickCount/1000) - ((Environment.TickCount / 1000 / 60 ) *60)}";
+                Out1.Content = $"記憶體使用量 - {Environment.WorkingSet / 1024 / 1024/2}MB";
+                this.PerformaceStartPoint1.AddGeometry(new RectangleGeometry(new Rect(movensum, (Environment.WorkingSet / 1024 / 1024 /2), 5, Environment.WorkingSet / 1024 / 1024)));
                 MainPath.Margin = new Thickness(0, 0, 100, 0);
             }
             catch

@@ -6,12 +6,11 @@
       xmlns:local="clr-namespace:Server_Restart_Final"
       xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="Server_Restart_Final.ReportPage"
       mc:Ignorable="d" 
-      Margin="50"
       VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
       d:DesignHeight="150" d:DesignWidth="600"
       Title="ReportPage">
 
-    <Border BorderBrush="Transparent" Height="150" Width="600" BorderThickness="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+    <Border BorderBrush="Transparent" Height="Auto" Width="600" BorderThickness="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         <Border.Effect>
             <DropShadowEffect BlurRadius="0" RenderingBias="Quality" ShadowDepth="0.1" Direction="0"/>
         </Border.Effect>
@@ -31,7 +30,6 @@
             </Border>
             <StackPanel Grid.Row="1">
                 <Label Name="MainRP" VerticalAlignment="Center" Content="" Foreground="White" FontSize="15" Padding="1"/>
-               
             </StackPanel>
         </Grid>
     </Border>

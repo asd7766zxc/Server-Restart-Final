@@ -18,6 +18,10 @@ namespace Server_Restart_Final.SocketClient
         {
             MainClient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         }
+        public bool Connected()
+        {
+           return MainClient.Connected;
+        }
         public void Connect(string ip,int port)
         {
             if (String.IsNullOrEmpty(ip)) return;

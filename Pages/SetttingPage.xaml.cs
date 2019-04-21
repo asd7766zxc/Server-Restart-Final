@@ -36,13 +36,13 @@ namespace Server_Restart_Final
             this.Unloaded += SetttingPage_Unloaded;
             Dt.Start();
             InitializeComponent();
-           
+
         }
 
         private void SetttingPage_Unloaded(object sender, RoutedEventArgs e)
         {
-           for(int i = CommandEditList.Items.Count-1; i>-1;i--)
-            CommandEditList.Items.RemoveAt(i);
+            for (int i = CommandEditList.Items.Count - 1; i > -1; i--)
+                CommandEditList.Items.RemoveAt(i);
 
             od_command = null;
         }
@@ -51,7 +51,7 @@ namespace Server_Restart_Final
         {
             UIRefresh.Refreshs(CommandEditList);
         }
-        
+
         public string ServerFileName = "";
         public string ServerFilePath = "";
         public string ServerFileFloder = "";
@@ -59,6 +59,7 @@ namespace Server_Restart_Final
         private void OpenFilePicker_Btn_Click(object sender, RoutedEventArgs e)
         {
             ServerFilePath = "";
+            ServerFileFloder = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "Batch|*.bat";
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -96,11 +97,11 @@ namespace Server_Restart_Final
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-           
+
             ProcessCheckStatus.data = StorageData.FromXmlFile<Data>(System.Windows.Forms.Application.StartupPath + "\\LocalData.xml");
             command = ProcessCheckStatus.data.command;
             od_command = command;
-            Settings.Content = "伺服器批次檔:  " + ProcessCheckStatus.data.ServerFileLocationName + "\n" + "伺服器位置:  " + ProcessCheckStatus.data.ServerFileLocation + "\n" + "伺服器資料夾:  " + ProcessCheckStatus.data.ServerFileLocationFloder  + "\n" + "使用者停滯自動掌管:  " + ProcessCheckStatus.data.UserFroceTiming + "\n" + "Server Crash Report - Server:  " + ProcessCheckStatus.data.SQLServerLoaction + "\n" + "RestartTimes: " + ProcessCheckStatus.data.ServerRestartTimes;
+            Settings.Content = "伺服器批次檔:  " + ProcessCheckStatus.data.ServerFileLocationName + "\n" + "伺服器位置:  " + ProcessCheckStatus.data.ServerFileLocation + "\n" + "伺服器資料夾:  " + ProcessCheckStatus.data.ServerFileLocationFloder + "\n" + "使用者停滯自動掌管:  " + ProcessCheckStatus.data.UserFroceTiming + "\n" + "Server Crash Report - Server:  " + ProcessCheckStatus.data.SQLServerLoaction + "\n" + "RestartTimes: " + ProcessCheckStatus.data.ServerRestartTimes;
             ValueSearch.Text = ProcessCheckStatus.data.Memory;
             odMemory = ProcessCheckStatus.data.Memory;
             UserFroceCheck.IsChecked = ProcessCheckStatus.data.UserFroceTiming;
@@ -111,7 +112,7 @@ namespace Server_Restart_Final
             parameter.Text = ProcessCheckStatus.data.parameter;
             ServerFileFloder = ProcessCheckStatus.data.ServerFileLocationFloder;
 
-            if(File.Exists(ProcessCheckStatus.data.ServerFileLocationName))
+            if (File.Exists(ProcessCheckStatus.data.ServerFileLocationName))
                 parameter.Text = StorageBatch.Batch.LoadBatch();
 
             foreach (var item in od_command)
@@ -146,17 +147,17 @@ namespace Server_Restart_Final
             int outm = (int)(MemorySlider.Value * 3200);
             foreach (var rp in cp)
             {
-              
+
                 if (rp == ValueSearch.Text)
                 {
 
                     ValueSearch.Text = "-Xmx" + outm + "M";
-                    outp += "-Xmx"+outm+"M ";
+                    outp += "-Xmx" + outm + "M ";
                     odMemory = "-Xmx" + outm + "M";
                 }
                 else
                 {
-                  outp += $"{rp} ";
+                    outp += $"{rp} ";
                 }
             }
             parameter.Text = outp;
@@ -164,8 +165,8 @@ namespace Server_Restart_Final
 
         private void Parameter_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            if(e.Key == Key.Enter)
-            ProcessCheckStatus.data.parameter = parameter.Text;
+            if (e.Key == Key.Enter)
+                ProcessCheckStatus.data.parameter = parameter.Text;
         }
         public string odMemory;
         private void ValueSearch_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
@@ -178,8 +179,8 @@ namespace Server_Restart_Final
                 {
                     if (rp == odMemory)
                     {
-                        outp += ""+ValueSearch.Text+" ";
-                        odMemory =ValueSearch.Text;
+                        outp += "" + ValueSearch.Text + " ";
+                        odMemory = ValueSearch.Text;
                     }
                     else
                     {
@@ -192,7 +193,7 @@ namespace Server_Restart_Final
 
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-           
+
         }
 
         private void DelBtn_Click(object sender, RoutedEventArgs e)

@@ -35,6 +35,14 @@ namespace Server_Restart_Final
             if (!Directory.Exists(outputfolder))
                 Directory.CreateDirectory(outputfolder);
         }
+        public void CloseClient()
+        {
+            if (transferClient == null) return;
+
+            transferClient.Close();
+            transferClient = null;
+            Connected = false;
+        }
         public void StartServer(int Port)
         {
             if (serverRunning)

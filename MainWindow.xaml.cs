@@ -223,7 +223,6 @@ namespace Server_Restart_Final
             Task.Run(() => this.Dispatcher.Invoke(() => {
                 MainGrid.Height = this.Height;
                 SideMenu.Height = this.Height;
-
             }));
         }
     }

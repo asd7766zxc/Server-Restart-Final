@@ -5,10 +5,22 @@
   <SQLServerLoaction />
   <UserFroceTiming>false</UserFroceTiming>
   <ServerRestartTimes>0</ServerRestartTimes>
-  <parameter>java -server -Xms1024M -Xmx5120M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxGCPauseMillis=50 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:UseSSE=3 -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -XX:+AggressiveOpts -jar Eds.jar nogui pause</parameter>
+  <parameter>java -server -Xms1024M -Xmx5120M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled -XX:MaxGCPauseMillis=50 -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 -XX:UseSSE=3 -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+UseCompressedOops -XX:+OptimizeStringConcat -XX:+UseFastAccessorMethods -XX:+AggressiveOpts -jar Eds.jar nogui</parameter>
   <command>
     <Commands>
       <command>Command</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asdas</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asdasd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>sd</command>
       <commandindex>0</commandindex>
     </Commands>
     <Commands>
@@ -16,7 +28,7 @@
       <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>ds</command>
+      <command>sad</command>
       <commandindex>0</commandindex>
     </Commands>
     <Commands>
@@ -25,30 +37,6 @@
     </Commands>
     <Commands>
       <command>asd</command>
-      <commandindex>0</commandindex>
-    </Commands>
-    <Commands>
-      <command>asd</command>
-      <commandindex>0</commandindex>
-    </Commands>
-    <Commands>
-      <command>adssadasd</command>
-      <commandindex>0</commandindex>
-    </Commands>
-    <Commands>
-      <command>sadasddsaasd</command>
-      <commandindex>0</commandindex>
-    </Commands>
-    <Commands>
-      <command>asdasdasd</command>
-      <commandindex>0</commandindex>
-    </Commands>
-    <Commands>
-      <command>adsasd</command>
-      <commandindex>0</commandindex>
-    </Commands>
-    <Commands>
-      <command>sadasdasdsda</command>
       <commandindex>0</commandindex>
     </Commands>
     <Commands>
@@ -56,11 +44,83 @@
       <commandindex>0</commandindex>
     </Commands>
     <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
       <command />
       <commandindex>0</commandindex>
     </Commands>
     <Commands>
-      <command>sadsadsdasdasadasdsda</command>
+      <command>sad</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>sad</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>sad</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command />
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>s</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>ads</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>ad</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command />
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command />
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>sad</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command>asd</command>
+      <commandindex>0</commandindex>
+    </Commands>
+    <Commands>
+      <command />
       <commandindex>0</commandindex>
     </Commands>
     <Commands>

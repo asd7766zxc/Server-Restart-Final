@@ -16,7 +16,7 @@ namespace Server_Restart_Final.Global
    
     public static class GlobalSigh 
     {
-        
+        static ConnectToSQL ctsql = new ConnectToSQL();
         public static PerformanceCounter pc = new PerformanceCounter();
         public static ParameterBuilder PB;
         public static string TreeViewItemTag { get; set; }
@@ -71,12 +71,18 @@ namespace Server_Restart_Final.Global
         }
         public static void ApplicationClosing()
         {
+            Task.Run(() => { Logger.DoneClearLog(); }); 
+            SS.ClearComplete();
+            SS.CloseClient();
+            SS.transferClient = null;
+
             _client = null;
             if (ServerObjectProc != null)
             {
                 ServerObjectProc.CloseMainWindow();
             }
-            Environment.Exit(-1);
+
+            Environment.Exit(0);
         }
         public static void CloseServerNull(Server s)
         {

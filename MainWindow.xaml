@@ -234,7 +234,7 @@
     <Border Height="Auto" Width="Auto">
         <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
+                <RowDefinition Height="25"/>
                 <RowDefinition Height="Auto"/>
 
             </Grid.RowDefinitions>

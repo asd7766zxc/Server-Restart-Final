@@ -20,7 +20,17 @@ namespace Server_Restart_Final
         {
             ProcessCheckStatus.data = DataStorage.StorageData.FromXmlFile<DataStorage.Data>(System.Windows.Forms.Application.StartupPath + "\\LocalData.xml");
             Rand = new Random();
+            this.Exit += App_Exit;
+
+            
         }
+
+        private void App_Exit(object sender, ExitEventArgs e)
+        {
+            Global.GlobalSigh.ApplicationClosing();
+            Environment.Exit(-1);
+        }
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);

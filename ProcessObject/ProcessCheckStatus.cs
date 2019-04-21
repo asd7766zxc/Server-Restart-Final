@@ -39,7 +39,7 @@ namespace Server_Restart_Final
         public static async Task RestartServer()
         {
             if (serverRestartCount >= data.ServerRestartTimes) return;
-            if (UserControl) return;
+          
             try
             {
                 await Global.GlobalSigh._client.Send(Encoding.UTF8.GetBytes("SRF-Bot|Try To Restart Server"));

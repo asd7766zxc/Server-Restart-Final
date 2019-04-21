@@ -21,20 +21,32 @@
         <Label Content="Performance View" Foreground="White"/>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="25"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="1">
-                <Path HorizontalAlignment="Right" x:Name="MainPath" Stroke="White" StrokeThickness="1">
-                    <Path.Data>
-                        <PathGeometry>
-                            <PathFigure x:Name="PerformaceStartPoint" StartPoint="10,50">
-                            </PathFigure>
-                        </PathGeometry>
-                    </Path.Data>
-                </Path>
+            <Grid Grid.Row="0" Height="Auto">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="Out" Foreground="White" FontSize="15" Content="運行時間"/>
+                <Label Grid.Row="1" x:Name="Out1" Foreground="White" FontSize="15" Content="記憶體使用量"/>
+                <Border VerticalAlignment="Top" Height="120" Grid.Row="2"  Margin="5" BorderThickness="1" BorderBrush="#0DEEEEEE">
+                    <Path HorizontalAlignment="Right" x:Name="MainPath" Stroke="White" StrokeThickness="0">
+                        <Path.Fill>
+                            <SolidColorBrush Color="#5A7E8F" />
+                        </Path.Fill>
+                        <Path.Data>
+                           
+                            <PathGeometry x:Name="PerformaceStartPoint1">
+                                <PathFigure x:Name="PerformaceStartPoint" StartPoint="10,50">
+                                </PathFigure>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                </Border>
             </Grid>
         </Grid>
     </Grid>

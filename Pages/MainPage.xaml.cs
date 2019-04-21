@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using Microsoft.DirectX;
+using Microsoft.DirectX.Direct3D;
 
 namespace Server_Restart_Final
 {
@@ -22,9 +24,11 @@ namespace Server_Restart_Final
     /// </summary>
     public partial class MainPage : Page
     {
+        public Device device;
         public Server _server;
         public Timer timer1;
         public DispatcherTimer dt = new DispatcherTimer();
+        public DispatcherTimer dt1 = new DispatcherTimer();
         public string Command = "YOOOO";
         public int _progress { get; set; }
 
@@ -33,6 +37,9 @@ namespace Server_Restart_Final
             dt.Interval = TimeSpan.FromSeconds(0.1);
             dt.Tick += Dt_Tick;
 
+            dt1.Interval = TimeSpan.FromMilliseconds(1);
+            dt1.Tick += Dt1_Tick;
+       
             this.Loaded += MainPage_Loaded;
             InitializeComponent();
             timer1 = new Timer
@@ -46,6 +53,29 @@ namespace Server_Restart_Final
 
             _server = new Server(this.OutPut, this, this.CrashOut, this);
             Global.GlobalSigh._server = this._server;
+        }
+        int i = 0;
+        private void Dt1_Tick(object sender, EventArgs e)
+        {
+        
+            i++;
+            Dispatcher.Invoke(() =>
+            {
+                this.Arc1.RenderTransform = TransformRT(i);
+                this.Arc2.RenderTransform = TransformRT(i*2);
+                this.Arc3.RenderTransform = TransformRT(i);
+                this.Arc4.RenderTransform = TransformRT(i);
+                this.Arc5.RenderTransform = TransformRT(i);
+            });
+          
+        }
+        public RotateTransform TransformRT(double angle)
+        {
+            var rt = new RotateTransform();
+            rt.CenterX = 0;
+            rt.CenterY = 50;
+            rt.Angle = angle;
+            return rt;
         }
         public int Server_Restart_Countdown = 100;
         private void Dt_Tick(object sender, EventArgs e)
@@ -89,6 +119,7 @@ namespace Server_Restart_Final
         public Button[] btnarray = new Button[10];
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
+         
             btnarray[0] = CommandBtn;
             btnarray[1] = CommandBtn1;
             btnarray[2] = CommandBtn2;
@@ -124,6 +155,7 @@ namespace Server_Restart_Final
             Global.GlobalSigh.AcServerType = ServerType.Starting;
             Global.GlobalSigh.Tk = new Task(() => _server.StartServer());
             Global.GlobalSigh.Tk.Start();
+            Global.GlobalSigh._server = _server;
             timer1.Start();
             dt.Start();
         }

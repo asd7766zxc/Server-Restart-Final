@@ -6,8 +6,7 @@
       xmlns:local="clr-namespace:Server_Restart_Final"
       xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
       mc:Ignorable="d" 
-      Margin="0 0 100 200"
- 
+      Margin="0 0 100 400"
       Title="MainPage">
     <Page.Effect>
         <BlurEffect x:Name="BlurP" Radius="0" />
@@ -350,7 +349,7 @@
             <Label Content="IoC" Foreground="Lime" Padding="1" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
          </Grid>
         <Grid Grid.Column="2" Grid.Row="1" Width="500">
-            <TextBox FontSize="12" IsReadOnly="True" x:Name="IoCOutPut" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Height="700" Width="500" Margin="0 0 0 0" Background="Black" Foreground="LimeGreen" Style="{DynamicResource OutPutTextBoxStyle}" />
+            <TextBox FontSize="12" IsReadOnly="True" x:Name="IoCOutPut" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Height="500" Width="500" Margin="0 0 0 0" Background="Black" Foreground="LimeGreen" Style="{DynamicResource OutPutTextBoxStyle}" />
         </Grid>
             <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
@@ -358,33 +357,33 @@
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
                 
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
                 
             </Grid.RowDefinitions>
             <Button Grid.Row="0" HorizontalAlignment="Left" x:Name="StartServerBtn" Foreground="White" Content="Start" Height="50" Width="50" Background="White" Click="StartServerBtn_Click" Style="{DynamicResource StartServerButton}" />
             <Button Grid.Row="1"  x:Name="StopServerBtn" Foreground="White" Content="Stop" Height="50" Width="50" Background="White" Click="StopServerBtn_Click" Style="{DynamicResource StopServerButton}"/>
             <Button Grid.Row="2"  x:Name="RestartServerBtn" Foreground="White" Content="Restart" Height="50" Width="50" Background="White" Click="RestartServerBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
 
-            <Button Grid.Row="4"  x:Name="CommandBtn" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="5"  x:Name="CommandBtn1" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="6"  x:Name="CommandBtn2" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="7"  x:Name="CommandBtn3" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="9"  x:Name="CommandBtn5" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="8"  x:Name="CommandBtn4" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="10"  x:Name="CommandBtn6" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="11"  x:Name="CommandBtn7" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="12"  x:Name="CommandBtn8" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
-            <Button Grid.Row="13"  x:Name="CommandBtn9" Foreground="White"  Height="50" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="4"  x:Name="CommandBtn" Foreground="White"    Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="5"  x:Name="CommandBtn1" Foreground="White"   Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="6"  x:Name="CommandBtn2" Foreground="White"   Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="7"  x:Name="CommandBtn3" Foreground="White"   Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="9"  x:Name="CommandBtn5" Foreground="White"   Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="8"  x:Name="CommandBtn4" Foreground="White"   Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="10"  x:Name="CommandBtn6" Foreground="White"  Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="11"  x:Name="CommandBtn7" Foreground="White"  Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="12"  x:Name="CommandBtn8" Foreground="White"  Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
+            <Button Grid.Row="13"  x:Name="CommandBtn9" Foreground="White"  Height="Auto" Width="50" Background="White" Click="CommandBtn_Click" Style="{DynamicResource ReStartServerButton}"/>
 
         </Grid>
         <Canvas Grid.Column="1" Grid.Row="0" x:Name="DrawCanvas"  Margin="0 0 0 0">

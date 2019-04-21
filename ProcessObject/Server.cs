@@ -154,8 +154,6 @@ namespace Server_Restart_Final
 
         private void Process_Exited(object sender, EventArgs e)
         {
-
-            Logger.DoneClearLog();
             if (Type == ServerType.UserControl) return;
             outerhandle();
             Global.GlobalSigh.AcServerType = ServerType.Close;
