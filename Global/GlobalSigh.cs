@@ -13,14 +13,13 @@ using ServerRestartFinal.Core.IoC;
 
 namespace Server_Restart_Final.Global
 {
-   
-    public static class GlobalSigh 
+
+    public static class GlobalSigh
     {
-        static ConnectToSQL ctsql = new ConnectToSQL();
         public static PerformanceCounter pc = new PerformanceCounter();
         public static ParameterBuilder PB;
         public static string TreeViewItemTag { get; set; }
-        public static SocketStaus SS = new SocketStaus(ProcessCheckStatus.data.SQLServerLoaction,10270);
+        public static SocketStaus SS = new SocketStaus(ProcessCheckStatus.data.SQLServerLoaction, 10270);
         public static Client _client = new Client();
         public static Task LoggerTask { get; set; }
         public static ApplicationPage PageType { get; set; }
@@ -32,7 +31,7 @@ namespace Server_Restart_Final.Global
         public static TopMenuPage tmp { get; set; }
         public static ServerType AcServerType { get; set; }
         public static List<ChatlistItemViewModel> _Item { get; set; }
-        public static MainPage mp=new MainPage();
+        public static MainPage mp = new MainPage();
         public static ReportPage rp = new ReportPage();
         public static InfoPage ip = new InfoPage();
         public static SetttingPage sp = new SetttingPage();
@@ -45,7 +44,7 @@ namespace Server_Restart_Final.Global
         public static Label reports;
         public static Label reportst;
         public static TextBox IoCOut;
-        public static int TranserValueProgress { get { return transerValueProgress; }  set { transerValueProgress = value; TransferUpdate(value); } }
+        public static int TranserValueProgress { get { return transerValueProgress; } set { transerValueProgress = value; TransferUpdate(value); } }
         public static int transerValueProgress;
         public static List<TransferQueue> LisOfQueue = new List<TransferQueue>();
         public static void GlobalMethod(ApplicationPage pages)
@@ -59,6 +58,15 @@ namespace Server_Restart_Final.Global
                 }
             }
             fr.Content = CurrentPages(pages);
+            fr.Content =new ServerPage();
+        }
+        public static void ConnectToSQLServer()
+        {
+            var rep = SQL.SQLHelper.GetServerData("cr-reports.ddns.net", 1433, "central-server", "central-pas", 1);
+            foreach (var item in rep)
+            {
+                MessageBox.Show(item.fullinfo);
+            }
         }
         public static void TreeViewItemClick()
         {

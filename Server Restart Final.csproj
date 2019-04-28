@@ -61,8 +61,17 @@
     <Reference Include="Batch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Batch.0.1.0\lib\net45\Batch.dll</HintPath>
     </Reference>
+    <Reference Include="box2d, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="cocos2d-xna, Version=2.0.3.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\cocos2d-xna.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.1.60.6\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Batch, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.Batch.10.1.0\lib\net461\Microsoft.Azure.Batch.dll</HintPath>
@@ -102,8 +111,8 @@
     <Reference Include="MPI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=29b4a045737654fe, processorArchitecture=MSIL">
       <HintPath>..\packages\MPI.NET.1.4.0\lib\netstandard2.0\MPI.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7" />
     <Reference Include="System" />
@@ -198,6 +207,9 @@
     <Reference Include="XPlat.Storage.Pickers, Version=1.5.19060.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\XPlat.Storage.Pickers.1.5.19060.1\lib\netstandard1.4\XPlat.Storage.Pickers.dll</HintPath>
     </Reference>
+    <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.Windows.2.0.3.2\lib\zlib.net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -248,6 +260,8 @@
     <Compile Include="File_Control_IO\GetSetFile.cs" />
     <Compile Include="Global\GlobalSigh.cs" />
     <Compile Include="Helpers\NativeMethods.cs" />
+    <Compile Include="Ioc Connection\ReTranslate.cs" />
+    <Compile Include="Ioc Connection\SQLData.cs" />
     <Compile Include="ListItemViewModel\Design\TopMenuDesignViewModel.cs" />
     <Compile Include="ListItemViewModel\Design\TopMenuItemDesignModel.cs" />
     <Compile Include="ListItemViewModel\TopMenuItemViewModel.cs" />
@@ -274,6 +288,11 @@
     <Compile Include="Pages\Particle.xaml.cs">
       <DependentUpon>Particle.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ServerPage\Namespace.cs" />
+    <Compile Include="Pages\ServerPage\ServerPage.xaml.cs">
+      <DependentUpon>ServerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ServerPage\ServerPageViewModel.cs" />
     <Compile Include="Pages\SideMenuPage\SideManuTreeViewPage.xaml.cs">
       <DependentUpon>SideManuTreeViewPage.xaml</DependentUpon>
     </Compile>
@@ -331,6 +350,7 @@
     <Compile Include="ViewModel\Base\IHavePassword.cs" />
     <Compile Include="ViewModel\Base\RelayParameterizedCommmand.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\MoveItemControlViewModel.cs" />
     <Compile Include="ViewModel\WindowsVeiwModles.cs" />
     <Compile Include="Window\WindowResizer.cs" />
     <Page Include="ContentResizer\ResizerStyle.xaml">
@@ -406,6 +426,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ReportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ServerPage\ServerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

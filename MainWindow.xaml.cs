@@ -57,8 +57,8 @@ namespace Server_Restart_Final
             {
                 f();
             }));
+         
 
-           
         }
         public void f()
         {
@@ -141,8 +141,7 @@ namespace Server_Restart_Final
             }
         }
         public void Move_Control(object sender, Point p)
-        {
-      
+        {     
             Point MousePoint = p;
             var PosX = (int)(MousePoint.X - 115 - 50);
             var PosY = (int)(MousePoint.Y - 55 - 50);
@@ -155,6 +154,7 @@ namespace Server_Restart_Final
         }
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            Global.GlobalSigh.ConnectToSQLServer();
             ProcessCheckStatus.data = StorageData.FromXmlFile<Data>(System.Windows.Forms.Application.StartupPath + "\\LocalData.xml");
             Global.GlobalSigh.SS.ConnectToServer();
             Global.GlobalSigh._client.Connect(ProcessCheckStatus.data.SQLServerLoaction,10127);

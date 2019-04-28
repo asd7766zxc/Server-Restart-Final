@@ -1,10 +1,58 @@
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe.config
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Styles\Scroll.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuFloatWindow\SideFloatWindowControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListControl .g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuListControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideMenuControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListItemControl.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ServerPage\ServerPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideManuTreeViewPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideMenuPerformace.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.cache
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.lref
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.exe.config
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.exe
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Server Restart Final.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Batch.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\box2d.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\cocos2d-xna.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Dapper.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Azure.Batch.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3D.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3DX.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.DirectDraw.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Expression.Drawing.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\MPI.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Core.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Interfaces.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Linq.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.UI.Xaml.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Windows.Interactivity.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ActivatedEventsContract.winmd
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ActivationCameraSettingsContract.winmd
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Windows.ApplicationModel.Activation.ContactActivatedEventsContract.winmd
@@ -48,8 +96,25 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Foundation.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.Pickers.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\zlib.net.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.dll.config
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Batch.pdb
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Dapper.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Azure.Batch.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3D.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3DX.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.DirectDraw.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Expression.Drawing.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.Azure.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Newtonsoft.Json.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Core.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Interfaces.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Linq.xml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Windows.Interactivity.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Foundation.pdb
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Foundation.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.pdb
@@ -58,31 +123,19 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\XPlat.Storage.Pickers.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.xml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Runtime.WindowsRuntime.UI.Xaml.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Styles\Scroll.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListControl .g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListItemControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuItemControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuListControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\InfoPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\LoadingPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\MainPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\MainWindow.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideMenuControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListItemControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\GeneratedInternalTypeHelper.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.cache
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final_MarkupCompile.lref
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\App.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\ContentResizer\ResizerStyle.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\LeftSideMenuControl.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuFloatWindow\SideFloatWindowControl.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListControl .baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenu\SideMenuListItemControl.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\TopMenu\TopMenuControl.baml
@@ -96,8 +149,12 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideList\SideListItemControl.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\Particle.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ReportPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\ServerPage\ServerPage.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SetttingPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideManuTreeViewPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideMenuPerformace.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\TopMenuPage.baml
+C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Styles\Button.baml
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.g.resources
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server_Restart_Final.Properties.Resources.resources
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.GenerateResource.cache
@@ -105,55 +162,3 @@ C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Releas
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csproj.CopyComplete
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe
 C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.pdb
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\ContentResizer\ResizerStyle.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.csprojAssemblyReference.cache
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Styles\Button.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideManuTreeViewPage.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideManuTreeViewPage.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Windows.Interactivity.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Windows.Interactivity.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\de\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\en\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\es\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\fr\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\it\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ja\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ko\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuFloatWindow\SideFloatWindowControl.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Controls\SideMenuFloatWindow\SideFloatWindowControl.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideMenuPerformace.g.cs
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Pages\SideMenuPage\SideMenuPerformace.baml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\obj\Release\Server Restart Final.exe.config
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.pdb
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Ninject.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\ServerRestartFinal.Core.dll.config
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3D.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3DX.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.DirectDraw.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3D.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.Direct3DX.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.DirectX.DirectDraw.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Batch.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Azure.Batch.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.Azure.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\MPI.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Newtonsoft.Json.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Core.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Interfaces.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Linq.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Batch.pdb
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Azure.Batch.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Microsoft.Rest.ClientRuntime.Azure.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Newtonsoft.Json.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Core.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Interfaces.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\System.Reactive.Linq.xml
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Dapper.dll
-C:\Users\admin\source\repos\Server Restart Final\Server Restart Final\bin\Release\Dapper.xml

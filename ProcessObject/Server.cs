@@ -49,6 +49,7 @@ namespace Server_Restart_Final
             Type = ServerType.Close;
             Global.GlobalSigh.AcServerType = ServerType.Close;
             lockmessage = true;
+            lockmessage1 = true;
         }
 
         public void StartServer()
@@ -109,6 +110,7 @@ namespace Server_Restart_Final
         }
 
         public bool lockmessage = true;
+        public bool lockmessage1 = true;
         private async void Timer1_Tick(object sender, EventArgs e)
         {
             var logs = log.Split(' ');
@@ -154,6 +156,15 @@ namespace Server_Restart_Final
 
         private void Process_Exited(object sender, EventArgs e)
         {
+            if (lockmessage1)
+            {
+                try
+                {
+                     Global.GlobalSigh._client.Send(Encoding.UTF8.GetBytes("SRF-Bot|" + "Server Stopped! : " + DateTime.Now));
+                    lockmessage1 = false;
+                }
+                catch { }
+            }
             if (Type == ServerType.UserControl) return;
             outerhandle();
             Global.GlobalSigh.AcServerType = ServerType.Close;

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,13 +11,10 @@ namespace Server_Restart_Final.SQL
 {
     public class DataAcess
     {
-        public List<dboReport> GetData(int id)
+        public List<dboReport> GetData(int id,SqlConnection conn)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(@"Server=.\SQLExpress;Database=Test;Trusted_Connection=True;"))
-            {
-                var outs =  connection.Query<dboReport>($"select * from Test where id = '{id}'").ToList();
-                return outs;
-            }
+            IDbConnection ics = conn;
+            return ics.Query<dboReport>($"select * from Test where id = {id}").ToList();
         }
     }
 }

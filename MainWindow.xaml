@@ -143,7 +143,7 @@
                                                 <TextBlock FontFamily="{StaticResource LatoThin}" FontSize="1000" Margin="0,0,0,-5">
                                                     <Run Text="Server" Foreground="{StaticResource ForegroundLightBrush}"/>
                                                     <Run Text="Restart" Foreground="{StaticResource ForegroundLightBrush}"/>
-                                                    <Run Text="Beta" Foreground="{StaticResource ForegroundLightBrush}"/>
+                                                    <Run Text="Beta TS Dev" Foreground="{StaticResource ForegroundLightBrush}"/>
                                                 </TextBlock>
                                             </StackPanel>
                                         </Viewbox>
